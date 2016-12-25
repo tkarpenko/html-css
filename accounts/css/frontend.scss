@@ -1,0 +1,254 @@
+@import "lib/reset";
+@import "lib/grid";
+@import "lib/mixins";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url("../img/bg.jpg") center 65% no-repeat #000;
+  color: #00b9ff;
+  line-height: 18px;
+}
+input:-webkit-autofill {
+  background-color: rgba(35, 35, 35, 0.5) !important;
+  color: #adb1b5 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #232323 inset;
+  outline: none;
+  -webkit-text-fill-color: #adb1b5 !important;
+
+}
+.text_center {
+  text-align: center;
+}
+.pr {
+  position: relative;
+}
+
+.form {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 300px;
+}
+
+.outer_right {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  letter-spacing: -4px;
+  font-size: 0;
+}
+
+.foot {
+  padding: 60px 0;
+  height: auto;
+  width: 100%;
+}
+
+.logo {
+  background: url("../img/logo.png") no-repeat top center;
+  display: inline-block;
+  height: 0;
+  width: 180px;
+  margin: 50px 0 20px 0;
+  padding-top: 140px;
+  @include font (#25aae1, 14px, 400, center, 28px);
+}
+
+h1 {
+  color: #d1d1d1;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 20px 0;
+  &.last {
+    margin-bottom: 45px;
+  }
+}
+
+a {
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  &:hover {
+    color: #00b9ff;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.support_link {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: inline-block;
+  a {
+    color: #adb1b5;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+.play_button_place {
+  position: relative;
+  min-height: 90px;
+  .play {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    margin: -15px 0 0 -35px;
+    @include font(#adb1b5, 105px, 400, center, 1);
+  }
+}
+
+@media only screen and (max-height : 590px) {
+  .play_button_place {
+    display: none;
+  }
+}
+
+input {
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(35, 35, 35);
+  background-color: rgba(35, 35, 35, 0.5);
+  height: 38px;
+  width: 300px;
+  padding: 0 30px 0 30px;
+  margin: 0 0 10px 0;
+  @include font(#adb1b5, 14px, 400, center, inherit);
+}
+
+button[type='submit'] {
+  @include font(#414141, 14px, 400, center, 38px);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 270px;
+  height: 38px;
+  width: 30px;
+  &:hover {
+    color: #b4b4b4;
+  }
+}
+
+.popup {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  &.close {
+    display: none;
+  }
+  &.open {
+    display: table;
+  }
+}
+
+.popup_content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 480px;
+  width: 850px;
+  div {
+    text-align: center;
+  }
+}
+
+.btn {
+  background: #0f779f;
+  @include font(#fff, 14px, 400, center, 40px);
+  cursor: pointer;
+  margin-top: 10px;
+  position: relative;
+  height: 40px;
+  width: 300px;
+  i {
+    color: rgb(136, 192, 214);
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+  }
+  &:hover,
+  &:hover i {
+    color: #fff;
+  }
+}
+
+.table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.table_cell {
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.social_reg {
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  @include font(#fff, 16px, 400, center, 38px);
+  &.twitter {
+    background: #0aabe5;
+  }
+  &.facebook {
+    background: #0072bf;
+  }
+  &.gplus {
+    background: #b81518;
+  }
+}
+
+.error {
+  margin: 0;
+  padding-left: 10px;
+  letter-spacing: 0px;
+  @include font(#dd0000, 12px, 400, left, 38px);
+}
+
+@media (max-height: 568px){
+  .logo {
+    margin: 35px 0 20px!important;
+  }
+
+  .foot {
+    padding: 45px 0!important;
+  }
+  p {
+    margin: 15px 0!important;
+  }
+}
+@media (max-height: 480px){
+
+  .logo {
+    margin: 20px 0 10px!important;
+  }
+
+  .foot {
+    padding: 15px 0!important;
+  }
+    p {
+    margin: 5px 0!important;
+  }
+}

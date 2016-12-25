@@ -1,0 +1,116 @@
+.mm_album:hover .album_cover:before,
+.mm_album:hover .album_cover:after,
+.mm_album.play .album_cover:before,
+.mm_album.play .album_cover:after,
+.mm_track .track_cover:before {
+  display: none;
+}
+
+i.ie8 {
+  font-style: normal;
+}
+
+
+.mm_album .album_cover i.ie8 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 82px;
+  width: 104px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 193px;
+  border: 8px solid #2c2c2c;
+  border-bottom: 30px solid #2c2c2c;
+  z-index: 1;
+  background: url('../img/ie8/ie8_cover_play.png') 0 -82px no-repeat;
+}
+.mm_album:hover .album_cover i.ie8,
+.mm_album.play   .album_cover i.ie8 {
+  display: block;
+}
+.mm_album.play   .album_cover i.ie8 {
+  background-position: 0 0;
+}
+
+
+
+.mm_track .track_cover i.ie8 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 48px;
+  z-index: 1;
+  background: url('../img/ie8/ie8_cover_play.png') -28px -99px no-repeat;
+}
+.mm_track:hover .track_cover i.ie8,
+.mm_track.play   .track_cover i.ie8 {
+  display: block;
+}
+.mm_track.play   .track_cover i.ie8 {
+  background-position: -28px -17px;
+}
+
+
+.mm_track.disabled {
+  background-color: #ede5d9;
+  border-bottom-color: #fff;
+}
+
+
+.mm_artist .artist_cover i.ie8 {
+  display: none;
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  height: 156px;
+  width: 180px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 345px;
+  border: 8px solid #2c2c2c;
+  border-bottom: 32px solid #2c2c2c;
+  z-index: 1;
+  background: url('../img/mm_artist_play_pause.png') -2px -18px no-repeat;
+}
+.mm_artist             .artist_cover:hover i.ie8,
+.mm_artist.play   .artist_cover i.ie8 {
+  display: block;
+}
+.mm_artist.play   .artist_cover i.ie8 {
+  background-position: -2px -204px;
+}
+
+
+
+.mm_steps li i.ie8 {
+  background: url('../img/mm_icons.png') -100px 0 no-repeat;
+  height: 45px;
+  width: 21px;
+  display: block;
+  position: absolute;
+  top:-1px;
+  right: -21px;
+  z-index: 1;
+}
+.mm_steps li.past i.ie8 {
+  background-position: -100px -50px;
+}
+.mm_steps li.current i.ie8 {
+  background-position: -100px -50px;
+}
+
+
+
+
+.darkened {
+  background-color: #ede5d9;
+  border-bottom: 1px solid #fff;
+}

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="css/ui/jquery-ui-1.8.23.custom.css">
+        <link type="text/css" rel="stylesheet" href="css/layout.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#js-accordion").accordion({
+                  header:"h3",
+                  active:false,
+                  autoHeight:false,
+                  collapsible:true
+                });
+                $('.search_play').click(function() {
+                    $(this).toggleClass('pause');
+                })
+                $('.search_act_info, .search_rezult_info_bottom a').click(function(){
+                    $(this).parents('.search_result_row').toggleClass('active');
+                })
+            })
+        </script>
+    </head>
+    <body class="schema_violet">
+
+        <div class="container_20">
+            <div class="grid_20">
+                <span class="top_title">Syncability<span>music space</span></span>
+
+                <ul class="top_menu">
+                    <li><a href="index.html">Upload Music</a></li>
+                    <li class="active"><a href="search.html">Search Track</a></li>
+                    <li><a href="opportunity.html">Opportunities</a></li>
+                    <li><a href="my_account.html">My Account</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+
+                <div class="line"></div>
+            </div>
+        </div>
+        
+        <div class="search_head">
+            <div class="container_20">
+                <div class="grid_6 line_vert">
+                    <div class="search_head_block">        
+                        <p>FOUND</p>
+                        <span>1 – 15 </span>
+                        <span class="search_head_subtxt ">&nbsp;of about 1021 tracks</span>
+                        <div class="pagination">
+                            <span class="previous"></span>
+                            <a href="#" title="" class="page active">1</a>
+                            <a href="#" title="" class="page">2</a>
+                            <a href="#" title="" class="page">3</a>
+                            <span>…</span>
+                            <a href="#" title="" class="page">69</a>
+                            <a href="/search?page=2#content" title="" class="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6 line_vert">
+                    <div class="search_head_block">
+                        <p>SHOW:</p>
+                        <ul class="filter">
+                            <li class="active">
+                                <a href="#" title="">All</a>
+                            </li>
+                            <li class="">
+                                <a href="#" title="">Original tracks</a>
+                            </li>
+                            <li class="">
+                                <a href="#" title="">Cover versions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid_8">
+                    <div class="search_head_block">
+                        <p>Choose your usage type<i class="info_icn"></i></p>
+                        <div class="glow_place">
+                            <select class="choose_usage white_select">
+                                <option value="1">Choose your usage type</option>
+                                <option value="2">Choose your usage type</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+        
+        
+        <div class="container_20">
+            <div class="grid_4 prefix_1">
+                <a href="#" title="" class="search_result_title">
+                    Artist<i class="search_title_arw"></i>
+                </a>
+            </div>
+            <div class="grid_7">
+                <a href="#" title="" class="search_result_title">
+                    Track<i class="search_title_arw up"></i>
+                </a>
+            </div>
+            <div class="grid_2">
+                <a href="#" title="" class="search_result_title">
+                    HitScore<i class="search_title_arw down"></i>
+                </a>
+            </div>
+            <div class="grid_2">
+                <span class="search_result_title">Price, £</span>
+            </div>
+            <div class="grid_4">
+                <span class="search_result_title">Actions</span>
+            </div>
+            
+            
+            <div class="line"></div>
+            
+            
+            <div class="search_result_row">
+                <div class="search_resalt_main">
+                    <div class="grid_4 prefix_1">
+                        <span class="ellipsis" title="Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference ">Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference </span>
+                    </div>
+                    <div class="grid_7">
+                        <a href="#" title="" class="search_play pause"></a>
+                        <a href="#" class="ellipsis" title="Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise">Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise</a>
+                        <div class="search_player_progress">
+                            <div class="search_player">
+                                <div class="search_player_upload" style="width:80%"></div>
+                                <div class="search_player_search_player_progress" style="width:40%"></div>
+                            </div>
+                            <div class="search_player_time">
+                                <span>00:00</span> &nbsp;/&nbsp; <span>00:00</span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="grid_2">985</div>
+                    <div class="grid_2">100</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_buy"></a>
+                        <a href="#" title="Like" class="search_act_love liked"></a>
+                        <a href="#" title="Like" class="search_act_download"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                
+                <div class="search_track_info">
+                    <div class="grid_5">
+                        <span class="grey"><b>Overall song rating</b></span>
+                        <span class="darkblue"><b>70%</b></span>
+                        <table class="track_info_rating">
+                            <tr>
+                                <th>Sound quality</th>
+                                <th>Song quality</th>
+                                <th>Song description</th>
+                            </tr>
+                            <tr>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                            </tr>
+                        </table>
+                        <a href="#">More information</a>
+                    </div>
+                    <div class="grid_7">
+                        <table class="track_info_genre">
+                            <tr>
+                                <td class="info_genre_title">Genre</td>
+                                <td class="info_genre_txt">Pop</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Feel</td>
+                                <td class="info_genre_txt">Happy</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Tempo</td>
+                                <td class="info_genre_txt">Up-Tempo</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Styles</td>
+                                <td class="info_genre_txt">Cinematic</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Song Types</td>
+                                <td class="info_genre_txt">Female Vocal</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Themes</td>
+                                <td class="info_genre_txt">Love</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="grid_8">
+                        <span class="grey"><b>Previous Licences</b></span>
+                        <div class="line"></div>
+                        <p class="info_genre_txt">Never licensed before or data not provided</p>
+                    </div>
+
+                    <div class="search_info_line"></div>
+                    
+                    <div class="grid_5">&nbsp;</div>
+                    <div class="grid_15">
+                        <span class="grey"><b>Lyrics</b></span>
+                        <div class="info_lyric">
+                            If I could do this all alone<br>
+                            I would, I would<br>
+                            But I need your help today<br>
+                            I would, I should<br>
+                            There is a time, there is a place<br>
+                            I would, I would<br>
+                            If I could get mankind back on track<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Verse2<br>
+                            Now I carry all this before me<br>
+                            I would, I Would<br>
+                            Here I shoulder what’s important<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Bridge<br>
+                            Don’t leave me all alone here<br>
+                            Come see what stirs within me<br>
+                            You might get tired<br>
+                            But that’s the way to find the light<br>
+                            Chorus x 2<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                        </div>
+                    </div>
+                    
+                    <div class="search_rezult_info_bottom">
+                        <a href="#" title="">Hide</a>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="search_result_row">
+                <div class="search_resalt_main">
+                    <div class="grid_4 prefix_1">
+                        <span class="ellipsis" title="Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference ">Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference </span>
+                    </div>
+                    <div class="grid_7">
+                        <a href="#" title="" class="search_play"></a>
+                        <a href="#" class="ellipsis" title="Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise">Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise</a>
+                        <div class="search_player_progress">
+                            <div class="search_player">
+                                <div class="search_player_upload" style="width:80%"></div>
+                                <div class="search_player_search_player_progress" style="width:40%"></div>
+                            </div>
+                            <div class="search_player_time">
+                                <span>00:00</span> &nbsp;/&nbsp; <span>00:00</span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="grid_2">985</div>
+                    <div class="grid_2">100</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_save"></a>
+                        <a href="#" title="Like" class="search_act_reply"></a>
+                        <a href="#" title="Like" class="search_act_new_bill"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                
+                <div class="search_track_info">
+                    <div class="grid_5">
+                        <span class="grey"><b>Overall song rating</b></span>
+                        <span class="darkblue"><b>70%</b></span>
+                        <table class="track_info_rating">
+                            <tr>
+                                <th>Sound quality</th>
+                                <th>Song quality</th>
+                                <th>Song description</th>
+                            </tr>
+                            <tr>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                            </tr>
+                        </table>
+                        <a href="#">More information</a>
+                    </div>
+                    <div class="grid_7">
+                        <table class="track_info_genre">
+                            <tr>
+                                <td class="info_genre_title">Genre</td>
+                                <td class="info_genre_txt">Pop</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Feel</td>
+                                <td class="info_genre_txt">Happy</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Tempo</td>
+                                <td class="info_genre_txt">Up-Tempo</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Styles</td>
+                                <td class="info_genre_txt">Cinematic</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Song Types</td>
+                                <td class="info_genre_txt">Female Vocal</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Themes</td>
+                                <td class="info_genre_txt">Love</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="grid_8">
+                        <span class="grey"><b>Previous Licences</b></span>
+                        <div class="line"></div>
+                        <ul class="info_list">
+                            <li>
+                                <b>Type:</b> Home/Student Productions<br>
+                                <b>License Expiration Date:</b> 07/12/2013<br>
+                                <b>Licensor Info:</b> sfsdfsdf                                
+                            </li>
+                            <li>
+                                <b>Type:</b> Home/Student Productions<br>
+                                <b>License Expiration Date:</b> 07/12/2013<br>
+                                <b>Licensor Info:</b> sfsdfsdf                                
+                            </li>
+                            <li>
+                                <b>Type:</b> Home/Student Productions<br>
+                                <b>License Expiration Date:</b> 07/12/2013<br>
+                                <b>Licensor Info:</b> sfsdfsdf                                
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="search_info_line"></div>
+                    
+                    <div class="grid_5">&nbsp;</div>
+                    <div class="grid_15">
+                        <span class="grey th_normal"><b>Lyrics</b></span>
+                        <div class="info_lyric">
+                            If I could do this all alone<br>
+                            I would, I would<br>
+                            But I need your help today<br>
+                            I would, I should<br>
+                            There is a time, there is a place<br>
+                            I would, I would<br>
+                            If I could get mankind back on track<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Verse2<br>
+                            Now I carry all this before me<br>
+                            I would, I Would<br>
+                            Here I shoulder what’s important<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Bridge<br>
+                            Don’t leave me all alone here<br>
+                            Come see what stirs within me<br>
+                            You might get tired<br>
+                            But that’s the way to find the light<br>
+                            Chorus x 2<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                        </div>
+                    </div>
+                    
+                    <div class="search_rezult_info_bottom">
+                        <a href="#" title="">Hide</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search_result_row">
+                <div class="search_resalt_main">
+                    <div class="grid_4 prefix_1">
+                        <span class="ellipsis" title="Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference ">Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference </span>
+                    </div>
+                    <div class="grid_7">
+                        <a href="#" title="" class="search_play"></a>
+                        <a href="#" class="ellipsis" title="Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise">Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise</a>
+                        <div class="search_player_progress">
+                            <div class="search_player">
+                                <div class="search_player_upload" style="width:80%"></div>
+                                <div class="search_player_search_player_progress" style="width:40%"></div>
+                            </div>
+                            <div class="search_player_time">
+                                <span>00:00</span> &nbsp;/&nbsp; <span>00:00</span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="grid_2">985</div>
+                    <div class="grid_2">100</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_del"></a>
+                        <a href="#" title="Like" class="search_act_edit"></a>
+                        <a href="#" title="Like" class="search_act_copy"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                
+                <div class="search_track_info">
+                    <div class="grid_5">
+                        <span class="grey"><b>Overall song rating</b></span>
+                        <span class="darkblue"><b>70%</b></span>
+                        <table class="track_info_rating">
+                            <tr>
+                                <th>Sound quality</th>
+                                <th>Song quality</th>
+                                <th>Song description</th>
+                            </tr>
+                            <tr>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                            </tr>
+                        </table>
+                        <a href="#">More information</a>
+                    </div>
+                    <div class="grid_7">
+                        <table class="track_info_genre">
+                            <tr>
+                                <td class="info_genre_title">Genre</td>
+                                <td class="info_genre_txt">Pop</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Feel</td>
+                                <td class="info_genre_txt">Happy</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Tempo</td>
+                                <td class="info_genre_txt">Up-Tempo</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Styles</td>
+                                <td class="info_genre_txt">Cinematic</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Song Types</td>
+                                <td class="info_genre_txt">Female Vocal</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Themes</td>
+                                <td class="info_genre_txt">Love</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="grid_8">
+                        <span class="grey"><b>Previous Licences</b></span>
+                        <div class="line"></div>
+                        <p class="info_genre_txt">Never licensed before or data not provided</p>
+                    </div>
+
+                    <div class="search_info_line"></div>
+                    
+                    <div class="grid_5">&nbsp;</div>
+                    <div class="grid_15">
+                        <span class="grey th_normal"><b>Lyrics</b></span>
+                        <div class="info_lyric">
+                            If I could do this all alone<br>
+                            I would, I would<br>
+                            But I need your help today<br>
+                            I would, I should<br>
+                            There is a time, there is a place<br>
+                            I would, I would<br>
+                            If I could get mankind back on track<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Verse2<br>
+                            Now I carry all this before me<br>
+                            I would, I Would<br>
+                            Here I shoulder what’s important<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Bridge<br>
+                            Don’t leave me all alone here<br>
+                            Come see what stirs within me<br>
+                            You might get tired<br>
+                            But that’s the way to find the light<br>
+                            Chorus x 2<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                        </div>
+                    </div>
+                    
+                    <div class="search_rezult_info_bottom">
+                        <a href="#" title="">Hide</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search_result_row">
+                <div class="search_resalt_main">
+                    <div class="grid_4 prefix_1">
+                        <span class="ellipsis" title="Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference ">Transference Transference Transference Transference Transference Transference Transference Transference Transference Transference </span>
+                    </div>
+                    <div class="grid_7">
+                        <a href="#" title="" class="search_play"></a>
+                        <a href="#" class="ellipsis" title="Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise">Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise Keep Your Promise</a>
+                        <div class="search_player_progress">
+                            <div class="search_player">
+                                <div class="search_player_upload" style="width:80%"></div>
+                                <div class="search_player_search_player_progress" style="width:40%"></div>
+                            </div>
+                            <div class="search_player_time">
+                                <span>00:00</span> &nbsp;/&nbsp; <span>00:00</span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="grid_2">985</div>
+                    <div class="grid_2">100</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_download"></a>
+                        <a href="#" title="Like" class="search_act_signin"></a>
+                        <a href="#" title="Like" class="search_act_approve"></a>
+                        <a href="#" title="Like" class="search_act_pay"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                
+                <div class="search_track_info">
+                    <div class="grid_5">
+                        <span class="grey"><b>Overall song rating</b></span>
+                        <span class="darkblue"><b>70%</b></span>
+                        <table class="track_info_rating">
+                            <tr>
+                                <th>Sound quality</th>
+                                <th>Song quality</th>
+                                <th>Song description</th>
+                            </tr>
+                            <tr>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                                <td>7/10</td>
+                            </tr>
+                        </table>
+                        <a href="#">More information</a>
+                    </div>
+                    <div class="grid_7">
+                        <table class="track_info_genre">
+                            <tr>
+                                <td class="info_genre_title">Genre</td>
+                                <td class="info_genre_txt">Pop</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Feel</td>
+                                <td class="info_genre_txt">Happy</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Tempo</td>
+                                <td class="info_genre_txt">Up-Tempo</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Styles</td>
+                                <td class="info_genre_txt">Cinematic</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Song Types</td>
+                                <td class="info_genre_txt">Female Vocal</td>
+                            </tr>
+                            <tr>
+                                <td class="info_genre_title">Themes</td>
+                                <td class="info_genre_txt">Love</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="grid_8">
+                        <span class="grey"><b>Previous Licences</b></span>
+                        <div class="line"></div>
+                        <p class="info_genre_txt">Never licensed before or data not provided</p>
+                    </div>
+
+                    <div class="search_info_line"></div>
+                    
+                    <div class="grid_5">&nbsp;</div>
+                    <div class="grid_15">
+                        <span class="grey th_normal"><b>Lyrics</b></span>
+                        <div class="info_lyric">
+                            If I could do this all alone<br>
+                            I would, I would<br>
+                            But I need your help today<br>
+                            I would, I should<br>
+                            There is a time, there is a place<br>
+                            I would, I would<br>
+                            If I could get mankind back on track<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Verse2<br>
+                            Now I carry all this before me<br>
+                            I would, I Would<br>
+                            Here I shoulder what’s important<br>
+                            I would, I should<br>
+                            Chorus<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                            Ahhh Ahhh, Ahhh Ahhh<br>
+                            Bridge<br>
+                            Don’t leave me all alone here<br>
+                            Come see what stirs within me<br>
+                            You might get tired<br>
+                            But that’s the way to find the light<br>
+                            Chorus x 2<br>
+                            I want and I need<br>
+                            For you to keep your promise<br>
+                            The things you said to me<br>
+                            I want and I need<br>
+                            For you to do the things you should<br>
+                            Don’t be afraid to see<br>
+                        </div>
+                    </div>
+                    
+                    <div class="search_rezult_info_bottom">
+                        <a href="#" title="">Hide</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="line"></div>
+            
+            <div class="pagination">
+                <span class="previous">Previous</span>
+                <a href="#" title="" class="page active">1</a>
+                <a href="#" title="" class="page">2</a>
+                <a href="#" title="" class="page">3</a>
+                <span>…</span>
+                <a href="#" title="" class="page">67</a>
+                <a href="#" title="" class="page">68</a>
+                <a href="#" title="" class="page">69</a>
+                <a href="#" title="" class="next">Next</a>
+            </div>
+        </div>  
+
+    </body>
+</html>

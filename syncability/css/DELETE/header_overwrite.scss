@@ -1,0 +1,63 @@
+.th_header_menu a {
+    margin: 21px 24px 0 0 !important;
+}
+.th_header_v2_menu_links_current {
+    background:none !important;
+}
+.th_header_v2_menu_links_current a {
+    background:url('//assets.tunehog.com/images/th_header_v2_menu.png') bottom left no-repeat !important;
+    color:#fff !important;
+    font-weight:700;
+}
+ul.ui-autocomplete.syncability_header_v2_search_popup {
+    width:550px;
+    background-color:#fff;
+    position:absolute !important;
+    left:0;
+    top:60px;
+    z-index:1000;
+    padding:10px 0;
+    border-radius: 0;
+    top: 60px;
+    left: 50% !important;
+    margin-left: -322px;
+}
+ul.ui-autocomplete.syncability_header_v2_search_popup a{
+    display:block;
+    padding:5px 20px;
+    font-size:14px;
+    color:#2c2a2a;
+}
+ul.ui-autocomplete.syncability_header_v2_search_popup a span{
+    color:#99a2a6;
+}
+ul.ui-autocomplete.syncability_header_v2_search_popup a:hover,
+ul.ui-autocomplete.syncability_header_v2_search_popup .ui-menu-item a.ui-state-hover,
+ul.ui-autocomplete.syncability_header_v2_search_popup .ui-menu-item a.ui-state-active {
+    background-color:#2c2a2a;
+    color:#fff;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+ul.ui-autocomplete.syncability_header_v2_search_popup a.hover{
+    background-color:#2c2a2a;
+    color:#fff;
+}
+ul.ui-autocomplete.syncability_header_v2_search_popup h4{
+    display:block;
+    padding:5px 20px;
+    font-size:14px;
+    color:#99a2a6;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+ul.ui-autocomplete.syncability_header_v2_search_popup.ui-widget-content {
+    background: #fff;
+    border: none;
+    border-top: 1px solid #efefef;
+}
+ul.ui-autocomplete.syncability_header_v2_search_popup.ui-widget-content {
+    top:60px !important;
+}

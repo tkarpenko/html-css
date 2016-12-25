@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="css/ui/jquery-ui-1.8.23.custom.css">
+        <link type="text/css" rel="stylesheet" href="css/layout.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#js-progressbar").progressbar({ value: 37 });
+                $("#js-accordion").accordion({
+                  header:"h3",
+                  active:false,
+                  autoHeight:false,
+                  collapsible:true
+                });
+                $("#js-datepicker").datepicker();
+                
+            })
+        </script>
+    </head>
+    <body class="schema_green">
+
+        <div class="container_20">
+            <div class="grid_20">
+                <span class="top_title">Syncability<span>music space</span></span>
+
+                <ul class="top_menu">
+                    <li class="active"><a href="index.html">Upload Music</a></li>
+                    <li><a href="search.html">Search Track</a></li>
+                    <li><a href="opportunity.html">Opportunities</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <div class="line"></div>
+            </div>
+            <div class="prefix_5 grid_10 suffix_5">
+                <h1>Upload
+                    <span class="title_option"><a href="#">cancel upload</a></span>
+                </h1>
+                
+                <div class="progress_bar">
+                    <div class="progress" style="width:50%"></div>
+                </div>
+                
+                <h2>Please fill track info:</h2>
+            </div>
+          </div>
+          
+          <div class="master">
+              <div class="master_step past ">
+                  <span class="master_txt">Basic Info</span>
+                  <span class="master_arw"></span>
+              </div>
+              <div class="master_step current ">
+                  <span class="master_txt">Full Info</span>
+                  <span class="master_arw"></span>
+              </div>
+              <div class="master_step">
+                  <span class="master_txt">Co-writers</span>
+                  <span class="master_arw"></span>
+              </div>
+              <div class="master_step">
+                  <span class="master_txt">License Agreement</span>
+                  <span class="master_arw"></span>
+              </div>
+              <div class="master_step">
+                  <span class="master_txt">Final</span>
+              </div>
+          </div>
+                
+          <div class="container_20">    
+            <div class="prefix_5 grid_10 suffix_5">
+                
+              <h2>Fill your track info:</h2>
+              
+              <p>To increase the opportunity and likelehood of your music appearing in accurate searches. which increases the potential of someone purchasing your song.</p>
+                
+              <div class="accordion pr" id="js-accordion">
+                  <h3>
+                      <a href="#" title="">
+                          <span class="accordion_left_col fl">Genre</span>
+                          <span class="accordion_center_col accordion_title fl"><b>Country/Folk | Pop:</b> Rock/Soul <b>|  R&amp;B</b></span>
+                          <span class="accordion_right_col fr">requ</span>
+                      </a>
+                  </h3>
+                  <div>
+                      <div class="tree_col">
+                          <dl class="tree open">
+                            <dt>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dt>
+                            <dd>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                            <dd>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                            <dd>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                          </dl>
+                          
+                          <dl class="tree open">
+                            <dt>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dt>
+                            <dd>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                            <dd>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                            <dd>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                          </dl>
+                          
+                          <dl class="tree close">
+                            <dt>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dt>
+                            <dd>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                          </dl>
+                      </div>
+                      
+                      <div class="tree_col">
+                          <dl class="tree close">
+                            <dt>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dt>
+                            <dd>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                          </dl>
+                          
+                          <dl class="tree close">
+                            <dt>
+                              <label class="checkbox active">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dt>
+                            <dd>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                          </dl>
+                          
+                          <dl class="tree close">
+                            <dt>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dt>
+                            <dd>
+                              <label class="checkbox">
+                                  <input type="checkbox" /> Checkbox normal
+                              </label>
+                            </dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <h3>
+                    <a href="#" title="">
+                      <span class="accordion_left_col fl">Genre</span>
+                      <span class="accordion_center_col accordion_title dn fl"><b>Country/Folk | Pop:</b> Rock/Soul <b>|  R&amp;B</b></span>
+                      <span class="accordion_right_col fr">requ</span>
+                    </a>
+                    <span class="accordion_open_arrow_icn pa"></span>
+                  </h3>
+                  <div>
+                  </div>
+          
+                  <h3>
+                    <a href="#" title="">
+                      <span class="accordion_left_col fl">Genre</span>
+                      <span class="accordion_center_col accordion_title fl">for all</span>
+                      <span class="accordion_right_col dn fr">requ</span>
+                    </a>
+                    <span class="accordion_open_arrow_icn pa"></span>
+                  </h3>
+                  <div>
+                  </div>
+          
+                  <h3>
+                    <a href="#" title="">
+                      <span class="accordion_left_col fl">Genre</span>
+                      <span class="accordion_center_col accordion_title dn fl"><b>Country/Folk | Pop:</b> Rock/Soul <b>|  R&amp;B</b></span>
+                      <span class="accordion_right_col dn fr">requ</span>
+                    </a>
+                    <span class="accordion_open_arrow_icn pa"></span>
+                  </h3>
+                  <div>
+                  </div>
+              </div>
+
+            </div>
+            <div class="prefix_6 grid_9 suffix_5">
+                <fieldset>
+                    <div class="form_elem">
+                        <div>
+                            <label class="required"><span class="info_icn"></span>Producer</label>
+                            <input type="text" value="input text" />
+                        </div>
+                    </div>
+                    <div class="form_elem">
+                        <b>Title of form element</b>
+                        <div>
+                            <label><span class="info_icn"></span>Writers</label>
+                            <select>
+                                <option>option 1</option>
+                                <option>option 2</option>
+                                <option>option 3</option>
+                            </select>
+                        </div>
+                        <span class="desc">Describe form element</span>
+                    </div>
+                    <div class="form_elem">
+                        <div>
+                            <label>Year of Creation</label>
+                            <input type="text" value="input text" class="txt_input_small"/>
+                            <i class="calend_icn"></i>
+                        </div>
+                        <p class="error">error</p>
+                    </div>
+                    <div class="form_elem">
+                        <div>
+                            <label>Lyrics</label>
+                            <textarea></textarea>
+                        </div>
+                        <p class="error">error</p>
+                        <span class="desc">Describe form element</span>
+                    </div>
+                </fieldset>
+                
+                <div class="alert warning">warning</div>
+                <div class="alert success">success</div>
+                
+                <div class="form_elem">
+                    <b>Does this song contain a sample?<span class="info_icn"></span></b>
+                    <div>
+                        <a class="radio active"><input type="radio" />Yes</a>
+                        <a class="radio"><input type="radio" />No</a>
+                    </div>
+                    <span class="desc">Describe form element</span>
+                </div>
+            </div>
+            <div class="prefix_5 grid_10 suffix_5">
+                <div class="form_foot">
+                    <div class="grid_6">
+                        <p class="form_foot_txt th_martop th_fl">
+                            By pressing next you are accepting the <a target="#" href="#">T&amp;Cs</a>.
+                        </p>
+                    </div>
+                    <div class="grid_2">
+                        <button type="button" class="btn">NEXT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

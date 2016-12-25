@@ -1,0 +1,81 @@
+.blog_comments {
+	max-width: 720px;
+	text-align: right;
+	margin-bottom: 40px;
+	.title {
+		font-family: "Bebas";
+		@include font(#000, 24px, 400, left, 70px);
+		text-transform: uppercase;
+	}
+	.comments {
+		height: 245px;
+		width: 100%;
+		border: 3px solid #cdcdcd;
+		border-left: none;
+		border-right-width: 1px;
+		margin-bottom: 20px;
+	}
+	.comment {
+		margin: 20px 0;
+		.comment_avatar {
+			height: 60px;
+			width: 60px;
+			display: block;
+			float: right;
+			position: relative;
+			margin-right: 3%;
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.comment_body {
+			width: 83%;
+			float: right;
+			.comment_title {
+				@include ellipsis;
+				@include font(#3d3d3d, 14px, 400, left, 16px);
+				margin-bottom: 10px;
+			}
+			.comment_content {
+				@include font(#a7a7a7, 13px, 400, left, 15px);
+			}
+		}
+		
+		&:before,
+		&:after {
+			content: " ";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	form {
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 980px) and (min-width: 790px) {
+	.blog_comments .comments {
+		width: 97%;
+	}
+}
+@media screen and (max-width: 789px) and (min-width: 320px) {
+	.blog_comments .comments {
+		width: 100%;
+	}
+	.blog_content.post .blog_left,
+	.blog_content.post .blog_right	{
+		width: 490px;
+	}
+	.blog_content.post .blog_right .blog_search,
+	.blog_content.post .blog_right .blog_social {
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 0;
+	}
+	.blog_content.post .blog_right .blog_related_posts {
+		margin-top: 0;
+	}
+}

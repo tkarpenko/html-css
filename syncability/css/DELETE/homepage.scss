@@ -1,0 +1,66 @@
+.homepage {
+    background: url(../img/homepage_bg.png) repeat;
+    @include rounded_border(3px, 3px, 3px, 3px, 1px solid #000);
+    margin-bottom: 120px;
+    overflow: hidden;
+    padding: 24px;
+    position: relative;
+    top: 120px;
+    left: 0;
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 0;
+    }
+    p {
+        color: #bbb8b3;
+    }
+    .green {
+        color: #afbe31;
+    }
+    .orange {
+        color: #ed8101;
+    }
+    .violet {
+        color: #c257e4;
+    }
+}
+
+.start_upload_btn {
+    background: url('../img/upload_btn.png') -1px -2px no-repeat;
+    display: block;
+    height: 117px;
+    width: 293px;
+    &:hover {
+        background-position: -1px -119px;
+    }
+    &:active {
+        background-position: -1px -236px;
+    }
+}
+
+.start_music_btn {
+    background: url('../img/search_btn.png') -1px -2px no-repeat;
+    display: block;
+    height: 117px;
+    width: 293px;
+    &:hover {
+        background-position: -1px -119px;
+    }
+    &:active {
+        background-position: -1px -236px;
+    }
+}
+
+.start_opport_btn {
+    background: url('../img/opport_btn.png') -1px -2px no-repeat;
+    display: block;
+    height: 117px;
+    width: 293px;
+    &:hover {
+        background-position: -1px -119px;
+    }
+    &:active {
+        background-position: -1px -236px;
+    }
+}

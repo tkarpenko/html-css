@@ -1,0 +1,178 @@
+ul.ui-autocomplete {
+    width: 265px;
+}
+
+li.ui-autocomplete-category {
+    margin: 5px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+ul.ui-autocomplete .ui-menu-item a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active {
+    border-color: #5E2660;
+    background: white;
+    color: #5E2660;
+}
+
+div.accordion-narrow.accordion {
+    width: 410px;
+    float: right;
+}
+
+div.accordion-narrow.accordion .control-label {
+    right: 325px;
+}
+
+.upload_progress.ui-progressbar {
+    height:30px;
+    text-align: left;
+    overflow: hidden;
+    position:relative;
+}
+.accordion.ui-accordion {
+    margin-left:-1px;
+}
+.accordion.ui-accordion .ui-accordion-header {
+    cursor: pointer;
+    position: relative;
+    margin-top: -1px;
+    zoom: 1;
+}
+
+.accordion.ui-helper-reset {
+    border: 1px solid #BAB9AE;
+}
+
+.accordion.ui-accordion .ui-accordion-content {
+    padding: 10px 20px 20px 20px;
+    border-top: 1px solid #bab9ae;
+    margin-top: 0px;
+    position: relative;
+    top: 0px;
+    margin-bottom: 0px;
+    overflow: auto;
+    display: none;
+    zoom: 1; }
+
+.accordion.ui-accordion-icons .ui-accordion-header a { padding-left: 0px; }
+.accordion.ui-accordion-icons .ui-accordion-header a span { cursor: pointer; }
+
+.accordion.ui-accordion .ui-accordion-header a {
+    display: block;
+    font-size: 12px;
+    height:17px;
+    overflow:hidden;
+    padding: 10px 15px 8px 20px;
+}
+
+.ui-accordion-header label {
+    position: inherit;
+    width: auto;
+}
+.ui-accordion .errors {
+    padding: 0px 15px 5px 20px;
+}
+
+/* Component containers
+----------------------------------*/
+.accordion.ui-widget { font-family: Helvetica, Trebuchet MS, Arial, Georgia, Tahoma, Verdana, Sans-Serif; font-size: 12px; }
+.accordion .ui-widget-content {
+    border: none;
+    background: #fff;
+    color: #9e9a93; }
+
+
+.upload_progress.ui-widget-content {
+    border: 1px solid #bab9ae;
+    background: #e9e5dc;
+    color: #333333;
+}
+.upload_progress .ui-widget-header {
+    border: 1px solid #96a420;
+    background: #96a420 url(../img/progress.jpg) 50% 50% repeat-x;
+    color: #ffffff;
+    font-weight: bold;
+}
+.accordion .ui-widget-content .checkbox_link {color:#9e9a93;}
+.accordion .ui-widget-content .checkbox_link:hover {color:#38a1c8;}
+.accordion .ui-widget-content .checkbox_link.active {color:#38a1c8;}
+.accordion .ui-widget-content .checkbox_link.disabled {color:#9e9a93;}
+
+/* Corner radius */
+.upload_progress.ui-corner-all,
+.upload_progress .ui-corner-all {
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    behavior: url(/css/pie.htc);
+}
+
+/* Interaction states
+----------------------------------*/
+.accordion .ui-state-default,
+.accordion .ui-widget-content .ui-state-default,
+.accordion .ui-widget-header .ui-state-default {
+    border:none;
+    border-top: 1px solid #bab9ae;
+    background: #fff url(../img/accordion_title_bg.jpg) repeat-x;
+    font-weight: 400;
+    color: #89867f;
+}
+
+.accordion .ui-state-default a,
+.accordion .ui-state-default a:link,
+.accordion .ui-state-default a:visited {
+    color: #89867f;
+    text-decoration: none;
+}
+
+.accordion .ui-state-hover,
+.accordion .ui-widget-content .ui-state-hover,
+.accordion .ui-widget-header .ui-state-hover,
+.accordion .ui-state-focus,
+.accordion .ui-widget-content .ui-state-focus,
+.accordion .ui-widget-header .ui-state-focus {
+    border:none;
+    border-top: 1px solid #bab9ae;
+    background: #fff url(../img/accordion_title_hover_bg.jpg) repeat-x;
+    font-weight: 400;
+    color: #2b9bc5;
+}
+
+.accordion .ui-state-hover a,
+.accordion .ui-state-hover a:hover {
+    color: #2b9bc5;
+    text-decoration: none;
+}
+.accordion .ui-state-active,
+.accordion .ui-widget-content .ui-state-active,
+.accordion .ui-widget-header .ui-state-active {
+    border:none;
+    border-top: 1px solid #bab9ae;
+    background: #fff url(../img/accordion_title_bg.jpg) repeat-x;
+    font-weight: 400;
+    color: #89867f;
+}
+.accordion .ui-state-active .accordion_open_arrow_icn,
+.accordion .ui-widget-content .ui-state-active .accordion_open_arrow_icn,
+.accordion .ui-widget-header .ui-state-active .accordion_open_arrow_icn {
+    display:block;
+}
+.accordion .ui-state-active a,
+.accordion .ui-state-active a:link,
+.accordion .ui-state-active a:visited {
+    color: #89867f;
+    text-decoration: none;
+}
+
+
+/* states and images */
+.accordion .ui-icon {
+    display:none;
+}

@@ -1,0 +1,21 @@
+.th_page {
+  width: 690px;
+}
+.th_footer .th_page {
+  width: 960px;
+}
+
+.gifts_scroll .mCustomScrollBox>.mCSB_scrollTools{
+	width:9px;
+}
+.gifts_scroll .mCSB_container {
+	margin-right: 0;
+}
+.gifts_scroll .mCSB_scrollTools .mCSB_dragger {
+	width: 5px;
+	background: #8b8e91;
+	@include rounded_border(6px, 6px, 6px, 6px);
+}
+.gifts_scroll.white .mCSB_scrollTools .mCSB_dragger {
+	background: rgba(255, 255, 255, 0.5);
+}

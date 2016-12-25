@@ -1,0 +1,118 @@
+$default-prefixes: webkit moz ms o;
+
+@mixin build-prefix-values($property, $value, $prefixes: $default-prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: #{$value};
+  }
+  #{$property}: #{$value};
+}
+
+@mixin box_shadow_inset ($x_shadow, $y_shadow, $radius, $blur, $color) {
+  -moz-box-shadow: inset $x_shadow $y_shadow $radius $blur $color;
+  -webkit-box-shadow: inset $x_shadow $y_shadow $radius $blur $color;
+  box-shadow: inset $x_shadow $y_shadow $radius $blur $color;
+  behavior: url(/assets/PIE.htc);
+}
+
+@mixin gradient ($top_color, $bottom_color) {
+    background: $top_color; /* Old browsers */
+    background: -moz-linear-gradient(top, $top_color 0%, $bottom_color 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top_color), color-stop(100%,$bottom_color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, $top_color 0%,$bottom_color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $top_color 0%,$bottom_color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $top_color 0%,$bottom_color 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $top_color 0%,$bottom_color 100%); /* W3C */
+    -pie-background: linear-gradient($top_color, $bottom_color);
+    behavior: url(/assets/PIE.htc);
+}
+
+@mixin position ($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin font ($color: $grey, $size: 12px, $weight: 400, $align: left, $line_height: inherit) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    line-height: $line_height;
+}
+
+@mixin hw ($height: auto, $width: auto) {
+    height: $height;
+    width: $width;
+}
+
+@mixin rounded_border ($left_top: 3px, $right_top: 3px, $right_bottom: 3px, $left_bottom: 3px, $border: none) {
+    border: $border;
+    border-radius:         $left_top $right_top $right_bottom $left_bottom;
+    -moz-border-radius:    $left_top $right_top $right_bottom $left_bottom;
+    -webkit-border-radius: $left_top $right_top $right_bottom $left_bottom;
+    behavior: url(/assets/PIE.htc);
+}
+
+@mixin opacity ($opacity) {
+  -moz-opacity: $opacity / 100;
+  -webkit-opacity: $opacity / 100;
+  -o-opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
+@mixin ellipsis {
+  display: block;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+@mixin multiline_ellipsis ($height: 45px, $width: 100px) {
+  float: left;
+  height: $height;
+  width: $width;
+  overflow: hidden;
+  &:before {
+    content:"";
+    float: left;
+    width: 5px;
+    height: $height;
+  }
+
+  & > *:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -5px;
+  }
+
+  &:after {
+    content: "\02026";
+
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+
+    float: right;
+    position: relative;
+    top: -18px;
+    left: 100%;
+    height: 20px;
+    width: 20px;
+    margin-left: -20px;
+    padding-right: 5px;
+
+    text-align: right;
+
+    background: -webkit-gradient(linear, left top, right top,
+      from(rgba(255, 255, 255, 0)), to(white), color-stop(15%, white));
+    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
+    background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
+    background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
+  }
+}

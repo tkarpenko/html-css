@@ -1,0 +1,146 @@
+.gifts_create {
+  .create_cover.ecard {
+    background-image: url("../img/gifts_ecard_cover.png");
+  }
+  .create_content {
+    .ecard_create_track {
+      height: 206px;
+      position: relative;
+      .track_name,
+      .artist_name {
+        @include font (#666666, 16px, 700, left, 22px);
+        @include ellipsis;
+        display: block;
+      }
+      .artist_name {
+        font-weight: 400;
+      }  
+      .track_info {
+        display: block;
+        width: 392px;
+        height: 55px;
+        padding: 7px 0 6px 43px;
+        margin: 0 0 41px -43px;
+        position: relative;
+        background-color: #e8e8e8;
+        .controls {
+          display: none;
+          width: 40px;
+          height: 56px;
+          position: absolute;
+          top: 7px;
+          right: 2px;
+          line-height: 52px;
+          z-index: 2;
+        }
+        .play_button,
+        .info {
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: -3px;
+        }
+        .play_button {
+          margin: 0 0 0 -8px;
+        }
+        .info {
+          width: 283px;
+          margin-left: 10px;
+          .track_name,
+          .artist_name {
+            @include font (#666666, 18px, 700, left, 20px);
+            @include ellipsis;
+            display: block;
+          }
+          .track_name {
+            margin: 4px 0 7px 0;
+          }
+          .artist_name {
+            font-weight: 400;
+          }  
+        } 
+        &:hover .controls {
+          display: block;
+        }   
+      }
+      &.send_page {
+        height: auto;
+        .track_info {
+          background-color: transparent;
+          width: 90%;
+          margin-bottom: 0;
+          height: auto;
+          .info {
+            max-width: 283px;
+            width: auto;
+            margin-right: 47px;
+          }
+          .gifts_button {
+            margin-bottom: 0;
+          }
+        } 
+      }
+      .ecard_create_msg {
+        font-size: 18px;
+        color: #a6a6a6;
+        position: relative;
+        &.inline {
+          display: inline-block;
+          vertical-align: middle;
+          width: 148px;
+          white-space: nowrap;
+          font-size: 16px;
+        }
+      }
+      .gifts_button > span {
+        font-weight: 700;
+        padding-left: 3px;
+      }
+    }
+    .gifts_sending .ecard_create_track {
+      height: 33px;
+    }
+  }
+}
+
+.gifts_preview.ecard {
+  min-height: 82px;
+  .gifts_preview_content {
+    .preview {
+      top: 14px;
+      .preview_cover {
+        height: 56px;
+        width: 56px;
+        margin-right: 27px;
+        &:after {
+          top: 0;
+          left: 0;
+          background: url("../img/gifts_icons_56x56.png") no-repeat 0 -56px #f4f4f4;
+        }
+      }
+      .preview_info {
+        vertical-align: middle;
+        .preview_ecard_content {
+          width: 1005px;
+          .track_name,
+          .artist_name {
+            @include font(#ffffff, 18px, 700, left, 20px);
+            @include ellipsis;
+          }
+          .track_name {
+            margin: 3px 0 10px 0;
+          }
+          .artist_name {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .gifts_button {
+      margin-top: 20px;
+    }
+  }
+}
+
+.gifts_popup .popup_body .upload_img.ecard {
+  background-image: url("../img/gifts_ecard_cover.png");
+}

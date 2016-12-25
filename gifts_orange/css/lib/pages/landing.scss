@@ -1,0 +1,191 @@
+.gifts_landing {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: url("../img/gifts_landing_bg.jpg") no-repeat center top #ff8a65;
+  background-size: cover;
+  &:before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+    width: 100%;
+    height: 910px;
+    background-color: #ffd54f;
+    z-index: 1;
+  }
+  .gifts_landing_top {
+    position: relative;
+    margin: 68px 0 0 29px;
+    z-index: 2;
+    max-width: 73%;
+    white-space: nowrap;
+    .info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .info p {
+      @include font (#fff, 36px, 700, left, 50px);
+      white-space: normal;
+    }
+  }
+  .gifts_landing_content {
+    position: relative;
+    width: 1354px;
+    margin: 51px auto 75px auto;
+    z-index: 2;
+    .content {
+      width: 347px;
+      color: #fff;
+      text-align: center;
+      p {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 8px
+      }
+      &>i {
+        margin-bottom: 39px;
+        width: 100%;
+      }
+      .gifts_button {
+        margin: 36px 0 28px 0;
+        width: 217px;
+      }
+      .content_link {
+        @include font(#fff, 32px, 400, center, 40px);
+        white-space: nowrap;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1670px) {
+  .gifts_landing .gifts_landing_content .content.th_fl {
+    margin-left: 100px;
+  }
+  .gifts_landing .gifts_landing_content .content.th_fr {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 1380px) {
+  .gifts_landing .gifts_landing_content {
+    padding: 0 25px;
+    width: auto;
+  }
+}
+
+@media (max-width: 1214px) {
+  .gifts_landing .gifts_landing_content .content.th_fl {
+    margin-left: 60px;
+  }
+  .gifts_landing .gifts_landing_content .content.th_fr {
+    margin-right: 60px;
+  }
+  .gifts_landing .gifts_landing_content .content .gifts_button {
+    width: 148px;
+  }
+}
+@media (max-width: 1063px) {
+  .gifts_landing .gifts_landing_content .content.th_fl {
+    margin-left: 30px;
+  }
+  .gifts_landing .gifts_landing_content .content.th_fr {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 1020px) and (min-width: 880px) {
+  .gifts_landing .gifts_landing_top .info p {
+    font-size: 29px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 879px) {
+  .gifts_landing .gifts_landing_top .info p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .gifts_landing .gifts_landing_content .content p {
+    font-size: 29px;
+    margin-bottom: 0;
+  }
+  .gifts_landing .gifts_landing_content .content > i {
+    margin-bottom: 0;
+    background-size: contain;
+    height: 300px;
+  }
+  .gifts_landing .gifts_landing_content .content .gifts_button {
+    width: 265px;
+    padding: 0;
+  }
+  .gifts_landing .gifts_landing_content .content {
+    width: 270px;
+  }
+}
+
+@media (max-width: 780px) {
+  .gifts_landing {
+    background-image: none;
+  }
+  .gifts_landing:before {
+    display: block;
+  }
+  .gifts_landing .gifts_landing_content .content {
+    float: none !important;
+    margin: 0 auto !important;
+  }
+  .gifts_landing .gifts_landing_top .logo, 
+  .gifts_landing .gifts_landing_top .info {
+    display: block;
+    margin: 0 auto;
+  }
+  .gifts_landing .gifts_landing_top .info p {
+    text-align: center;
+  }
+  .gifts_landing .gifts_landing_top .logo {
+    width: 125px;
+    height: 125px;
+    font-size: 28px;
+    line-height: 125px;
+    i {
+      background: url("../img/gifts_icons_37x37.png") -37px 0 no-repeat;
+      height: 37px;
+      width: 37px;
+      margin: -8px 6px 0 0;
+    }
+  }
+  .content.th_fr {
+    padding-top: 70px;
+  }
+  .gifts_landing .gifts_landing_content {
+    margin: 26px auto 75px auto;
+  }
+  .gifts_landing .gifts_logo {
+    display: block;
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+    font-size: 28px;
+    line-height: 125px;
+    position: relative;
+    top: -31px;
+    i {
+      background: url("../img/gifts_icons_37x37.png") -37px 0 no-repeat;
+      height: 37px;
+      width: 37px;
+      margin: -8px 6px 0 0;
+    }
+  }
+  .gifts_landing .gifts_landing_top {
+    max-width: 100%;
+  }
+}

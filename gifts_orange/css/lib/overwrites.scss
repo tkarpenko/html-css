@@ -1,0 +1,29 @@
+.th_header_main {
+  position: relative !important;
+}
+.th_footer {
+  z-index: 2 !important;
+}
+.th_footer_left {
+  width: 527px !important;
+}
+.th_header_submenu_inside {
+  display: none;
+}
+.th_content {
+  padding-bottom: 0 !important;
+}
+.th_header_main_inside_loginbox_loginpopup_submit {
+  text-align: center;
+}
+.thl_with_player.thl_with_footer .thl_layout_yield {
+  padding-bottom: 191px !important;
+} 
+@media (max-width: 781px) {
+  .th_content {
+    width: 781px !important;
+  }
+  .th_header_main {
+    width: 781px !important;
+  }
+}

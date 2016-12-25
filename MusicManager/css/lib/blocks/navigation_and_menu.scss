@@ -1,0 +1,301 @@
+/* Menu (in tracks) 
+------------------------------------------------ */
+.mm_menu.close {
+    display: none;
+}
+
+.mm_menu {
+  clear: both;
+  width: inherit;
+  position: relative;
+  top: 1px;
+  border-top: 1px solid #c8c9c0;
+  border-bottom: 1px solid #c8c9c0;
+  background-color: #ffffff;
+  &:before,
+  .menu_links li a:before {
+    content: "";
+    height: 8px;
+    width: 18px;
+    background: url('../img/mm_track_icons.png') no-repeat -29px -257px;
+    display: none;
+    position: absolute;
+  }
+  
+  &:before {
+    display: block;
+    right: 12px;
+    top: -8px;
+    z-index: 1;
+  }
+  
+  .menu_links {
+    list-style: none;
+    height: 38px;
+    line-height: 0;
+    font-size: 0;
+    letter-spacing: -4px;
+    text-align: right;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        height: 38px;
+        padding-left: 10px;
+        @include font(#9e9a93, 12px, 400, center, 38px);
+        letter-spacing: 0;
+        &:hover {
+          color: #2c2c2c;
+        }
+      }
+      &.active.dir a:before {
+        display: block;
+        bottom: -1px;
+        right: 50%;
+        right: calc(50% - 4px);
+        z-index: 2;
+      }
+    }
+  }
+  .menu_content {
+    display: none;
+    background-color: #ffffff;
+    width: 100%;
+    &.active {
+      border-top: 1px solid #c8c9c0;
+      display: block;
+    }
+  }
+}
+
+
+@-moz-document url-prefix() { 
+  .mm_menu .menu_links li.active a:before {
+    bottom: 0px; 
+  }
+}
+
+
+/* Menu (in tracks) 
+------------------------------------------------ */
+
+
+/* Tabs 
+------------------------------------------------ */
+ul.mm_tabs,
+.mm_tabs > ul {
+  height: 44px;
+  list-style: none;
+  font-size: 0;
+  letter-spacing: -4px;
+  margin-bottom: 25px;
+  li {
+    height: 44px;
+    border-top: 1px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    a {
+      font-family: "Lucida Grande";
+      border: 1px solid transparent;
+      @include font(#2c2c2c, 18px, 400, center, 44px);
+      letter-spacing: 0px;
+      display: block;
+      height: 44px;
+      min-width: 104px;
+      padding: 0 10px;
+      position: relative;
+    }
+    &.active {
+      border-top-color: #938b7e;
+      a {
+        color:#fff;
+        border-color: #ada495;
+        border-bottom-color: #fff;
+        background-color: #bbb1a1;
+        @include text_shadow (#4c453a, 0px, 0px, 7px);
+        &:after {
+          content: "";
+          position: absolute;
+          border-top: 11px solid;
+          border-left: 12px solid;
+          border-right: 12px solid;
+          border-color: #bbb1a1 transparent transparent transparent;
+          top: 100%;
+          left: 50%;
+          margin-left: -11px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    border-top: 1px solid #d8d7cd;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.mm_tabs .tab_content {
+  display: none;
+  &.open {
+    display: block;
+  }
+} 
+
+.mm_block .left .mm_tabs {
+  margin-bottom: 0;
+  &:after {
+    display: none;
+  }
+}
+
+/* Tabs 
+------------------------------------------------ */
+
+
+/* Steps (in upload) 
+------------------------------------------------ */
+.mm_steps {
+  height: 45px;
+  list-style: none;
+  margin-bottom: 55px;
+  font-size: 0;
+  letter-spacing: -4px;
+  li {
+    height: 43px;
+    border-top: 1px solid #d8d7cd;
+    border-bottom: 1px solid #d8d7cd;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    min-width: 200px;
+    span {
+      font-family: "Lucida Grande";
+      border-top: 1px solid transparent;
+      @include font(#2c2c2c, 18px, 400, center, 42px);
+      display: block;
+      height: 42px;
+      padding: 0 10px;
+      cursor: default;
+    }
+    &:after {
+      content: '';
+      background: url('../img/mm_icons.png') -100px 0 no-repeat;
+      height: 45px;
+      width: 21px;
+      display: block;
+      position: absolute;
+      top:-1px;
+      right: -21px;
+      z-index: 1;
+    }
+      
+    &.past,
+    &.current {
+      background-color: #bbb1a1;
+      span {
+        color:#fff;
+        @include text_shadow (#4c453a, 0px, 0px, 7px);
+      }
+    }
+    &.past {
+      border-top-color: #cac2b5;
+      border-bottom-color: #bbb1a1;
+      span {
+        border-top-color: #c0b7a8;
+      }
+      &:after {
+        background-position: -100px -50px;
+      }
+    }
+    &.current {
+      border-top-color: #938b7e;
+      border-bottom-color: #bbb1a1;
+      span {
+        border-top-color: #ada495;
+      }
+      &:after {
+        background-position: -100px -100px;
+      }
+    }
+  }
+}
+/* Steps (in upload) 
+------------------------------------------------ */
+
+
+
+/* Dropdown
+------------------------------------------------ */
+.mm_dropdown {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  position: relative;
+  & > dt {
+    width: 100%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    line-height: 22px;
+    &:after {
+      content: '';
+      height: 20px;
+      width: 20px;
+      background: url('../img/mm_small_icons.png') -60px -150px no-repeat;
+      display: block;
+      position: absolute;
+      top: 1px;
+      right: 5px;
+    }
+    .dropdown_head_txt {
+      width: 100%;
+      @include ellipsis;
+    }
+  }
+  & > dd {
+    display: none;
+    position: relative;
+    top: -1px;
+    width: 100%;
+  }
+  &.open > dt:after {
+    background-position: -90px -150px;
+  }
+  &.open > dd {
+    display: block;
+  }
+  &.close > dt:after {
+    background-position: -60px -150px;
+  }
+  &.close > dd {
+    display: none;
+  }
+  ul {
+    list-style: none;
+  }  
+  .dropdown_items {
+    display: block; 
+    position: relative;
+    z-index: 1;
+    li {
+      line-height: 0;
+      width: 100%;
+      & > a {
+        width: 100%;
+        height: 22px;
+        position: relative;
+      }
+    }
+  }  
+}
+
+
+/* Dropdown
+------------------------------------------------ */

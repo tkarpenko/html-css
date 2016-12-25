@@ -1,0 +1,333 @@
+.status_col {
+    @include font(#9e9a93, 12px, 700);
+}
+.state_col {
+    padding-left: 35px;
+    position: relative;
+    width: 100px;
+}
+.status_col,
+.recommend_artist_col {
+    padding-left: 35px;
+    position: relative;
+    width: 240px;
+}
+.recommend_artist_col {
+    width: 350px;
+}
+.artist_col {
+    padding: 0 35px 0 35px;
+    margin-top: 10px;
+    position: relative;
+    width: 205px;
+    float: left;
+    
+}
+
+.track_col {
+    position: relative;
+    width: 355px;
+    float: left;
+    .track_title {
+        @include ellipsis;
+        display: inline-block;
+        height: 20px;
+        width: 320px;
+    }
+}
+.hit_col {
+    position: relative;
+    width: 105px;
+    float: left;
+}
+.search_price_col {
+    position: relative;
+    width: 104px;
+    float: left;
+}
+.act_col {
+    position: relative;
+    width: 141px;
+    float: left;
+}
+.reqdetail_col {
+    padding-left: 35px;
+    position: relative;
+    width: 695px;
+}
+.deadline_col {
+    position: relative;
+    width: 109px;
+}
+.reqdetail_genre_col {
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 450px;
+} 
+.search_player_block {
+    display: block;
+    height: 15px;
+    width: 355px;
+}
+/*
+.info_left_col {
+    padding: 11px 65px 0px 25px;
+    width: 190px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.info_center_col {
+    padding: 8px 15px 0px 0px;
+    width: 330px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.info_right_col {
+    padding: 11px 0px 0px 0px;
+    width: 325px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+*/
+
+.search_result_row.active .multiline_ellipsis,
+.search_result_row.active .multiline_ellipsis:before {
+    height: auto;
+}
+
+.id_col {
+    width: 54px;
+    padding-left: 35px;
+}
+
+.description_col {
+    padding: 11px 0 0 0;
+    width: 100px;
+}
+
+.amount_col {
+    padding: 0;
+    width: 95px;
+}
+
+.stagename_col {
+    padding-left: 35px;
+    height: 28px;
+    width: 660px;
+}
+
+.price_col {
+    padding: 11px 0 0 0;
+    width: 95px;
+}
+
+.cowriter_col {
+    padding: 11px 55px 0px 30px;
+    width: 265px;
+}
+.list_marker {
+    background: url('../img/vsmall_icons.png') -50px -5px no-repeat;
+    display: block;
+    height: 5px;
+    left: -11px;
+    position: absolute;
+    top: 8px;
+    width: 5px;
+}
+
+.upload_info {
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.upload_info li {
+    @include font(#404040, 14px, 400, left, 18px);
+    margin-top: 10px;
+    position: relative;
+}
+
+
+.upload_btn .btn.thick.upload,
+.upload_btn.btn.thick.upload {
+    width: 90px;
+}
+.txt_input_file {
+    @include font(#9E9A93, 14px);
+    background-color: #E9E5DC;
+    @include rounded_border (3px, 3px, 3px, 3px, 1px solid #BAB9AE);
+    height: 29px;
+    padding: 0;
+    width: 505px;
+}
+.input_file_block {
+    cursor:default;
+    height:50px;
+    overflow:hidden;
+    width:100%
+}
+
+.input_file_btn {
+    cursor:pointer;
+    height:50px;
+    overflow:hidden;
+    width:255px;
+    margin-left: 96px;
+}
+
+.input_file {
+    border: none;
+    cursor:pointer;
+    height:1px;
+    font-size:1px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    visibility: hidden;
+    width:1px;
+    z-index: -10;
+}
+.browse_file {
+    cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    div,
+    div span{
+        cursor: pointer;
+    }
+    span {
+        cursor: text;
+    }
+    a {
+        top: -2px;
+    }
+}
+.upload_progress.ui-progressbar {
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+.uploaded_files {
+    span {
+        color: #8b9918;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 10px 0 55px;
+        display: block;
+        &:before {
+            content: "";
+            display: block;
+            float: left;
+            margin-top: -2px;
+            width: 21px;
+        }
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+
+.pricing {
+    margin: 0 auto;
+    tr {
+        color: #6d6a65;
+    }
+    td {
+        padding: 5px 10px;
+        line-height: 1.5;
+    }
+    .hover:hover {
+        background-color: #fff;
+    }
+    .title {
+        font-weight: 700;
+    }
+    a {
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    p {
+        width: 800px;
+    }
+}
+
+
+.advocate {
+    background-color: #fff;
+    .left_col {
+        padding: 11px 55px 0px 30px;
+        width: 295px;
+    }
+    .center_col {
+        padding: 11px 0 0 0;
+        width: 325px;
+    }
+    .right_col {
+        padding: 11px 20px 0 0;
+        width: 190px;
+    }
+}
+
+
+.doc_list {
+    margin: 0;
+    padding: 10px 0;
+    dt {
+        color: #050708;
+        float: none;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+    dd {
+        margin: 5px 0 0 0;
+        padding: 0;
+        a {
+            padding: 0 0 0 20px;
+            position: relative;
+            &:before {
+                content: "";
+                background: url(../img/small_icons.png) -104px -79px no-repeat;
+                display: block;
+                height: 17px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 17px;
+            }
+        }
+    }
+}
+
+
+.advocate_title {
+    color: #9E9A93;
+    font-size: 12px;
+    padding: 11px 10px 0px 30px;
+    width: 375px;
+    a {
+        display: block;
+        font-size: 16px;
+        height: 18px;
+        padding: 3px 0;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: normal;
+    }
+}
+
+.input_file.explorer {
+    visibility: visible;
+    width: 510px;
+}

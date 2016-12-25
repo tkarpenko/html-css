@@ -1,0 +1,32 @@
+.master .master_step {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transpare;
+    height: 100%;
+    position: relative;
+}
+.master .master_step .master_arw {
+    background: url(../img/large_icons_ie8.png) -55px -8px no-repeat;
+    display: block;
+    height: 30px;
+    width: 11px;
+    position: absolute;
+    right: -11px;
+    top: -1px;
+    z-index: 300;
+}
+.master .master_step.current .master_arw { background-position: -70px -8px; }
+
+.schema_green .master .master_step .master_arw { background-position: -101px -8px; }
+.schema_green .master .master_step.current .master_arw { background-position: -116px -8px; }
+
+.schema_violet .master .master_step .master_arw { background-position: -8px -8px; }
+.schema_violet .master .master_step.current .master_arw { background-position: -23px -8px; }
+
+.schema_orange .master { border-color: #227a9b; }
+.schema_orange .master .master_step { background-color: #a1e5ff; }
+.schema_orange .master .master_txt { color: #2b9bc5; }
+.schema_orange .master .master_step.current { background-color: #2b9bc5; }
+.schema_orange .master .master_step .master_arw { background-position: -55px -8px; }
+.schema_orange .master .master_step.current .master_arw { background-position: -70px -8px; }
+

@@ -1,0 +1,48 @@
+.icon_play_button {
+  background: url('../img/page2/play_video.png') 0 0 no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  width: 34px;
+  &.white {
+    background: url('../img/page5/play_video.png') 0 0 no-repeat;
+  }
+}
+.icon_up_arw {
+  background: url('../img/icon_up_arw.png') 0 0 no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 37px;
+}
+.icon_close {
+  background: url('../img/icon_close.png') 0 0 no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
+}
+.icon_facebook {
+  background: url('../img/icons_social_fb.png') no-repeat;
+}
+.icon_twitter {
+  background: url('../img/icons_social_tw.png') no-repeat;
+}
+.icon_facebook,
+.icon_twitter {
+  display: inline-block;
+  vertical-align: middle;
+  height: 44px;
+  width: 48px;
+  transition: background 0.3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+}
+:hover > .icon_facebook {
+  background: url('../img/icons_social_fb_hover.png') ;
+}
+:hover > .icon_twitter {
+  background: url('../img/icons_social_tw_hover.png') 0 0;
+}

@@ -1,0 +1,186 @@
+.lp .page_1 {
+  width: 100%;
+  background: url("../img/page1/page1_bg.jpg") left center no-repeat #29b3db;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .page_1_title {
+    font-family: "Solomon Sans SemiBold";
+    @include font(#fff, 46px, 400, center, 46px);
+    margin-bottom: 30px;
+    @include text_shadow (rgba(0, 0, 0, 0.20), 0, 0, 5px);
+    white-space: nowrap;
+  }
+  .page_1_info {
+    @include font(#fff, 18px, 400, center, 22px);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .page_1_illustrations {
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    height: 550px;
+    position: relative;
+    
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 64px;
+      width: 100%;
+      height: 9px;
+      background: url('../img/footer_shadow.png') repeat-x;
+    }
+    .page_1_phones {
+      position: relative;
+      width: 1000px;
+      margin: 0 auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      ul {
+        list-style: none;
+        letter-spacing: -4px;
+        padding-top: 50px;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        width: 1012px;
+        height: 510px;
+        li {
+          display: inline-block;
+          vertical-align: top;
+          width: 25%;
+          max-width: 250px;
+          height: 100%;
+          .page_1_phone_title {
+            @include font(#fff, 16px, 700, center, 36px);
+            @include rounded_border (36px, 36px, 36px, 36px);
+            background: none;
+            display: block;
+            margin: 0 0 0px 44px;
+            width: 180px;
+            &:hover {
+              background: #fff;
+              color: #24a1d4;
+            }
+          }
+          .page_1_phone.phone1 img {
+            left: 6px; 
+          }
+          .page_1_phone.phone2 img {
+            left: -12px; 
+          }
+          .page_1_phone.phone3 img {
+            left: -7px; 
+          }
+          .page_1_phone.phone4 img {
+            left: -22px; 
+          }
+          .page_1_phone {
+            display: block;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            
+            img {
+              position: relative;
+              top: 400px;
+              max-width: 125%;
+              max-height: 135%;
+            }
+          }
+          .lp_google_play,
+          .lp_app_store {
+            margin: 20px 0 0 69px;
+            display: none;
+          }
+          .lp_google_play {
+            margin-left: 77px;
+          }
+          &:hover {
+            .lp_google_play,
+            .lp_app_store {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .lp .page_1 .page_1_info {
+    width: auto;
+    padding: 0 10px;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones {
+    width: 100%;
+    height: 575px;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .lp_google_play, 
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .lp_app_store {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lp .page_1 .page_1_title {
+    font-size: 35px;
+  }
+  .lp .page_1 .page_1_info {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .lp .page_1 .page_1_title {
+    font-size: 24px;
+  }
+  .lp .page_1 .page_1_info {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-height: 768px) {
+  .lp .page_1 .page_1_illustrations .page_1_phones ul {
+    padding-top: 20px;
+  }
+  .lp .page_1 .page_1_illustrations {
+    height: 415px;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .page_1_phone {
+    height: 275px;
+  }
+  .lp .page_1 .page_1_title {
+    margin-bottom: 0;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .lp_google_play, 
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .lp_app_store {
+    display: block;
+  } 
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .lp_google_play {
+    margin-left: 48px;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .lp_app_store {
+    margin-left: 34px;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li:first-child+*+* .lp_app_store {
+    margin-left: 38px;
+  }
+  .lp .page_1 .page_1_illustrations:after {
+    bottom: 83px;
+  }
+  .lp .page_1 .page_1_illustrations .page_1_phones ul li .page_1_phone_title {
+    margin-left: 18px
+  }
+}
+
+

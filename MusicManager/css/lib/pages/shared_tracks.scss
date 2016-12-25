@@ -1,0 +1,46 @@
+.mm_shared_links {
+  border-bottom: 1px solid #c8c9c0;
+  background-color: #fff;
+  position: relative;
+  top: 1px;
+  display: none;
+  &.open {
+    display: block;
+  }
+  .shared_link {
+    clear: both;
+    width: inherit;
+    position: relative;
+    border-top: 1px solid #c8c9c0;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -4px;
+    dt {
+      height: 38px;
+      .title{
+        @include ellipsis;
+        width: 555px;
+        cursor: pointer;
+        height: 38px;
+        @include font(#9e9a93, 14px, 400, left, 38px);
+      }
+      &:hover .title {
+        color: #2c2c2c;
+      }
+    }
+    & > dd {
+      padding: 0 30px 10px 35px;
+      
+      display: none;
+      .link {
+        color: #2b9bc5;
+        word-break: break-all;
+        white-space: normal;
+        width: 555px;
+      }
+    }
+    &.open > dd {
+      display: block;
+    }
+  }
+}

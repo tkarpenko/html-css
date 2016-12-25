@@ -1,0 +1,36 @@
+.schema_blue .progress_bar,
+.progress_bar {
+    @include font($grey, 14px, 400, left);
+    @include rounded_border (3px, 3px, 3px, 3px, 1px solid #2b9bc6);
+    padding: 0;
+    height: 30px;
+    position: relative;
+    &:after {
+        content: "";
+        background:url(../img/progress_lines.png) repeat-x;
+        position: absolute;
+        height:31px;
+        top:0px;
+        left:0px;
+        width: 100%;
+        z-index:300;
+    }
+    .progress {
+        height: 100%;
+        @include gradient (#74c6e4, #2fa9d7);
+    }
+}
+.upload_btns {
+  p {
+    text-align: center;
+  }
+  span {
+    @include font(#9e9a93, 18px, 400, center);
+    display: block;
+    text-transform: uppercase;
+    padding-top: 16px;
+  }
+  .btn {
+    width: 115px; 
+  }
+}

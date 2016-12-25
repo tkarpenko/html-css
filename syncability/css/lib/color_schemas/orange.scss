@@ -1,0 +1,70 @@
+.schema_orange .master {
+    border-color: #ed8101; 
+    .master_txt {
+        color: #a16218;
+        &:before { background-position: -150px -100px; }
+    }
+    .master_step {
+        background-color: #fccf8c;
+        &:before { border-color: transparent transparent transparent #ed8101;  }
+        &:after { border-color: transparent transparent transparent #fccf8c; }
+        &.current {
+            background-color: #ed8101;
+            &:after { border-color: transparent transparent transparent #ed8101; }
+        }
+    }
+}
+
+.schema_orange .filter {
+    li.active a {
+        @include text_shadow (#a16218, 1px, 0, 3px);
+        background-color: #ed8102;
+        &:after { border-color: #ed8102 transparent transparent transparent; }
+    }
+}
+
+.schema_orange .pagination {
+    .page:hover, 
+    .page.active {
+        background-color: #ed8101;
+    }
+}
+
+.schema_orange .page_menu li.active a {
+    @include gradient (#f3ab56, #ed8101);
+    @include text_shadow (#a16218, 1px, 0px, 3px);
+    border-color: #ed8101;
+    &:after {
+        border-color: #ed8101 transparent transparent transparent;
+    }
+}
+
+.schema_orange .btn {
+    @include gradient (#f3ab56, #ed8101);
+    border-color: #ed8101;
+    &:hover {
+        @include gradient (#ed8101, #f3ab56);
+    }
+    &:active {
+        @include gradient (#e47c01, #e47c01);
+        @include box_shadow_inset (2px, 2px, 4px, 2px, #ca6e01);
+    }
+}
+
+.schema_orange .top_menu {
+    li.active a {
+        @include gradient (#f3ab56, #ed8101);
+        @include text_shadow (#a16218, 1px, 0, 3px);
+        border-color: #ed8101;
+        &:after {
+            border-color: #ed8102 transparent transparent transparent;
+        }
+    }
+}
+
+.schema_orange .progress_bar {
+    border-color: #ed8101;
+    .progress {
+        @include gradient (#f3ab56, #ed8101);
+    }
+}

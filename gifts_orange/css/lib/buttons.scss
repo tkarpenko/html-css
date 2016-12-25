@@ -1,0 +1,142 @@
+.gifts_button {
+  display: inline-block;
+  vertical-align: middle;
+  height: 64px;
+  padding: 0 65px;
+  border-radius: 4px;
+  border-bottom: 2px solid #dc7c5d;
+  background-color: #ff8a65;
+  white-space: nowrap;
+  &.big {
+    height: 89px;
+  }
+  &.small {
+    height: 41px;
+    border-bottom-width: 1px;
+    padding: 0 20px;
+    border-radius: 2px;
+    min-width: 134px;
+  }
+  &.yellow {
+    background-color: #ffd54f;
+    border-bottom-color: #dc7c5d;
+    color: #5c584f;
+  }
+  &.white {
+    background-color: #fff;
+    border-bottom-color: #d8d8d8;
+    color: #c0c0c0;
+  }
+  &.gray {
+    background-color: #666666;
+    border-bottom-color: #555555;
+    color: #fff;
+  }
+  &.empty {
+    padding: 0;
+    min-width: 0;
+    background-color: transparent !important;
+    border-bottom-color: transparent !important;
+  }
+}
+.gifts_button,
+.gifts_button span {
+  font-family: "Lato";
+  @include font(#fff, 23px, 400, center, 64px);
+}
+.gifts_button.big,
+.gifts_button.big span {
+  font-size: 32px;
+  line-height: 89px;
+}
+.gifts_button.small,
+.gifts_button.small span {
+  font-size: 18px;
+  line-height: 41px;
+}
+
+.gifts_input_file_button.disabled .gifts_button,
+.gifts_button.disabled {
+  background-color: #dedede;
+  border-bottom-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  cursor: not-allowed;
+  &.pointevent {
+    pointer-events: auto;
+    position: relative;
+  }
+}
+
+.gifts_input_file_button {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 90px;
+    z-index: 2;
+    opacity: 0;
+    display: inline;
+		cursor: pointer;
+  }
+  .gifts_button {
+    position: relative;
+    z-index: 1;
+  }
+  &.disabled {
+    pointer-events: none;
+    input[type="file"] {
+      display: none;
+    }
+  }
+}
+
+
+.gifts_input_file_button:hover .gifts_button,
+.gifts_button:hover {
+  background-color: #ff9b7b;
+}
+.gifts_input_file_button:active .gifts_button,
+.gifts_button:active {
+  background-color: #dc7c5d;
+  border-bottom-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+.gifts_input_file_button:hover .gifts_button.yellow,
+.gifts_button.yellow:hover {
+  background-color: #ffdb69;
+}
+.gifts_input_file_button:hover .gifts_button.white,
+.gifts_button.white:hover {
+  color: #ff8a65;
+  background-color: #fff;
+}
+.gifts_input_file_button:active .gifts_button.white,
+.gifts_button.white:active {
+  color: #fff;
+  background-color: #ff8a65;
+}
+.gifts_input_file_button:hover .gifts_button.gray,
+.gifts_button.gray:hover {
+  color: #fff;
+  background-color: #7c7c7c;
+}
+.gifts_input_file_button:active .gifts_button.gray,
+.gifts_button.gray:active {
+  background-color: #555555;
+}
+.gifts_input_file_button:hover .gifts_button.disabled,
+.gifts_input_file_button.disabled:hover .gifts_button,
+.gifts_button.disabled:hover,
+.gifts_input_file_button:active .gifts_button.disabled,
+.gifts_input_file_button.disabled:active .gifts_button,
+.gifts_button.disabled:active {
+  background-color: #c0c0c0;
+  border-bottom-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}

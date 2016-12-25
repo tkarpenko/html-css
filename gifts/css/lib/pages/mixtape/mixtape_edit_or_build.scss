@@ -1,0 +1,108 @@
+.gifts_build_list {
+	min-height: 166px;
+	max-height: 339px;
+	width: 322px;
+	float: left;
+	dt {
+		height: 42px;
+		background: #333333;
+		font-family: 'Roboto Slab', serif;
+		@include font(#fff, 20px, 300, center, 42px);
+		@include box_shadow(0px, 4px, 0px, 0px, rgba(0,0,0,0.2));
+		ul {
+			list-style: none;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				a {
+					display: block;
+					font-family: "lato", Arial;
+					@include font(#fff, 15px, 300, center, 36px);
+					border-bottom: 3px solid #333333;
+					padding: 0 15px;
+					&.active {
+						font-size: 20px;
+						color: #fdd300;
+						border-bottom-color: #fdd300;
+					}
+				}
+			}
+		}
+	}
+	dd {
+		background: rgba(255, 255, 255, 0.5);
+		max-height: 297px;
+		min-height: 123px;
+		width: 100%;
+		.list_title {
+			position: relative;
+			height: 42px;
+			background: #738091;
+			font-family: "lato", Arial;
+			@include font(#fff, 25px, 400, center, 42px);
+		}
+		.search {
+			position: relative;
+			height: 42px;
+			padding: 0 5px 0 50px;
+			background: #738091;
+			input {
+				background: none;
+				border: none;
+				display: block;
+				font-family: "lato", Arial;
+				@include font(#fff, 25px, 400, left, 42px);
+				width: 264px;
+			}
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: 11px;
+				height: 23px;
+				width: 23px;
+				background: url("../img/glass.png") no-repeat center center;
+			}
+		}
+		.empty_msg {
+			font-family: "lato", Arial;
+			@include font(#738091, 15px, 400, center, 18px);
+			padding: 17px 65px;
+			display: none;
+		}
+	}
+	&.empty .empty_msg {
+		display: block;
+	}
+}
+
+.gifts_charts_list {
+	.item {
+		margin: 0 auto;
+		padding-left: 42px;
+		display: block;
+		background: rgba(115, 128, 145, 0.23);
+		height: 55px;
+		position: relative;
+		font-family: 'lato', Arial;
+		@include font(#333333, 20px, 400, left, 55px);
+		@include ellipsis;
+		&:hover {
+			background: none;
+			&:after {
+				display: block;
+			}
+		}
+		&:after {
+			content: "";
+			display: none;
+			position: absolute;
+			top: 18px;
+			right: 23px;
+			height: 21px;
+			width: 12px;
+			background: url("../img/mixtape/chart_arrow.png") no-repeat center center;
+		}
+	}
+}

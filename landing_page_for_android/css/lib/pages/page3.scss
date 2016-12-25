@@ -1,0 +1,237 @@
+.lp .page_3 {
+  width: 100%;
+  background: url("../img/page3/page3_bg.jpg")repeat;
+  .tableCell {
+    vertical-align: top;
+  }
+  .page_3_container {
+    position: relative;
+    width: 950px;
+    height: 120%; 
+    margin: 0 auto;
+    padding: 0 50px 0 0;
+    clear: both;
+    .page_3_content {
+      width: 275px;
+      position: relative;
+      float: left;
+      .page_3_title {
+        font-family: "Solomon Sans SemiBold";
+        @include font(#fff, 30px, 400, left, 30px);
+        margin: 0 0 20px 0;
+        padding-top: 90px;
+        white-space: nowrap;
+      }
+      .page_3_info {
+        @include font(#fff, 16px, 400, left, 27px);
+        width: 280px;
+      }
+      .lp_app_store {
+        margin-top: 30px;
+      }
+    }
+    .page_3_phone {
+      float: right;
+      height: 100%;
+      width: 590px;
+      position: relative;
+      letter-spacing: -4px;
+      .wheels {
+        letter-spacing: -4px;
+        background: #000;
+        height: 504px;
+        width: 354px;
+        padding: 6px;
+        position: relative;
+        top: 208px;
+        left: 119px;
+        z-index: 1;
+      }
+      .established,
+      .current,
+      .emerging {
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        width: 33%;
+        height: 100%;
+        position: relative;
+      }
+      x:-o-prefocus, .established,
+      .current,
+      .emerging {
+        width: 32%;
+      }
+      .established img,
+      .current img,
+      .emerging img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+      }
+      .panel {
+        background: url('../img/page3/bg_phone.png') right center no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        height: 905px;
+        width: 590px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+  }
+  .page_3_shadow {
+    width: 100%;
+    overflow: hidden;
+    height: 750px;
+    position: relative;
+    margin-top: 54px;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 9px;
+      background: url('../img/footer_shadow.png') repeat-x;
+    }
+    & + .lp_app_store {
+      display: none;
+      margin: 20px auto 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .lp .page_3 .page_3_container {
+    width: auto;
+    padding: 0 10px;
+  }
+  .lp .page_3 .page_3_container .page_3_content .page_3_title {
+    padding-top: 30%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .lp .page_3 .page_3_container .page_3_content {
+    float: none;
+    width: 100%;
+    
+  }
+  .lp .page_3 .page_3_container .page_3_phone {
+    float: none;
+    margin: 0 auto;
+  }
+  .lp .page_3 .page_3_container .page_3_content .page_3_title {
+    font-size: 46px;
+    text-align: center;
+    padding-top: 0;
+  }
+  .lp .page_3 .page_3_container .page_3_content .page_3_info {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+  .lp .page_3 .page_3_container .page_3_content .lp_app_store {
+    display: none;
+  }
+  .lp .page_3 .page_3_shadow + .lp_app_store {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lp .page_3 .page_3_container .page_3_content .page_3_title {
+    font-size: 35px;
+  }
+  .lp .page_3 .page_3_container .page_3_content .page_3_info {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .lp .page_3 .page_3_container .page_3_content .page_3_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .lp .page_3 .page_3_shadow {
+    height: 75%;
+  }
+}
+
+@media screen and (max-height: 880px) and (max-width: 810px) {
+  .lp .page_3 .page_3_container .page_3_phone {
+    height: 78%;
+  }
+}
+@media screen and (max-height: 880px) {
+  .lp .page_3 .page_3_shadow {
+    height: 75%;
+  }
+  .lp .page_3 .page_3_shadow {
+    margin-top: 10px;
+  }
+}
+
+
+
+@media screen and (max-height: 800px) {
+  .lp .page_3 .page_3_container .page_3_phone {
+    width: 394px;
+  }
+  .lp .page_3 .page_3_container .page_3_phone .panel {
+    height: 587px;
+    width: 385px;
+  }
+  .lp .page_3 .page_3_container .page_3_phone .wheels {
+    height: 323px;
+    width: 226px;
+    top: 134px;
+    left: 77px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lp .page_3 .page_3_container .page_3_phone {
+    width: 394px;
+  }
+  .lp .page_3 .page_3_container .page_3_phone .panel {
+    height: 587px;
+    width: 385px;
+  }
+  .lp .page_3 .page_3_container .page_3_phone .wheels {
+    height: 323px;
+    width: 226px;
+    top: 134px;
+    left: 77px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .lp .page_3 .page_3_container .page_3_phone {
+    width: 320px;
+  }
+  .lp .page_3 .page_3_container .page_3_phone .panel {
+    width: 320px;
+    height: 492px;
+  }
+  .lp .page_3 .page_3_container .page_3_phone .wheels {
+    height: 264px;
+    width: 183px;
+    top: 113px;
+    left: 65px;
+  }
+}
+
+
+
+

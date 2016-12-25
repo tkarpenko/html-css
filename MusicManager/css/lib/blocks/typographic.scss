@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Lucida Grande";
+    src: url(lib/fonts/lucidagrande.ttf);
+}
+
+h3 {
+  @include font(#9e9a93, 14px, 400, left, 1.1);
+  margin: 25px 0 4px 0;
+}
+
+h4,
+h4 > a {
+  @include font(#575757, 18px, 700, left, 1.1); 
+}
+
+h5,
+h5 > a {
+  @include font(#575757, 14px, 400, left, 20px);
+}
+
+h6,
+h6 > a {
+  @include font(#9e9a93, 12px, 400, left, 1.1);
+}
+
+h3, h4, h5, h6, a, p, span, div {
+  @include text_shadow (rgba(255, 255, 255, 0.93), 0px, 1px, 2px); 
+}
+
+p, span, div {
+  @include font(#9e9a93, 14px, 400, left, 1.1);
+}
+
+a {
+  @include font(#2b9bc5, 14px, 400, left, 1.2);
+}
+
+a, span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ellipsis {
+  @include ellipsis;
+}
+
+.pre {
+  @include pre;
+}

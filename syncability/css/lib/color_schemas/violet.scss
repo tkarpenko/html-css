@@ -1,0 +1,70 @@
+.schema_violet .master {
+    border-color: #5e2660; 
+    .master_txt {
+        color: #713973;
+        &:before { background-position: -100px -50px; }
+    }
+    .master_step {
+        background-color: #ddbcde;
+        &:before { border-color: transparent transparent transparent #5e2660;  }
+        &:after { border-color: transparent transparent transparent #ddbcde; }
+        &.current {
+            background-color: #723872;
+            &:after { border-color: transparent transparent transparent #723872; }
+        }
+    }
+}
+
+.schema_violet .filter {
+    li.active a {
+        @include text_shadow (#521854, 1px, 0, 3px);
+        background-color: #8E4790;
+        &:after { border-color: #8E4790 transparent transparent transparent; }
+    }
+}
+
+.schema_violet .pagination {
+    .page:hover, 
+    .page.active {
+        background-color: #8e4790;
+    }
+}
+
+.schema_violet .page_menu li.active a {
+    @include gradient (#9b4f9e, #713973);
+    @include text_shadow (#521854, 1px, 0px, 3px);
+    border-color: #5e2660;
+    &:after {
+        border-color: #713973 transparent transparent transparent;
+    }
+}
+
+.schema_violet .btn {
+    @include gradient (#9b4f9e, #713973);
+    border-color: #5e2660;
+    &:hover {
+        @include gradient (#713973, #9b4f9e);
+    }
+    &:active {
+        @include gradient (#713973, #713973);
+        @include box_shadow_inset (2px, 2px, 4px, 2px, #5b2e5d);
+    }
+}
+
+.schema_violet .top_menu {
+    li.active a {
+        @include gradient (#9b4f9e, #713973);
+        @include text_shadow (#521854, 1px, 0, 3px);
+        border-color: #5e2660;
+        &:after {
+            border-color: #713973 transparent transparent transparent;
+        }
+    }
+}
+
+.schema_violet .progress_bar {
+    border-color: #5e2660;
+    .progress {
+        @include gradient (#9b4f9e, #713973);
+    }
+}

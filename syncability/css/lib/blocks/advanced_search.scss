@@ -1,0 +1,324 @@
+.search-form {
+    background: url(../img/bg.jpg) repeat #F2F0F0;
+    .clone-group-control {
+        clear: both;
+        margin-right: 30px;
+    }
+    .search-advanced {
+        width: 980px;
+        margin: 25px auto;
+    }
+    .search-advanced-box {
+        width: 100%;
+        float: left;
+        border-top: 1px solid #dfdfdf;
+        background: url(../img/content_bg.png) repeat-x top left;
+        padding-bottom: 5px;
+    }
+}
+
+.form-search.search-collapse .search-advanced-box,
+.form-search.search-collapse .search-advanced-submit-box {
+    display: none;
+}
+
+.search-form-clear {
+    @include font(white, 17px, 700);
+    float: right;
+    margin: 10px 25px 10px 10px;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+    &:hover {
+        border-bottom: 1px dashed transparent;
+    }
+}
+
+.search-simple-box {
+    position: absolute;
+    left: 50%;
+    margin-left: -372px;
+    top: -16px;
+    input.th_header_v2_search_submit {
+        position: absolute;
+        left: 50%;
+        margin-left: 233px;
+        top: 15px;
+    }
+}
+
+.search-advanced-show-btn {
+    border-bottom: 1px dashed;
+    color: #2b9bc5;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 5px;
+    margin-left: 20px;
+    position: relative;
+    &:hover {
+        border-bottom: 1px dashed transparent;
+    }
+}
+
+
+.schema_orange .search-advanced-show-btn {
+    color: #ED8101
+}
+
+.schema_violet .search-advanced-show-btn {
+    color: #8f4791;
+}
+
+.schema_violet .search-advanced-submit-box {
+    background: #8f4791;
+}
+
+.search-simple-box .search-simple {
+    width: 460px;
+    margin: auto;
+}
+
+.opportunity-left-column h4,
+.opportunity-right-column h4 {
+    margin-top: 30px;
+}
+
+.opportunity-left-column {
+    width: 69%;
+    float: left;
+}
+
+.opportunity-right-column {
+    width: 27%;
+    float: right;
+}
+
+.opportunity-right-column .inner-box{
+    border-top: 1px solid #dfdfdf;
+    font-size: 14px;
+    color: #ababab;
+    line-height: 20px;
+}
+
+.form-search.opportunity .search-advanced {
+    width: 100%;
+    float: left;
+    margin-bottom: 0;
+}
+
+.form-search.opportunity .search-advanced-box {
+    background: none;
+}
+
+.form-search.opportunity .search-advanced-left {
+    width: 275px;
+}
+
+.form-search.opportunity .search-advanced .search-advanced-left .txt_input {
+    width: 245px;
+    margin-left: 60px;
+}
+
+.form-search.opportunity .search-advanced .search-advanced-left .form_right_col {
+    width: 275px;
+}
+
+.form-search.opportunity .search-advanced .search-advanced-left .control-label {
+    right: 225px;
+}
+
+.form-search.opportunity .search-advanced .search-advanced-left legend {
+    right: 109px;
+    margin: 18px 5px 5px 0px;
+}
+
+.form-search.opportunity .search-advanced .search-advanced-left fieldset .clear_medium {
+    height: 4px;
+}
+
+.form-search.opportunity .upload_accordion.ui-accordion {
+    float: right;
+    width: 315px;
+    margin-top: 20px;
+}
+
+.form-search.opportunity .clone-group-control {
+    margin-left: 59px;
+    float: left;
+}
+
+.form-search.opportunity .search-form-clear {
+    color: #2b9bc5;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.form-search.opportunity .accordion_title {
+    width: 180px;
+}
+
+.search-simple-box.opportunity .search-simple-input input.th_header_v2_search_submit {
+    position: absolute;
+    left: 50%;
+    margin-left: 233px;
+    top: 15px;
+}
+
+.search-simple-input {
+    float: left;
+}
+
+.search-advanced .search-advanced-left {
+    float: left;
+    fieldset {
+        clear: both;
+        display: block;
+        float: left;
+        position: relative;
+    }
+}
+
+.opportunity .search-advanced-left fieldset {
+    margin-top: 20px;
+}
+
+fieldset legend {
+    margin: 5px 5px 5px 90px;
+    color: #9E9A93;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.search-advanced .search-advanced-left legend {
+    position: absolute;
+    right: 196px;
+    top: -39px;
+}
+
+.search-advanced .search-advanced-left .form_right_col {
+    width: 450px;
+}
+
+.search-advanced .search-advanced-left .control-label {
+    right: 330px;
+}
+
+.search-advanced .search-advanced-left .txt_input {
+    width: 250px;
+    margin-left: 150px;
+}
+
+.search-advanced .search-advanced-right {
+    float: right;
+}
+
+.search-advanced-submit-box {
+    width: 100%;
+    clear: both;
+    height: 42px;
+    position: relative;
+}
+
+.schema_blue .search-advanced-submit-box {
+    background: #2B9BC5;
+}
+
+.schema_orange .search-advanced-submit-box {
+    background: #ED8101
+}
+
+.search-advanced-submit {
+    width: 980px;
+    margin: auto;
+}
+
+.search-advanced-submit .btn.normal {
+    background-position: 0 -1407px;
+    color: #9979bf;
+    margin: 5px 32px 0 45px;
+}
+
+.search-advanced-submit .btn.normal:hover {
+    background-position: 0 -1443px;
+    color: #fff;
+}
+.search-advanced-submit .btn.normal:active {
+    background-position: 0 -1479px;
+    color: #fff;
+}
+
+.search-advanced-submit .btn.normal.disable,
+.search-advanced-submit .btn.normal.disable:hover,
+.search-advanced-submit .btn.normal.disable:active {
+    background-position: 0 -1479px;
+}
+
+.search-advanced-submit .btn.normal:before {
+    background-position: -1px -1184px;
+    margin: 0 0 0 -45px;
+    width: 45px;
+}
+
+.search-advanced-submit .btn.normal:hover.btn.normal:before {
+    background-position: -1px -1220px;
+}
+.search-advanced-submit .btn.normal:active.btn.normal:before{
+    background-position: -1px -1256px;
+}
+
+.search-advanced-submit .btn.normal.disable:before {
+    background-position: -1px -1256px;
+}
+.search-advanced-submit .btn.normal.disable:hover.btn.normal.disable:before,
+.search-advanced-submit .btn.normal.disable:active.btn.normal.disable:before { background-position: -1px -1256px; }
+
+.search-advanced-submit .btn.normal:after {
+    background-position: 0 -1298px;
+    margin: 0 -32px 0 0;
+    width: 32px;
+}
+
+.search-advanced-submit .btn.normal:hover.btn.normal:after {
+    background-position: 0 -1334px;
+}
+.search-advanced-submit .btn.normal:active.btn.normal:after{
+    background-position: 0 -1370px;
+}
+
+.search-advanced-submit .btn.normal.disable:after {
+    background-position: 0 -1370px;
+}
+.search-advanced-submit .btn.normal.disable:hover.btn.normal.disable:after,
+.search-advanced-submit .btn.normal.disable:active.btn.normal.disable:after,
+.search-advanced-submit .btn.normal.disable:focus.btn.normal.disable:after { background-position: 0 -1370px; }
+
+.search-advanced-submit .btn.normal input[type="submit"] {
+    float: none;
+    margin: 0 -32px 0 -45px;
+    padding: 0 32px 0 45px;
+}
+
+.schema_orange .search-advanced-submit .btn.normal,
+.schema_orange .search-advanced-submit .btn.normal input[type="submit"] {
+    color: #ba6501;
+    text-shadow: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    behavior: url(/css/pie.htc);
+}
+
+.schema_violet .search-advanced-submit .btn.normal,
+.schema_violet .search-advanced-submit .btn.normal input[type="submit"] {
+    color: #743a76;
+    text-shadow: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    behavior: url(/css/pie.htc);
+}
+
+.schema_orange  .search-advanced-submit  .btn.normal:hover input[type="submit"],
+.schema_orange  .search-advanced-submit  .btn.normal:active input[type="submit"],
+.schema_violet  .search-advanced-submit  .btn.normal:hover input[type="submit"],
+.schema_violet  .search-advanced-submit  .btn.normal:active input[type="submit"] {
+    color: #fff;
+}

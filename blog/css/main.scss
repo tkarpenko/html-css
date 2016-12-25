@@ -1,0 +1,330 @@
+@import "lib/mixins";
+@import "lib/reset";
+@import "lib/typographic";
+@import "lib/navigation";
+@import "lib/articles";
+@import "lib/icons";
+@import "lib/forms";
+@import "lib/buttons";
+@import "lib/post_comments";
+@import "lib/search_result";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Arial;
+  background: #f6f6f6;
+}
+
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+
+.blog_content {
+  width: 980px;
+  margin: 0 auto;
+	text-align: center;
+	&:before, 
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.blog_left,
+.blog_right {
+  display: inline-block;
+  vertical-align: top;
+}
+.blog_left {
+  width: 734px;
+}
+.blog_right {
+  width: 240px; 
+}
+
+.blog_header {
+  width: 100%;
+  min-height: 165px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+	margin-bottom: 20px;
+	padding: 40px 0 10px 0;
+	background-image: url('../img/blog_head_search.jpg');
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  * {
+    position: relative;
+    z-index: 2;
+  }
+} 
+
+.blog_logo {
+  height: 93px;
+  width: 190px;
+  margin: 18px 0 0 7px;
+  display: block;
+  font-family: "Abel";
+  @include font(#fff, 72px, 400, left, 93px);
+  text-transform: uppercase;
+}
+
+
+.blog_tweets {
+	.head {
+		height: 77px;
+		padding: 0 20px;
+		margin: 0 -20px;
+		background: #e6e6e6;
+		font-family: "Bebas";
+		@include font(#000, 24px, 400, left, 70px);
+		text-transform: uppercase;
+		.twets_num {
+			display: inline-block;
+			vertical-align: middle;
+			width: 100px;
+		}
+	}
+  height: 480px;
+	padding: 0 20px;
+  background: #f6f6f6;
+  margin-top: 20px;
+	border: 3px solid #fff;
+}
+
+.blog_read_more {
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	display: block;
+	width: 90px; 
+	@include font(#818181, 11px, 400, right, 35px);
+	z-index: 2;
+}
+
+.blog_tags {
+	list-style: none;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 2px 4px 2px 0;
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			background: rgba(40, 219, 193, 0.7);
+			@include font(#fff !important, 12px, 400, left, 21px);
+			padding: 0 10px;
+			margin-left: 10px;
+			position: relative;
+			@include rounded_border (0px, 5px, 5px, 0px);
+			&:before {
+				content: '';
+				position: absolute;
+				top: 9px;
+				left: -2px;
+				display: block;
+				background: #fff;
+				height: 4px;
+				width: 4px;
+				@include rounded_border (2px, 2px, 2px, 2px);
+				z-index: 2;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -7px;
+				display: block;
+				border-top: 11px solid transparent;
+				border-bottom: 11px solid transparent;
+				border-right: 7px solid rgba(40, 219, 193, 0.7);
+				z-index: 1;
+			}
+			&:hover {
+				background: rgba(40, 219, 193, 1);
+				&:after {
+					border-right-color: rgba(40, 219, 193, 1);
+				}
+			}
+		}
+		&:first-child {
+			display: block;
+			margin: 0 0 3px 0;
+			& > {
+				color: #000 !important;
+			}
+		}
+	}
+}
+
+.blog_categories {
+	display: block;
+	font-family: "Bebas";
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+	
+.blog_blue,
+.blog_all {
+  border-color: #00b4ff;
+  color: #00b4ff;
+}
+.blog_violet,
+.blog_popular {
+  border-color: #6f25c3;
+  color: #6f25c3;
+}
+.blog_orange,
+.blog_tech {
+  border-color: #eb6036;
+  color: #eb6036;
+}
+.blog_pink,
+.blog_feature {
+  border-color: #ff4ab5;
+  color: #ff4ab5;
+}
+.blog_yellow,
+.blog_community {
+  border-color: #e0c827;
+  color: #e0c827;
+}
+.blog_white,
+.blog_archive {
+  border-color: #fff;
+  color: #fff;
+}
+
+
+.blog_social {
+	position: relative;
+	margin-top: 20px;
+	width: 240px;
+	&:hover {
+		.blog_btn {
+			@include opacity(0);
+		}
+		ul {
+			@include opacity(100);
+		}
+	}
+	.blog_btn,
+	ul {
+		-webkit-transition: opacity 0.7s ease;
+		-moz-transition: opacity 0.7s ease;
+		-o-transition: opacity 0.7s ease;
+		-ms-transition: opacity 0.7s ease;
+		transition: opacity 0.7s ease;
+	}
+	.blog_btn {
+		width: 100%;
+		height: 60px;
+		font-family: "Bebas";
+		font-size: 20px;
+		line-height: 60px;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		@include opacity(100);
+	}
+	ul {
+		list-style: none;
+		width: 100%;
+		letter-spacing: -4px;
+		text-align: center;
+		height: 60px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+		@include opacity(0);
+		li,
+		li a {
+			display: inline-block;
+			vertical-align: middle;
+			height: 60px;
+		}
+		li {
+			width: 25%;
+			a {
+				width: 100%;
+				text-align: center;
+				line-height: 60px;
+			}
+		}
+		&.big li {
+			width: 42px;
+			margin: 0 14px;
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.blog_header .blog_content {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 980px) and (min-width: 790px) {
+	.blog_left {
+		width: 515px;
+	}
+	.blog_content {
+		width: 780px;
+	}
+	.blog_social .blog_btn {
+		@include opacity(0);
+	}
+	.blog_social ul {
+		@include opacity(100);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.blog_menu li.last {
+		float: left;
+	}
+}
+
+@media screen and (max-width: 789px) and (min-width: 320px) {
+	.blog_left {
+		width: 250px;
+	}
+	.blog_content {
+		width: 495px;
+	}
+	.blog_social .blog_btn {
+		@include opacity(0);
+	}
+	.blog_social ul {
+		@include opacity(100);
+	}
+} 

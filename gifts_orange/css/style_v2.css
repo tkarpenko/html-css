@@ -1,0 +1,309 @@
+html {
+    height: 100%;
+    min-height: 100%;
+    width:100%;
+}
+body {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    height: 100%;
+    min-height: 100%;
+    color: #404040;
+    background:url('//assets.tunehog.com/images/th_bg.gif') top left;
+    width:100%;
+    min-width:980;
+}
+body, td, div, h1, p, input, select, textarea {
+    font-family: Arial, Tahoma, Verdana, Sans-Serif;
+}
+form {
+    margin: 0;
+    padding: 0;
+}
+input {
+    outline:none;
+    margin:0px;
+}
+b {
+    font-weight: 700;
+}
+a, img {
+    border: none;
+}
+a {
+    text-decoration: none;
+    cursor:pointer;
+    outline:none;
+}
+a:hover u{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight:400;
+}
+.th_page {
+    text-align:left;
+    width:980px;
+    margin:0px auto;
+    position:relative;
+}
+.th_container {
+    min-height: 100%;
+    position: relative;
+    width:100%;
+    min-width:1002px;
+}
+.th_content {
+    padding-bottom:150px;
+    width:100%;
+}
+.th_fl {
+    float:left !important;
+}
+.th_fr {
+    float:right !important;
+}
+.th_xsmall {
+    font-size:9px;
+}
+.th_vsmall {
+    font-size:10px;
+}
+.th_small {
+    font-size:11px;
+}
+.th_normal {
+    font-size:12px !important;
+}
+.th_slarge {
+    font-size:13px;
+}
+.th_large {
+    font-size:14px;
+}
+.th_vlarge {
+    font-size:14px;
+}
+.th_xlarge {
+    font-size:16px;
+}
+.th_clear {
+    display:block;
+    clear: both;
+    font-size: 0px;
+    overflow:hidden;
+    height:0px;
+}
+.th_clear1 {
+    clear: both;
+    font-size: 0px;
+    overflow:hidden;
+    height:1px;
+}
+.th_clear_small2 {
+    clear: both;
+    font-size: 1px;
+    height:2px;
+    display:block;
+}
+.th_clear_small {
+    clear: both;
+    font-size: 1px;
+    height:5px;
+    display:block;
+}
+.th_clear_medium {
+    clear: both;
+    font-size: 1px;
+    height:10px;
+    display:block;
+}
+.th_clear_big {
+    clear: both;
+    font-size: 1px;
+    height:15px;
+    display:block;
+}
+.th_clear_vbig {
+    clear: both;
+    font-size: 1px;
+    height:20px;
+    display:block;
+}
+.th_clear_xbig {
+    clear: both;
+    font-size: 1px;
+    height:25px;
+    display:block;
+}
+.th_martop_small {
+    margin-top:5px;
+}
+.th_martop {
+    margin-top:10px;
+}
+.th_martop_big {
+    margin-top:15px;
+}
+.th_martop_vbig {
+    margin-top:20px;
+}
+.th_martop_xbig {
+    margin-top:25px;
+}
+.th_marbot_small {
+    margin-bottom:5px;
+}
+.th_marbot {
+    margin-bottom:10px;
+}
+.th_marbot_big {
+    margin-bottom:15px;
+}
+.th_marbot_vbig {
+    margin-bottom:20px;
+}
+.th_marbot_xbig {
+    margin-bottom:25px;
+}
+.th_mrl_small {
+    margin-left:5px;
+}
+.th_mrl {
+    margin-left:10px !important;
+}
+.th_mrl_big {
+    margin-left:15px;
+}
+.th_mrl_vbig {
+    margin-left:20px !important;
+}
+.th_mrl_xbig {
+    margin-left:25px !important;
+}
+.th_mrt_small {
+    margin-right:5px;
+}
+.th_mrt {
+    margin-right:10px !important;
+}
+.th_mrt_big {
+    margin-right:15px;
+}
+.th_mrt_vbig {
+    margin-right:20px;
+}
+.th_mrt_xbig {
+    margin-right:25px;
+}
+.th_padl_small {
+    padding-left:5px;
+}
+.th_padl {
+    padding-left:10px !important;
+}
+.th_padl_big {
+    padding-left:15px !important;
+}
+.th_padl_vbig {
+    padding-left:20px !important;
+}
+.th_padl_xbig {
+    padding-left:30px;
+}
+.th_padr_small {
+    padding-right:5px;
+}
+.th_padr {
+    padding-right:10px;
+}
+.th_padr_big {
+    padding-right:15px;
+}
+.th_padr_vbig {
+    padding-right:20px;
+}
+.th_padr_xbig {
+    padding-right:30px;
+}
+.th_text_left {
+    text-align:left !important;
+}
+.th_text_center {
+    text-align:center;
+}
+.th_text_right {
+    text-align:right !important;
+}
+.th_vtop {
+    vertical-align:top;
+}
+.th_vmid {
+    vertical-align:middle !important;
+}
+.th_tup {
+    text-transform:uppercase;
+}
+.th_notup {
+    text-transform:none !important;
+}
+.th_pr {
+    position:relative;
+}
+.th_pa {
+    position:absolute;
+}
+.th_pf {
+    position:fixed;
+}
+.th_dn {
+	display:none;
+}
+.th_db {
+	display:block;
+}
+.th_di {
+	display:inline !important;
+}
+.th_box_ins_small {
+	padding:5px;
+}
+.th_box_ins {
+	padding:10px;
+}
+.th_box_ins_big {
+	padding:15px;
+}
+.th_box_ins_vbig {
+	padding:20px;
+}
+.th_box_ins_xbig {
+	padding:25px;
+}
+.th_radius_vsmall {
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    position:relative;
+}
+.th_radius_small {
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    position:relative;
+}
+.th_radius_normal {
+    border-radius:7px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    position:relative;
+}
+.th_radius_big {
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    position:relative;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="css/ui/jquery-ui-1.8.23.custom.css">
+        <link type="text/css" rel="stylesheet" href="css/layout.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#js-accordion").accordion({
+                  header:"h3",
+                  active:false,
+                  autoHeight:false,
+                  collapsible:true
+                });
+                $('.search_play').click(function() {
+                    $(this).toggleClass('pause');
+                })
+                $('.search_act_info, .search_rezult_info_bottom a').click(function(){
+                    $(this).parents('.search_result_row').toggleClass('active');
+                })
+            })
+        </script>
+    </head>
+    <body class="schema_blue">
+
+        <div class="container_20">
+            <span class="top_title">Syncability<span>music space</span></span>
+
+            <ul class="top_menu">
+                <li><a href="index.html">Upload Music</a></li>
+                <li><a href="search.html">Search Track</a></li>
+                <li><a href="opportunity.html">Opportunities</a></li>
+                <li><a href="my_account.html">My Account</a></li>
+                <li class="active"><a href="pricing.html">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+
+            <div class="line"></div>
+            
+            <h1>Rate card</h1>
+
+            <ul class="page_menu">
+                <li class="active">
+                    <a href="#">Individual Writer’s pricing</a>
+                </li>
+                <li>
+                    <a href="#">Catalogue pricing</a>
+                </li>
+            </ul>
+
+            <table class="price_table">
+                <tr class="category">
+                    <td colspan="3">
+                        <h2>Home/Student Productions</h2>
+                    </td>
+                    <td class="price">£&nbsp;5</td>
+                </tr>
+                <tr>
+                    <td class="free_space" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="description">
+                        <div class="description_title">Description</div>
+                        <div class="description_txt">Licence covers sync usage in home productions (eg. wedding videos/DVDs), student productions and other multi-media projects. Covers usage in your home, education establishment or church. Covers distribution of the finished audio-visual production to festivals, friends and family or User Generated Content aggregators. Excludes products for commercial sale or exploitation. All licences in this category cover full song use in perpetuity.</div>
+                        <div class="search_info_line"></div>
+                    </td>
+                </tr>
+                <tr class="category">
+                    <td colspan="3">
+                        <h2>Corporate/Charity</h2>
+                    </td>
+                    <td class="price"> </td>
+                </tr>
+                <tr>
+                    <td class="free_space" colspan="4"></td>
+                </tr>
+                <tr class="category">
+                    <td colspan="3">
+                        <h3>Corporate</h3>
+                    </td>
+                    <td class="price">£&nbsp;50</td>
+                </tr>
+                <tr class="category">
+                    <td colspan="3">
+                        <h3>Charity</h3>
+                    </td>
+                    <td class="price">£&nbsp;25</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="description">
+                        <div class="description_title">Description</div>
+                        <div class="description_txt">Licence covers sync usage in Corporate or Charitable videos &amp; DVDs, websites, presentations, audio-only projects or other multi-media projects including eBooks, exhibitions and live events. Covers up to 100 copies of the finished audio-visual production for distribution within the Corporation or Charity. All licences in this category are for use of full song in perpetuity.</div>
+                        <div class="search_info_line"></div>
+                    </td>
+                </tr>
+                <tr class="category">
+                    <td colspan="3">
+                        <h2>Broadcast</h2>
+                    </td>
+                    <td class="price"></td>
+                </tr>
+                <tr>
+                    <td class="free_space" colspan="4"></td>
+                </tr>
+                <tr class="category">
+                    <td colspan="1">
+                        <h3>TV</h3>
+                    </td>
+                    <td colspan="2">Background</td>
+                      <td class="price">£&nbsp;150</td>
+                </tr>
+                <tr class="category">
+                    <td colspan="1"></td>
+                    <td colspan="2">Theme</td>
+                    <td class="price">£&nbsp;300</td>
+                </tr>
+                <tr class="category">
+                    <td colspan="1">
+                        <h3>Film</h3>
+                    </td>
+                    <td colspan="1">Budget less than £1m</td>
+                    <td colspan="1">Not used in trailer</td>
+                      <td class="price">£&nbsp;150</td>
+                </tr>
+                <tr class="category">
+                    <td colspan="2"></td>
+                    <td colspan="1">Used in trailer</td>
+                    <td class="price"> £&nbsp;300</td>
+                </tr>
+                <tr class="category">
+                    <td colspan="1">
+                        <h3>Cinema</h3>
+                    </td> 
+                    <td colspan="1">Up to 6 months</td>
+                    <td colspan="1">Non exclusive</td>
+                    <td class="price"> £&nbsp;150</td>
+                </tr>
+                <tr class="category">
+                    <td colspan="2"></td>
+                    <td colspan="1">Exclusive</td>
+                    <td class="price"><a href="/index/feedback">Contact Us</a></td>
+                </tr>
+                <tr class="category">
+                    <td colspan="2"></td>
+                    <td colspan="1">Non exclusive</td>
+                    <td class="price"> £&nbsp;250 </td>
+                </tr>
+            </table>
+         </div>
+    </body>
+</html>

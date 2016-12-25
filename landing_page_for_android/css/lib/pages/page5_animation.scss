@@ -1,0 +1,59 @@
+.lp .active.page_5 .page_5_container .page_5_phone {
+  -webkit-animation: move_right 2s linear;
+  -moz-animation: move_right 2s linear;
+  -ms-animation: move_right 2s linear;
+  -o-animation: move_right 2s linear;
+  animation: move_right 2s linear;
+}
+
+@keyframes move_right
+{ 
+      0% { right: -1500px; }
+    100% { right:  0px; } 
+} 
+@-moz-keyframes move_right
+{ 
+      0% { right: -1500px; }
+    100% { right:  0px; } 
+} 
+@-webkit-keyframes move_right
+{ 
+      0% { right: -1500px; }
+    100% { right:  0px; } 
+} 
+@-o-keyframes move_right
+{ 
+      0% { right: -1500px; }
+    100% { right:  0px; } 
+} 
+
+@media screen and (max-width: 1000px) {
+  .lp .active.page_5 .page_5_container .page_5_phone {
+    -webkit-animation: move_right_small 2s linear;
+    -moz-animation: move_right_small 2s linear;
+    -ms-animation: move_right_small 2s linear;
+    -o-animation: move_right_small 2s linear;
+    animation: move_right_small 2s linear;
+  }
+}
+
+@keyframes move_right_small
+{ 
+      0% { right: -500px; }
+    100% { right:  0px; } 
+} 
+@-moz-keyframes move_right_small
+{ 
+      0% { right: -500px; }
+    100% { right:  0px; } 
+} 
+@-webkit-keyframes move_right_small
+{ 
+      0% { right: -500px; }
+    100% { right:  0px; } 
+} 
+@-o-keyframes move_right_small
+{ 
+      0% { right: -500px; }
+    100% { right:  0px; } 
+}

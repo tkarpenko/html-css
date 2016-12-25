@@ -1,0 +1,98 @@
+.page_1 {
+  .page_1_illustrations {
+    .page_1_phones {
+      ul {
+        li {
+          .page_1_phone img {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            
+            /*animation-timing-function: ease-in;
+            -moz-animation-timing-function: ease-in;
+            -webkit-animation-timing-function: ease-in;
+            -o-animation-timing-function: ease-in;
+            
+            animation-name:  slideIn;
+            -moz-animation-name:  slideIn;
+            -webkit-animation-name:  slideIn;
+            -o-animation-name:  slideIn;
+            
+            animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            -o-animation-duration: 1s;
+            
+            animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+            -webkit-animation-iteration-count: 1;
+            -o-animation-iteration-count: 1;
+            
+            animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;*/
+          }
+          .page_1_phone:hover img {
+            -webkit-transform: translate(0,-10px);
+            -moz-transform: translate(0,-10px);
+            -o-transform: translate(0,-10px);
+            -ms-transform: translate(0,-10px);
+            transform: translate(0,-10px);
+          }
+          /*.page_1_phone.phone1 img {
+            animation-delay: 0s, 0s;
+            -moz-animation-delay: 0s, 0s;
+            -webkit-animation-delay: 0s, 0s;
+            -o-animation-delay: 0s, 0s;
+          }
+          .page_1_phone.phone2 img {
+            animation-delay: 0s, 1s;
+            -moz-animation-delay: 0s, 1s;
+            -webkit-animation-delay: 0s, 1s;
+            -o-animation-delay: 0s, 1s;
+          }
+          .page_1_phone.phone3 img {
+            animation-delay: 0s, 2s;
+            -moz-animation-delay: 0s, 2s;
+            -webkit-animation-delay: 0s, 2s;
+            -o-animation-delay: 0s, 2s;
+          }
+          .page_1_phone.phone4 img {
+            animation-delay: 0s, 3s;
+            -moz-animation-delay: 0s, 3s;
+            -webkit-animation-delay: 0s, 3s;
+            -o-animation-delay: 0s, 3s;
+          }*/
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideIn
+{ 
+      0% { visibility: hidden; top: 370px; }
+      1% { visibility: visible; top: 370px; }
+    100% { visibility: visible; top:  20px; } 
+} 
+@-moz-keyframes slideIn
+{ 
+      0% { visibility: hidden; top: 370px; }
+      1% { visibility: visible; top: 370px; }
+    100% { visibility: visible; top:  20px; }  
+} 
+@-webkit-keyframes slideIn
+{ 
+      0% { visibility: hidden; top: 370px; }
+      1% { visibility: visible; top: 370px; }
+    100% { visibility: visible; top:  20px; }  
+} 
+@-o-keyframes slideIn
+{ 
+      0% { visibility: hidden; top: 370px; }
+      1% { visibility: visible; top: 370px; }
+    100% { visibility: visible; top:  20px; } 
+} 

@@ -1,0 +1,220 @@
+.gifts_icon_pencil,
+.gifts_icon_gift {
+  background: url("../img/gifts_icons_20x20.png") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+}
+.gifts_icon_pencil { background-position: 0 0; }
+:hover > .gifts_icon_pencil { background-position: -20px 0; }
+:active > .gifts_icon_pencil { background-position: -40px 0; }
+
+.gifts_icon_gift { background-position: -60px 0; }
+
+
+
+.gifts_icon_eye,
+.gifts_icon_logo_small,
+.gifts_icon_arrow_next,
+.gifts_icon_upload,
+.gifts_icon_camera,
+.gifts_icon_ok,
+.gifts_icon_ok_1,
+.gifts_icon_thumb,
+.gifts_icon_list,
+.gifts_icon_play,
+.gifts_icon_remove,
+.gifts_icon_search,
+.gifts_icon_flag_uk,
+.gifts_icon_flag_usa,
+.gifts_icon_red_gift,
+.gifts_icon_close,
+.gifts_icon_plus,
+.gifts_icon_undo {
+  background: url("../img/gifts_icons_37x37.png") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 37px;
+  width: 37px;
+}
+.gifts_icon_eye { background-position: 0 0; }
+.gifts_icon_logo_small { background-position: -37px 0; }
+.gifts_icon_arrow_next { background-position: -74px 0; }
+:hover > .gifts_icon_arrow_next { background-position: -111px 0; }
+
+.gifts_icon_upload { background-position: 0 -37px; }
+:hover > .gifts_icon_upload { background-position: -37px -37px; }
+:active > .gifts_icon_upload { background-position: -74px -37px; }
+
+.gifts_icon_camera { background-position: -111px -37px; }
+:hover > .gifts_icon_camera { background-position: 0 -74px; }
+:active > .gifts_icon_camera { background-position: -37px -74px; }
+
+.gifts_icon_red_gift { background-position: -111px -333px; }
+:hover > .gifts_icon_red_gift { background-position: 0 -370px; }
+:active > .gifts_icon_red_gift { background-position: -37px -370px; }
+
+.gifts_icon_ok { background-position: 0 -147px; }
+.gifts_icon_ok_1 { background-position: -74px -259px; }
+:hover > .gifts_icon_ok_1 { background-position: -111px -259px; }
+
+.gifts_icon_plus { background-position: -37px -407px; }
+:hover > .gifts_icon_plus { background-position: -74px -407px; }
+
+.gifts_icon_close { background-position: -74px -370px; }
+:hover > .gifts_icon_close { background-position: -111px -370px; }
+
+.mixtape_create_options.editing .gifts_icon_ok,
+.search_results_item.track_added .controls button .gifts_icon_ok_1 { background-position: -74px -74px; }
+
+.mixtape_create_options.editing :hover > .gifts_icon_ok,
+.search_results_item.track_added .controls button:hover > .gifts_icon_ok_1 { background-position: -111px -74px; }
+
+.mixtape_create_options.editing :active > .gifts_icon_ok,
+.search_results_item.track_added .controls button:active > .gifts_icon_ok_1 { background-position: 0 -111px; }
+
+.search_results_item.track_added .controls button .gifts_icon_plus { background-position: -111px -407px; }
+.search_results_item.track_added .controls button:hover > .gifts_icon_plus { background-position: 0 -481px; }
+.search_results_item.track_added .controls button:active > .gifts_icon_plus { background-position: -111px -444px; }
+
+
+.gifts_icon_thumb { background-position: -74px -148px; }
+:hover > .gifts_icon_thumb,
+.active > .gifts_icon_thumb { background-position: -37px -148px; }
+
+.gifts_icon_list { background-position: 0 -185px; }
+:hover > .gifts_icon_list,
+.active > .gifts_icon_list { background-position: -111px -147px; }
+
+.gifts_icon_play { background-position: -37px -185px; }
+:hover > .gifts_icon_play { background-position: -74px -185px; }
+:active > .gifts_icon_play,
+.active > .gifts_icon_play { background-position: -111px -185px; }
+
+.search_results_item.track_play .controls button .gifts_icon_play,
+.mixtape_create_tracks.tiles .mixtape_create_track.filled.track_play .controls button .gifts_icon_play { background-position: 0 -296px; }
+
+.search_results_item.track_play .controls button:hover > .gifts_icon_play,
+.mixtape_create_tracks.tiles .mixtape_create_track.filled.track_play .controls button:hover > .gifts_icon_play { background-position: -37px -333px; }
+
+.search_results_item.track_play .controls button:active > .gifts_icon_play,
+.mixtape_create_tracks.tiles .mixtape_create_track.filled.track_play .controls button:active > .gifts_icon_play { background-position: -74px -333px; }
+
+
+.gifts_icon_remove { background-position: 0 -222px; }
+:hover > .gifts_icon_remove { background-position: -37px -222px; }
+
+.gifts_icon_search { background-position: -74px -222px; }
+.gifts_search_field.editing .gifts_icon_search { background-position: -111px -222px; }
+.gifts_search_field.editing :hover > .gifts_icon_search { background-position: 0 -259px; }
+.gifts_search_field.editing :active > .gifts_icon_search { background-position: -37px -259px; }
+
+.gifts_icon_flag_uk { background-position: -37px -296px; }
+:hover > .gifts_icon_flag_uk,
+.active > .gifts_icon_flag_uk { background-position: -74px -296px; }
+
+.gifts_icon_flag_usa { background-position: -111px -296px; }
+:hover > .gifts_icon_flag_usa,
+.active > .gifts_icon_flag_usa { background-position: 0 -333px; }
+
+.gifts_icon_undo { background-position: -37px -481px; }
+:hover > .gifts_icon_undo { background-position: -74px -481px; }
+:active > .gifts_icon_undo { background-position: -111px -481px; }
+
+
+.gifts_icon_logo,
+.gifts_icon_play_big {
+  background: url("../img/gifts_icons_46x46.png") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 46px;
+  width: 46px;
+}
+.gifts_icon_logo { background-position: 0 0; }
+.gifts_icon_play_big { background-position: -46px 0; }
+:hover > .gifts_icon_play_big { background-position: -92px 0; }
+.mixtape_create_tracks.list .mixtape_create_track.track_play .gifts_icon_play_big { background-position: -92px -46px; }
+
+
+
+.gifts_icon_record_small,
+.gifts_icon_headphone_small,
+.gifts_icon_play_vbig,
+.gifts_icon_play_next {
+  background: url("../img/gifts_icons_56x56.png") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 56px;
+  width: 56px;
+}
+.gifts_icon_headphone_small { background-position: 0 0; }
+.gifts_icon_record_small { background-position: -56px 0; }
+
+.gifts_icon_play_vbig { background-position: -112px 0; }
+:hover > .gifts_icon_play_vbig { background-position: -168px 0; }
+.active > .gifts_icon_play_vbig,
+.gifts_create .create_content .ecard_create_track .track_info.track_play .gifts_icon_play_vbig { background-position: -112px -56px; }
+
+.gifts_icon_play_next { background-position: -168px -56px; }
+:hover > .gifts_icon_play_next { background-position: 0 -112px; }
+.active > .gifts_icon_play_next,
+:active > .gifts_icon_play_next { background-position: -56px -112px; }
+
+.gifts_icon_christmas,
+.gifts_icon_new_year,
+.gifts_icon_st_valentines_day,
+.gifts_icon_birthday {
+  background: url("../img/gifts_icons_73x73.png") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 73px;
+  width: 73px;
+}
+.gifts_icon_christmas { background-position: 0 0; }
+:hover > .gifts_icon_christmas,
+.active > .gifts_icon_christmas { background-position: 0 -73px; }
+
+.gifts_icon_new_year { background-position: -73px 0; }
+:hover > .gifts_icon_new_year,
+.active > .gifts_icon_new_year { background-position: -73px -73px; }
+
+.gifts_icon_st_valentines_day { background-position: -146px 0; }
+:hover > .gifts_icon_st_valentines_day,
+.active > .gifts_icon_st_valentines_day { background-position: -146px -73px; }
+
+.gifts_icon_birthday { background-position: -219px 0; }
+:hover > .gifts_icon_birthday,
+.active > .gifts_icon_birthday { background-position: -219px -73px; }
+
+
+
+.gifts_icon_headphone,
+.gifts_icon_record {
+  display: inline-block;
+  vertical-align: middle;
+  height: 341px;
+  width: 337px;
+}
+.gifts_icon_headphone { 
+  background: url("../img/gifts_landing_headphone.png") 0 0 no-repeat ;
+}
+.gifts_icon_record { 
+  background: url("../img/gifts_landing_record.png") 0 0 no-repeat ;
+}
+
+
+
+.gifts_head.mixtape .gifts_icon_head,
+.gifts_head.ecard .gifts_icon_head {
+  display: inline-block;
+  vertical-align: middle;
+  height: 537px;
+  width: 547px;
+}
+.gifts_head.mixtape .gifts_icon_head {
+  background: url("../img/gifts_head_record.png") center center no-repeat;
+}
+.gifts_head.ecard .gifts_icon_head {
+  background: url("../img/gifts_head_headphone.png") center center no-repeat;
+}

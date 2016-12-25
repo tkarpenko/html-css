@@ -1,0 +1,256 @@
+.icon_list,
+.icon_wheel,
+.icon_plus_brown,
+.icon_link_list,
+.icon_favourite,
+.icon_favourite,
+.icon_playlist,
+.icon_comment,
+.icon_atention,
+.icon_share,
+.icon_facebook,
+.icon_twitter,
+.icon_organize,
+.icon_edit,
+.icon_delete,
+.icon_download,
+.icon_close_brown,
+.icon_playlist_2,
+.icon_image,
+.icon_video {
+    background: url('../img/mm_track_icons.png') no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px; 
+}
+
+.icon_favourite,
+.icon_favourite,
+.icon_playlist,
+.icon_comment,
+.icon_atention,
+.icon_share,
+.icon_facebook,
+.icon_twitter,
+.icon_organize,
+.icon_edit,
+.icon_delete,
+.icon_download {
+    margin: 0 5px;
+}
+
+.icon_list { background-position: -25px -150px; }
+.icon_list:hover,
+:hover > .icon_list { background-position: -50px -150px; }
+
+.icon_wheel { background-position: -75px -150px; }
+.icon_wheel:hover,
+:hover > .icon_wheel { background-position: -100px -150px; }
+
+.icon_favourite { background-position: -25px -100px; }
+.icon_favourite:hover,
+:hover > .icon_favourite { background-position: -25px -125px; }
+
+.icon_playlist { background-position: -50px -100px; }
+.icon_playlist:hover,
+:hover > .icon_playlist { background-position: -50px -125px; }
+
+.icon_comment { background-position: 0px -125px; }
+.icon_comment:hover,
+:hover > .icon_comment { background-position: 0px -150px; }
+
+.icon_atention { background-position: -75px -125px; }
+.icon_atention:hover,
+:hover > .icon_atention { background-position: -100px -125px; }
+
+.icon_share { background-position: -50px -50px; }
+.icon_share:hover,
+:hover > .icon_share { background-position: -50px -75px; }
+
+.icon_facebook { background-position: 0px -75px; }
+.icon_facebook:hover,
+:hover > .icon_facebook { background-position: 0 -100px; }
+
+.icon_twitter { background-position: -25px -50px; }
+.icon_twitter:hover,
+:hover > .icon_twitter { background-position: -25px -75px; }
+
+.icon_edit { background-position: -25px 0; }
+.icon_edit:hover,
+:hover > .icon_edit { background-position: -25px -25px; }
+
+.icon_organize { background-position: -50px 0; }
+.icon_organize:hover,
+:hover > .icon_organize { background-position: -50px -25px; }
+
+.icon_delete { background-position: 0 -25px; }
+.icon_delete:hover,
+:hover > .icon_delete { background-position: 0 -50px; }
+
+.icon_plus_brown { background-position: -75px -175px; }
+.icon_plus_brown:hover,
+:hover > .icon_plus_brown { background-position: -100px -175px; }
+
+.icon_link_list { background-position: 0 -225px; }
+.icon_link_list:hover,
+:hover > .icon_link_list { background-position: -25px -225px; }
+
+.icon_download { background-position: -50px -225px; }
+.icon_download:hover,
+:hover > .icon_download { background-position: -75px -225px; }
+
+.icon_close_brown { background-position: -100px -225px; }
+.icon_close_brown:hover,
+:hover > .icon_close_brown { background-position: 0 -250px; }
+
+.icon_playlist_2 { background-position: -25px -275px; }
+.icon_playlist_2:hover,
+:hover > .icon_playlist_2 { background-position: -50px -275px; }
+
+.icon_image { background-position: -50px -250px; }
+.icon_image:hover,
+:hover > .icon_image { background-position: -75px -250px; }
+
+.icon_video { background-position: -100px -250px; }
+.icon_video:hover,
+:hover > .icon_video { background-position: 0 -275px; }
+
+
+
+
+.icon_play,
+.icon_pause {
+  background: url('../img/mm_icons.png') no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 37px;
+  width: 37px;
+}
+.icon_play {
+  background-position: -6px -57px;
+}
+.icon_pause {
+  background-position: -58px -57px;
+}
+
+
+
+.icon_round_upload {
+  background: url('../img/mm_icons.png') no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  width: 50px;
+}
+.icon_round_upload {
+  background-position: 0 -100px;
+}
+:hover > .icon_round_upload {
+  background-position: -50px -100px; 
+}
+
+
+
+
+.icon_i,
+.icon_cup,
+.icon_globe,
+.icon_soundwave,
+.icon_paper,
+.icon_dustbin,
+.icon_plus,
+.icon_plus_invers,
+.icon_upload,
+.icon_slider_arrow,
+.icon_slider_small_arrow,
+.icon_big_close,
+.icon_facebook_2,
+.icon_twitter_2,
+.icon_google {
+  background: url('../img/mm_small_icons.png') no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+}
+
+.icon_i { background-position: -90px 0px; }
+li.active a .icon_i { background-position: -90px -30px; }
+
+.icon_cup { background-position: -60px -60px; }
+li.active a .icon_cup { background-position: -90px -60px; }
+
+.icon_globe { background-position: 0px -90px; }
+li.active a .icon_globe {  background-position: -30px -90px; }
+
+.icon_soundwave { background-position: -60px -90px; }
+li.active a .icon_soundwave { background-position: -90px -90px; }
+
+.icon_paper { background-position: 0px -120px; }
+li.active a .icon_paper { background-position: -30px -120px; }
+
+.icon_facebook_2 { background-position: -120px -90px; }
+:hover > .icon_facebook_2 { background-position: -120px -120px; }
+
+.icon_twitter_2 { background-position: -120px -150px; }
+:hover > .icon_twitter_2 { background-position: -120px -180px; }
+
+.icon_google { background-position: 0 -150px; }
+:hover > .icon_google { background-position: -30px -150px; }
+
+.icon_dustbin { background-position: -60px -120px; }
+.icon_plus { background-position: -90px -120px; }
+.icon_plus_invers { background-position: -60px -30px; }
+.icon_upload { background-position: -30px -30px; }
+.icon_slider_arrow.prev { background-position: -30px -180px; }
+.icon_slider_arrow.next { background-position: 0 -180px; }
+.icon_slider_small_arrow.prev { background-position: -90px -180px; }
+.icon_slider_small_arrow.next { background-position: -60px -180px; }
+.icon_big_close { background-position: 0 -210px; }
+
+
+
+
+.icon_close,
+.icon_block,
+.icon_small_arrow_down {
+  background: url('../img/mm_vsmall_icons.png') no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+}
+
+.icon_close { background-position: -15px -30px; }
+.icon_close.grey { background-position: -30px 0; }
+.icon_close.shadow { background-position: -30px -15px; }
+.icon_block { background-position: 0 -30px; }
+.icon_small_arrow_down { background-position: -30px -30px; }
+
+
+
+.icon_messenger_aim,
+.icon_messenger_gtalk,
+.icon_messenger_isq,
+.icon_messenger_msn,
+.icon_messenger_skype,
+.icon_messenger_yahoo,
+.icon_messenger_other {
+  background: url('../img/mm_messengers.png') no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 19px;
+  width: 20px;
+}
+
+.icon_messenger_aim   { background-position: 0 -26px; }
+.icon_messenger_gtalk { background-position: 0 -71px; }
+.icon_messenger_isq   { background-position: 0 -5px; }
+.icon_messenger_msn   { background-position: 0 -111px; }
+.icon_messenger_skype { background-position: 0 -91px; }
+.icon_messenger_yahoo { background-position: 0 -48px; }
+.icon_messenger_other { background-position: 0 -132px; }
+
+
+  

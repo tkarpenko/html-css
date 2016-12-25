@@ -1,0 +1,68 @@
+.gifts_ecard_trackinfo_right {
+	width: 256px;
+	float: right;
+	margin-right: 30px;
+	.cover {
+		width: 256px;
+		height: 256px;
+		background-repeat: no-repeat;
+		background-position: center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  background-color: rgba(255, 255, 255, 0.5);
+	 }
+  .info {
+  	height: 80px;
+  	display: inline-block;
+  	vertical-align: middle;
+  	width: 211px;
+  	.name,
+  	.artist {
+  		font-family: "lato", Arial;
+  		@include font(#fff, 23px, 400, left, 30px);
+  		@include ellipsis;
+  		display: block;
+  	}
+  	.name {
+  		margin-top: 9px;
+  	}
+  	.artist {
+  		font-weight: 300;
+  	}
+  	.empty_msg {
+  		font-family: "Roboto Slab", serif;
+  		@include font(#000, 20px, 300, center, 80px);
+  		display: none;
+  	}
+  }
+  .delete {
+  	background: none;
+  	border: none;
+  	display: inline-block;
+  	vertical-align: middle;
+  	width: 40px;
+  	text-align: center;
+  	height: 80px;
+  	cursor: pointer;
+  }
+  &.empty {
+  	.cover {
+  		background-image: none !important;
+  	}
+  	.info {
+  		width: 256px;
+  		.name,
+  		.artist {
+  			display: none;
+  		}
+  		.empty_msg {
+	  		display: block;
+	  	}
+  	}
+  	.delete {
+	  	display: none;
+	  }
+  }
+}

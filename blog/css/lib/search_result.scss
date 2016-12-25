@@ -1,0 +1,207 @@
+.blog_archive_head {
+	.blog_left {
+		float: left;
+	}
+	.blog_search {
+		float: right;
+		width: 240px;
+	}
+}
+.blog_search_result_title {
+	.title {
+		font-family: "Bebas";
+		@include font(#333333, 24px, 400, left, 24px);
+		text-transform: uppercase;
+		float: left;
+		letter-spacing: 0.04em;
+	}
+	.blog_search {
+		float: right;
+	}
+}
+
+.blog_archive_filter {
+	.title {
+		font-family: "Bebas";
+		@include font(#333333, 14px, 400, left, 30px);
+		text-transform: uppercase;
+		float: left;
+		letter-spacing: 0.04em;
+	}
+	.blog_dropdown {
+		float: left;
+		margin: 0 20px 0 10px;
+	}
+	.blog_search {
+		float: right;
+	}
+}
+
+.blog_search_result {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: table;
+	dt {
+		display: table-cell;
+		vertical-align: top;
+		width: 80px;
+		max-width: 80px;
+		.date {
+			height: 70px;
+			background-color: #8fe8db;
+			/*float: left;*/
+			padding-top: 10px;
+			.year {
+				font-family: "Bebas";
+				@include font(#000, 24px, 400, center, 41px);
+				text-transform: uppercase;
+				
+			}
+			.month {
+				@include font(#2c2c2c, 14px, 700, center, 16px);
+			}
+		}
+	}
+	dd {
+		background: #fff;
+		@include box_shadow (0px, 4px, 5px, -1px, rgba(0, 0, 0, 0.2));
+		display: table-cell;
+		padding: 20px;
+		.result_item {
+			border-top: 3px solid #dbf7f4;
+			margin: 17px 0;
+			padding-top: 17px;
+			display: table;
+			width: 100%;
+			.result_item_head {
+				width: 110px;
+				padding-right: 10px;
+				border-right: 2px solid #dbf7f4;
+				min-height: 75px;
+				display: table-cell;
+				.blog_categories {
+					margin-bottom: 6px;
+				}
+				.date {
+					@include font(#2c2c2c, 11px, 400, left, 12px);
+					margin-bottom: 13px;
+					display: block;
+				}
+				.post_author {
+					@include font(#b4b4b4, 14px, 400, left, 16px);
+					display: block;
+					strong {
+						margin: 0 3px;
+					}
+				}
+			}
+			.result_item_body {
+				padding-left: 10px;
+				position: relative;
+				display: table-cell;
+				.item_title {
+					font-family: 'bebas_neuebold';
+					@include font(#333333, 18px, 400, left, 20px);
+					text-transform: uppercase;
+					margin-bottom: 2px;
+					display: block;
+					letter-spacing: 0.04em;
+				}
+				.item_content {
+					p, span, p span, a, p a { 
+						font-family: "Open Sans" !important;
+						@include font(#818181 !important, 14px !important, 400 !important, left !important, 21px !important);
+						height: 43px;
+						overflow: hidden;
+					}
+					img {
+						display: none;
+					}
+				}
+				.blog_read_more {
+					bottom: -25px;
+				}
+			}
+			&:first-child {
+				border: none;
+				margin-top: 0;
+			}
+		}
+	}
+}
+.blog_archive_head,
+.blog_archive_filter,
+.blog_search_result_title,
+.blog_search_result,
+.blog_search_result .result_item {
+	&:before, 
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+.blog_no_result {
+	padding: 60px 0 20px 0;
+	border-bottom: 3px solid #d3f0ed;
+	p {
+		@include font(#b4b4b4, 16px, 400, center, 40px);
+	}
+	.sorry {
+		font-family: "Bebas";
+		@include font(#b4b4b4, 60px, 400, center, 60px);
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 55px;
+	}
+}
+@media screen and (max-width: 980px) {
+	.blog_archive_filter {
+		.title,
+		.blog_dropdown,
+		.blog_search {
+			float: none;
+			width: 99%;
+		}
+		.blog_dropdown {
+			margin: 10px 0;
+		}
+		.blog_search {
+			margin: 10px 0 0 200px;
+		}
+		.blog_years {
+			margin-top: 10px
+		}
+	}
+	.blog_archive_head .blog_search {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.blog_dropdown > dt .dropdown_head_txt {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 509px) {
+	.blog_archive_head .blog_search {
+		position: relative;
+		right: 0;
+		top: 0;
+		left: 0;
+		margin-bottom: 20px;
+	}
+	.blog_archive_head .blog_left {
+		width: 100%;
+	}
+	.blog_search_result,
+	.blog_search_result dt {
+		display: block;
+	}
+	.blog_search_result dd {
+		padding: 20px 10px;
+	}
+}

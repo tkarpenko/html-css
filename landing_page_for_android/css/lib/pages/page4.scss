@@ -1,0 +1,51 @@
+.lp .page_4 {
+  width: 100%;
+  background: url("../img/page4/page4_bg.jpg") right top no-repeat #a19384;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .tableCell {
+    vertical-align: top;
+  }
+  .page_4_content {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: right;
+    .page_4_title {
+      font-family: "Solomon Sans SemiBold";
+      @include font(#fff, 30px, 400, right, 30px);
+      margin: 150px 0 27px 0;
+      white-space: nowrap;
+    }
+  }
+  .page_4_info {
+    @include font(#fff, 16px, 400, right, 27px);
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    .page_4_radio_more {
+      font-family: "Solomon Sans SemiBold";
+      text-decoration: underline;
+      @include font(#fff, 16px, 400, right, 22px);
+      display: block;
+      margin: 13px 0 10px 0;
+    }
+  }
+  .lp_app_store {
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .lp .page_4 .page_4_content {
+    width: auto;
+    padding: 0 10px;
+  }
+  .lp .page_4 .page_4_content .page_4_title {
+    margin-top: 10%;
+  }
+}
+

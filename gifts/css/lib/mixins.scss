@@ -1,0 +1,97 @@
+@mixin box_shadow_inset ($x_shadow, $y_shadow, $radius, $blur, $color) {
+  -moz-box-shadow: inset $x_shadow $y_shadow $radius $blur $color;
+  -webkit-box-shadow: inset $x_shadow $y_shadow $radius $blur $color;
+  box-shadow: inset $x_shadow $y_shadow $radius $blur $color;
+}
+
+@mixin box_shadow ($x_shadow, $y_shadow, $radius, $blur, $color) {
+  -moz-box-shadow: $x_shadow $y_shadow $radius $blur $color;
+  -webkit-box-shadow: $x_shadow $y_shadow $radius $blur $color;
+  box-shadow: $x_shadow $y_shadow $radius $blur $color;
+}
+
+@mixin position ($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin font ($color: $grey, $size: 12px, $weight: 400, $align: left, $line_height: inherit) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    line-height: $line_height;
+}
+
+@mixin text_shadow ($color, $x_shadow, $y_shadow, $blur) {
+    text-shadow:         $color $x_shadow $y_shadow $blur;
+    -webkit-text-shadow: $color $x_shadow $y_shadow $blur;
+    -moz-text-shadow:    $color $x_shadow $y_shadow $blur;
+}
+
+@mixin rounded_border ($left_top: 3px, $right_top: 3px, $right_bottom: 3px, $left_bottom: 3px, $border: none) {
+    border: $border;
+    border-radius:         $left_top $right_top $right_bottom $left_bottom;
+    -moz-border-radius:    $left_top $right_top $right_bottom $left_bottom;
+    -webkit-border-radius: $left_top $right_top $right_bottom $left_bottom;
+}
+
+@mixin opacity ($opacity) {
+  -moz-opacity: $opacity / 100;
+  -webkit-opacity: $opacity / 100;
+  -o-opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+  opacity: $opacity / 100;
+}
+
+@mixin ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+}
+
+@mixin pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+}
+@mixin box-sizing($style) {
+  -webkit-box-sizing: $style;
+     -moz-box-sizing: $style;
+      -ms-box-sizing: $style;
+          box-sizing: $style;
+}
+@mixin transition ($val) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -ms-transition: $val;
+  -o-transition: $val;
+  transition: $val;
+}
+@mixin transform ($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -o-transform: $val;
+  -ms-transform: $val;
+  transform: $val;
+}
+@mixin transition_transform ($val) {
+  -webkit-transition: -webkit-transform $val;
+  -moz-transition: -moz-transform $val;
+  -o-transition: all $val;
+  -ms-transition: -ms-transform $val;
+  transition: transform $val;
+}
+

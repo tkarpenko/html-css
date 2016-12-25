@@ -1,0 +1,129 @@
+.mm_fullscreen {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  * {
+    @include text_shadow (rgba(255, 255, 255, 0.93), 0px, 0px, 0px);
+  }
+  
+  .navigation {
+    height: 30px;
+    width: 30px;
+    @include opacity(60);
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    &.prev {
+      left: 0;
+    }
+    &.next {
+      right: 0;
+    }
+    &.hide {
+      display: none;
+    }
+    &:hover {
+      @include opacity(100);
+    }
+  }
+  .show_place {
+    position: relative;
+    background-color: #141414;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    .show {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+  .info_place { 
+    .mm_track {
+      background: none;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        height: 48px;
+        width: 48px;
+        margin: 0 0 8px 8px;
+        position: relative;
+        text-align: center;
+      }
+      .track_cover:before {
+        background: none;
+      }
+      .info {
+        width: 280px;
+        h5 {
+          color: #fff;
+        }
+        h6 {
+          max-width: 100%; 
+        }
+      }
+    }
+  }
+  
+
+  .slider_place {
+    text-align: center;
+    position: relative;
+    width: 74.35897435897436%;
+    padding-top: 10px;
+    .slider {
+      height: 65px;
+      margin: 0 30px;
+      overflow: hidden;
+      position: relative;
+      ul {
+        list-style: none;
+        height: 65px;
+        width: 9000px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        li {
+          float: left;
+          margin: 0 5px;
+          height: 65px;
+          width: 65px;
+          @include opacity(60);
+          a img {
+            height: 65px;
+            width: 65px;
+            
+          }
+          &:hover,
+          &.active {
+            @include opacity(100); 
+          }
+        }
+      }
+    }
+  }
+  .row-fluid {
+    height: 80%;
+    margin-top: 50px;
+  }
+}
+
+.mm_fullscreen.video .slider_place .slider ul li,
+.mm_fullscreen.video .slider_place .slider ul li a img, {
+  height: 65px;
+  width: 120px;
+}

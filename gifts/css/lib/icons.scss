@@ -1,0 +1,28 @@
+.gifts_icon_pencil {
+	background: url("../img/pencil.png") no-repeat center center;
+	display: inline-block;
+	vertical-align: middle;
+	height: 16px;
+	width: 15px;
+}
+.gifts_icon_bucket,
+.gifts_icon_move,
+.gifts_icons_autofill,
+.gifts_icons_info {
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+	width: 30px;
+}
+.gifts_icon_bucket {
+	background: url("../img/gifts_sprite.png") no-repeat -185px -57px;
+}
+.gifts_icon_move {
+	background: url("../img/move.png") no-repeat center center;
+}
+.gifts_icons_autofill {
+	background: url("../img/mixtape/autofill.png") no-repeat center center;
+}
+.gifts_icons_info {
+	background: url("../img/mixtape/info.png") no-repeat center center;
+}

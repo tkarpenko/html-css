@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="css/ui/jquery-ui-1.8.23.custom.css">
+        <link type="text/css" rel="stylesheet" href="css/layout.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#js-progressbar").progressbar({ value: 37 });
+                $("#js-accordion").accordion({
+                  header:"h3",
+                  active:false,
+                  autoHeight:false,
+                  collapsible:true
+                });
+                $("#js-datepicker").datepicker();
+                
+            })
+        </script>
+    </head>
+    <body class="schema_green">
+
+        <div class="container">
+            <ul class="top_menu">
+                <li class="active"><a href="#">Green schema</a></li>
+                <li><a href="#">Blue schema</a></li>
+                <li><a href="#">Orange schema</a></li>
+                <li><a href="#">Violet schema</a></li>
+            </ul>
+
+            <h1>h...</h1>
+
+            <h1>Title h1
+                <span class="title_option">or&nbsp;<a href="#">cover versin</a></span>
+            </h1>
+            <h2>Title h2</h2>
+            <h3>Title h3</h3>
+            <h4>Title h4</h4>
+            <h5>Title h5</h5>
+            <h6>Title h6</h6>
+
+            <h1>form elements</h1>
+
+            <input type="text" value="text field" />
+            <textarea>Text area field</textarea>
+            <select>
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+            </select>
+
+            <h1>Links</h1>
+
+            <a href="#">Link</a>
+
+            <h1>Checkbox</h1>
+
+            <label class="checkbox">
+                <input type="checkbox" /> Checkbox normal
+            </label>
+
+            <label class="checkbox disabled">
+                <input type="checkbox" /> Checkbox normal disabled
+            </label>
+
+            <label class="checkbox active">
+                <input type="checkbox" /> Checkbox active
+            </label>
+
+            <label class="checkbox active disabled">
+                <input type="checkbox" /> Checkbox active disabled
+            </label>
+
+            <h1>Radio</h1>
+
+            <label class="radio">
+                <input type="radio" />Radio normal
+            </label>
+
+            <label class="radio active">
+                <input type="radio" />Radio active
+            </label>
+
+            <h1>Form blocks</h1>
+            <h2>Input field</h2>
+            <div class="form_elem">
+                <b>Title of form element</b>
+                <div>
+                    <label class="required">label</label>
+                    <input type="text" value="input text" />
+                </div>
+                <p class="error">Value is required and can't be empty</p>
+                <span class="desc">Describe form element</span>
+            </div>
+
+            <h2>Radio</h2>
+            <div class="form_elem">
+                <b>Title of form element</b>
+                <div>
+                    <a class="radio"><input type="radio" />Yes</a>
+                    <a class="radio"><input type="radio" />No</a>
+                </div>
+                <span class="desc">Describe form element</span>
+            </div>
+
+            <h2>Select date</h2>
+
+            <div class="form_elem">
+                <b>Title of form element</b>
+                <div class="pr martop">
+                    <label>Date</label>
+                    <input type="text" value="input text" class="txt_input_small"/>
+                    <i class="calend_icn"></i>
+                </div>
+                <span class="desc">Describe form element</span>
+            </div>
+
+            <h1>Fieldset with legend</h1>
+
+            <fieldset>
+                <legend>Original Song</legend>
+                <div class="form_elem">
+                    <b></b>
+                    <div class="pr martop">
+                        <label>label</label>
+                        <input type="text" value="input text" />
+                    </div>
+                    <span class="small"></span>
+                </div>
+                <div class="form_elem">
+                    <b></b>
+                    <div class="pr martop">
+                        <label>label</label>
+                        <input type="text" value="input text" />
+                    </div>
+                    <span class="small">Describe form element</span>
+                </div>
+                <div class="form_elem">
+                    <b>Publisher</b>
+                    <div class="pr martop">
+                        <label>label</label>
+                        <input type="text" value="input text" />
+                    </div>
+                    <span class="small">Describe form element</span>
+                </div>
+            </fieldset>
+
+            <h1>Accordion</h1>
+
+            <div class="accordion pr" id="js-accordion">
+                <h3>
+                    <a href="#" title="">
+                        <span class="accordion_left_col fl">Genre</span>
+                        <span class="accordion_center_col accordion_title fl"><b>Country/Folk | Pop:</b> Rock/Soul <b>|  R&amp;B</b></span>
+                        <span class="accordion_right_col fr">requ</span>
+                    </a>
+                </h3>
+                <div>
+                    <div class="tree_col">
+                        <dl class="tree open">
+                          <dt>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dt>
+                          <dd>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                          <dd>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                          <dd>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                        </dl>
+                        
+                        <dl class="tree open">
+                          <dt>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dt>
+                          <dd>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                          <dd>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                          <dd>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                        </dl>
+                        
+                        <dl class="tree close">
+                          <dt>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dt>
+                          <dd>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                        </dl>
+                    </div>
+                    
+                    <div class="tree_col">
+                        <dl class="tree close">
+                          <dt>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dt>
+                          <dd>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                        </dl>
+                        
+                        <dl class="tree close">
+                          <dt>
+                            <label class="checkbox active">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dt>
+                          <dd>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                        </dl>
+                        
+                        <dl class="tree close">
+                          <dt>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dt>
+                          <dd>
+                            <label class="checkbox">
+                                <input type="checkbox" /> Checkbox normal
+                            </label>
+                          </dd>
+                        </dl>
+                    </div>
+                </div>
+                <h3>
+                  <a href="#" title="">
+                    <span class="accordion_left_col fl">Genre</span>
+                    <span class="accordion_center_col accordion_title dn fl"><b>Country/Folk | Pop:</b> Rock/Soul <b>|  R&amp;B</b></span>
+                    <span class="accordion_right_col fr">requ</span>
+                  </a>
+                  <span class="accordion_open_arrow_icn pa"></span>
+                </h3>
+                <div>
+                </div>
+				
+                <h3>
+                  <a href="#" title="">
+                    <span class="accordion_left_col fl">Genre</span>
+                    <span class="accordion_center_col accordion_title fl">for all</span>
+                    <span class="accordion_right_col dn fr">requ</span>
+                  </a>
+                  <span class="accordion_open_arrow_icn pa"></span>
+                </h3>
+                <div>
+                </div>
+				
+                <h3>
+                  <a href="#" title="">
+                    <span class="accordion_left_col fl">Genre</span>
+                    <span class="accordion_center_col accordion_title dn fl"><b>Country/Folk | Pop:</b> Rock/Soul <b>|  R&amp;B</b></span>
+                    <span class="accordion_right_col dn fr">requ</span>
+                  </a>
+                  <span class="accordion_open_arrow_icn pa"></span>
+                </h3>
+                <div>
+                </div>
+            </div>
+
+            <h1>Papagraph</h1>
+
+            <p>Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph</p>
+
+            <h1>List</h1>
+
+            <ul>
+                <li>
+                    It is free to upload your music to tunehog Sync
+                </li>
+                <li>
+                    Placing your music in tunehog Sync will never prevent you from working with others
+                </li>
+                <li>
+                    You retain all of your rights and 100% ownership at all times
+                </li>
+                <li>
+                    We put the interests of the artist first
+                </li>
+                <li>
+                    We promote music from all over the world in all genres and styles
+                </li>
+            </ul>
+
+            <h1>Decorated List</h1>
+
+            <ul class="decorated">
+                <li>
+                    <b>No Fee </b>
+                    It is free to upload your music to tunehog Sync
+                </li>
+                <li>
+                    <b>Our Deal is completely non-exclusive </b>
+                    Placing your music in tunehog Sync will never prevent you from working with others
+                </li>
+                <li>
+                    <b>Retain Ownership</b>
+                    You retain all of your rights and 100% ownership at all times
+                </li>
+                <li>
+                    <b>Fair Deal</b>
+                    We put the interests of the artist first
+                </li>
+                <li>
+                    <b>Non-discriminatory</b>
+                    We promote music from all over the world in all genres and styles
+                </li>
+            </ul>
+
+            <h1>Buttons</h1>
+
+            <h2>Without icons</h2>
+            <a href="#" class="btn">link</a>
+            <button type="submit" class="btn">button</button>  
+            <a href="#" class="btn big">link</a>
+            <button type="submit" class="btn big">button</button>
+
+            <h2>With icons</h2>
+            <a href="#" class="btn"><i class="upload_icn"></i>link</a>
+            <button type="submit" class="btn"><i class="upload_icn"></i>button</button>
+            <a href="#" class="btn big"><i class="upload_icn"></i>link</a>
+            <button type="submit" class="btn big"><i class="upload_icn"></i>button</button>
+
+
+            <a href="#" class="btn"><i class="target_icn"></i>link</a>
+            <button type="submit" class="btn"><i class="target_icn"></i>button</button>
+            <a href="#" class="btn big"><i class="target_icn"></i>link</a>
+            <button type="submit" class="btn big"><i class="target_icn"></i>button</button>
+
+            <a href="#" class="btn"><i class="download_icn"></i>link</a>
+            <button type="submit" class="btn"><i class="download_icn"></i>button</button>
+            <a href="#" class="btn big"><i class="download_icn"></i>link</a>
+            <button type="submit" class="btn big"><i class="download_icn"></i>button</button>
+
+            <a href="#" class="btn fl"><i class="atach_icn"></i>link</a>
+            <button type="submit" class="btn fl"><i class="atach_icn"></i>button</button>
+
+            <h1>Master</h1>
+
+            <div class="master pr">
+                <div class="master_step fl past ">
+                    <span class="master_txt fl">Basic Info</span>
+                    <span class="master_arw"></span>
+                </div>
+                <div class="master_step fl current ">
+                    <span class="master_txt fl">Full Info</span>
+                    <span class="master_arw"></span>
+                </div>
+                <div class="master_step fl  ">
+                    <span class="master_txt fl">Co-writers</span>
+                    <span class="master_arw"></span>
+                </div>
+                <div class="master_step fl  ">
+                    <span class="master_txt fl">License Agreement</span>
+                    <span class="master_arw"></span>
+                </div>
+                <div class="master_step fl  ">
+                    <span class="master_txt fl">Final</span>
+                </div>
+            </div>
+
+            <div class="clear_big"></div>
+
+            <h1>Paginator</h1>
+            
+            <div class="pagination">
+                <span class="previous">Previous</span>
+
+                <a href="#" title="" class="page">1</a>
+                
+                <a href="#" title="" class="page active">11</a>
+                
+                <a href="#" title="" class="page">111</a>
+                
+                <span>&hellip;</span>
+                
+                <a href="#" title="" class="page">11111</a>
+
+                <a href="#" class="next">Next</a>
+            </div>
+            
+            <h1>Filter</h1>
+        
+            <ul class="filter">
+                <li><a href="#">filter</a></li>
+                <li><a href="#">filter</a></li>
+                <li class="active"><a href="#">filter</a></li>
+            </ul>
+            
+            <h1>Upload progress</h1>
+            
+            <div class="progress_bar">
+                <div class="progress" style="width:50%"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

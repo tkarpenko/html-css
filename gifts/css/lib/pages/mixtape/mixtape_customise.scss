@@ -1,0 +1,176 @@
+.gifts_customise {
+	min-height: 430px;
+	background: rgba(0,0,0,0.1);
+	position: relative;
+	overflow-x: hidden;
+	margin-bottom: 5px;
+	&:after {
+		content: "";
+		height: 165px;
+		width: 688px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 1px solid #fdd300;
+		z-index: 1;
+	}
+	.customise_title {
+		height: 73px;
+		width: 100%;
+		padding-top: 23px;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		&>span,
+		&>input {
+			font-family: "lato", Arial;
+			@include font(#fff, 20px, 300, center, 30px);
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 18px;
+		}
+		&>input {
+			background: none;
+			border: none;
+			border-bottom: 1px solid #fff;
+		}
+		&.form {
+			span {
+				font-family: 'Roboto Slab', serif;
+				@include font(#fff, 25px, 400, left, 30px);
+			}
+		}
+	}
+	.customise_slider {
+		height: 157px;
+		width: 2000px;
+		list-style: none;
+		position: relative;
+		z-index: 2;
+		li {
+			float: left;
+			a {
+				display: block;
+				height: 157px;
+				width: 157px;
+				position: relative;
+				background-repeat: no-repeat;
+				background-position: center center;
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  span {
+			  	@include transform(scaleX(-1) rotate(180deg));
+			  	filter: FlipH;
+        	-ms-filter: "FlipH";
+        	opacity: 0.1;
+			  	display: block;
+			  	position: absolute;
+			  	bottom: -100%;
+			  	left: 0;
+			  	width: 100%;
+			  	height: 100%;
+			  	background-repeat: no-repeat;
+					background-position: center center;
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+			  }
+				&:after {
+					content: "";
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: url("../img/mixtape/slider_play.png") no-repeat center center rgba(60, 56, 58, 0.5);
+
+				}
+				&:hover:after {
+					display: block;
+				}
+			}
+		}
+	}
+	.customise_slider_controls {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		margin-top: 10px;
+		.prev,
+		.next {
+			display: inline-block;
+			vertical-align: middle;
+			height: 21px;
+			width: 12px;
+			background: url("../img/mixtape/chart_arrow.png") no-repeat center center;
+			cursor: pointer;
+		}
+		.prev {
+			@include transform(scaleX(-1));
+		}
+		.track_info {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 20px;
+			.name,
+			.artist {
+				font-family: "lato", Arial;
+				@include font(#fff, 20px, 400, center, 22px);
+			}
+			.artist {
+				font-weight: 300;
+			}
+		}
+	}
+	.customise_form {
+		background: #fff;
+		padding: 5px 30px 15px 30px;
+		margin-top: 15px;
+		position: relative;
+		z-index: 2;
+		min-height: 150px;
+		.form_column {
+			width: 290px;
+			label {
+				display: block;
+				font-family: 'Roboto Slab', serif;
+				@include font(#000, 20px, 300, left, 30px);
+			}
+			input,
+			textarea {
+				display: block;
+				width: 290px;
+				height: 30px;
+				background: #fff;
+				border: 1px solid #8b8e91;
+				padding: 0 10px;
+				@include font(#000, 15px, 300, left, 30px);
+				margin-bottom: 5px;
+			}
+			textarea {
+				min-height: 132px;
+			}
+		}
+		.form_column_small {
+			width: 135px;
+			input {
+				width: 135px;
+			}
+		}
+		.customise_send_msg {
+			font-family: "lato", Arial;
+			@include font(#000, 20px, 300, left, 25px);
+			padding-top: 20px;
+			.sign {
+				font-family: "lato", Arial;
+				@include font(#000, 20px, 300, left, 25px);
+				display: block;
+				text-align: right;
+			}
+		}
+	}
+}

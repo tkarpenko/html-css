@@ -1,0 +1,224 @@
+.syncability_title_wraper{
+    position: relative;
+    height: 305px;
+    overflow: hidden;
+}
+.th_content {
+    background: url(../img/bg.jpg) 0 0 repeat;
+}
+.syncability_title_block{
+    width:1920px;
+    height: 305px;
+    background: url(../img/whatis/title_bg.jpg) 0 0 no-repeat;
+    margin-left:-960px;
+    left:50%;
+    top:0px;
+    position: absolute;
+}
+.syncability_inner_title_left{
+    width: 466px;
+    height: 240px;
+    padding-top:45px;
+}
+.syncability_title_do{
+    font-size: 30px;
+    color:#fff;
+    margin-bottom: 35px;
+    float:right;
+    line-height:30px;
+    text-transform: uppercase;
+    margin-right: 75px;
+    text-shadow: 2px 2px 1px rgba(100, 100, 100, 1);
+    clear:both;
+    font-family: Arial;
+}
+.syncability_inner_title_right{
+    width: 514px;
+    height: 240px;
+    padding-top:10px;
+}
+.syncability_title_text{
+    font-size: 30px;
+    color:#fff;
+    margin-bottom: 10px;
+    line-height:30px;
+    text-transform: uppercase;
+    margin-right: 75px;
+    clear:both;
+    font-family: Arial;
+}
+.syncability_title_inner_text{
+    font-size: 12px;
+    font-family: Arial;
+    color:#cfcfcf;
+    line-height: 23px;
+    width: 360px;
+    line-height: 14px;
+    text-align: justify;
+}
+
+.syncability_opotuni{
+    background: url(../img/whatis/oportuni.png) 0 0 no-repeat;
+    margin-left:248px;
+    padding-left: 105px;
+    height:110px;
+    margin-top:29px;
+    margin-bottom:45px;
+    padding-top: 10px;
+}
+.syncability_text_for_title{
+    text-transform: uppercase;
+    font-size: 16px;
+    color:#555555; 
+    margin-bottom:10px;
+}
+.syncability_big_text_for_title{
+    text-transform: uppercase;
+    font-size: 30px;
+    color:#555555; 
+}
+.syncability_list_text{
+    padding-left: 190px;
+    font-size:14px;
+    line-height: 16px;
+    margin-bottom:40px;
+    width:275px;
+    color:#555555;
+}
+.sycability_list_number{
+    font-size: 36px;
+    top:50%;
+    margin-top:-20px;
+    left:144px;
+}
+.syncability_right_block{
+    padding-left: 50px;
+}
+.syncability_left_text{
+    padding-top: 25px;
+}
+.syncability_active_number{
+    color:#f48a1d;
+}
+.jcarousel-container {
+    overflow:hidden;
+}
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal {
+    width:18px;
+    height: 36px;
+    position:absolute;
+    top:295px;
+    cursor: pointer;
+}
+.jcarousel-prev-horizontal{
+    background: url(../img/whatis/arrow.png) 0 0 no-repeat;
+    left:13px;
+}
+.jcarousel-next-horizontal{
+    background: url(../img/whatis/arrow.png) -20px 0 no-repeat;
+    right:13px;
+}
+.jcarousel-prev-horizontal.jcarousel-prev-disabled{
+    background-position: 0px -37px;
+}
+.jcarousel-next-horizontal.jcarousel-next-disabled{
+    background-position: -20px -37px;
+}
+.syncability_search{
+    background: url(../img/whatis/search.png) 0 0 no-repeat;
+    margin-left:280px;
+    margin-top:27px;
+    padding-left: 190px;
+    height:150px;
+    padding-top:25px;
+}
+.syncability_upload{
+    background: url(../img/whatis/upload.png) 0 0 no-repeat;
+    margin-left:260px;
+    margin-top:27px;
+    padding-left: 220px;
+    height:150px;
+    padding-top:25px;
+}
+.syncability_oportynity {
+    background: url(../img/whatis/oportunity.png) 0 0 no-repeat;
+    margin-left:175px;
+    margin-top:27px;
+    padding-left: 220px;
+    height:150px;
+    padding-top:25px;
+}
+.syncability_margin_top{
+    margin-top: -35px;
+}
+.syncability_left_text_top{
+    width:325px;
+    margin:0px 0px 20px 100px;
+    font-size:14px;
+}
+.syncability_left_texts{
+    width: 325px;
+    margin-left: 100px;
+    font-size:14px;
+}
+.syncability_second_li_img{
+    margin-top:25px;
+}
+.syncability_btn_play{
+    width:151px;
+    height:38px;
+    display: block;
+    background: url(../img/whatis/button_enter.png) 0px 0px no-repeat;
+    margin-top:25px;
+    color:#fff;
+    font-size:14px;
+    line-height: 38px;
+    padding-left: 50px;
+}
+.syncability_btn_play:hover{
+    background-position: 0 -38px;
+}
+.syncability_title_left{
+    font-size: 18px;
+    color:#fff;
+    margin-bottom:15px;
+}
+.syncability_left_text .syncability_btn_play{
+    margin:60px 0px 0px 150px;
+}
+.syncability_btn_play.syncability_marg_t {
+    margin-top:34px;
+    margin-left:210px;
+}
+#mycarousel .syncability_oportynity p,.syncability_upload p,.syncability_search p {
+    padding: 0px;
+}
+.syncability_oportynity{
+    padding-top: 25px;
+    margin-bottom:8px;
+}
+.syncability_video_img{
+    left:0px;
+    top:10px;
+    cursor:pointer;
+}
+.syncability_btn_play{
+    width:151px;
+    height:38px;
+    display: block;
+    background: url(../img/whatis/button_enter.png) 0px 0px no-repeat;
+    margin-top:25px;
+    color:#fff;
+    font-size:14px;
+    line-height: 38px;
+    padding-left: 50px;
+}
+.syncability_btn_play.syncability_marg_t {
+    margin-top:34px;
+    margin-left:210px;
+}
+
+#contain_sample_group-label{
+    height:0px;
+}

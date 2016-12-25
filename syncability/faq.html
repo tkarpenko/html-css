@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="css/ui/jquery-ui-1.8.23.custom.css">
+        <link type="text/css" rel="stylesheet" href="css/layout.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#js-accordion").accordion({
+                  header:"h3",
+                  active:false,
+                  autoHeight:false,
+                  collapsible:true
+                });
+                $('.search_play').click(function() {
+                    $(this).toggleClass('pause');
+                })
+                $('.search_act_info, .search_rezult_info_bottom a').click(function(){
+                    $(this).parents('.search_result_row').toggleClass('active');
+                })
+                $('.question li a').click(function() {
+                    $(this).next('div').toggle('fast');
+                })
+            })
+        </script>
+    </head>
+    <body class="schema_blue">
+
+        <div class="container_20">
+            <span class="top_title">Syncability<span>music space</span></span>
+
+            <ul class="top_menu">
+                <li><a href="index.html">Upload Music</a></li>
+                <li><a href="search.html">Search Track</a></li>
+                <li><a href="opportunity.html">Opportunities</a></li>
+                <li><a href="my_account.html">My Account</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li class="active"><a href="faq.html">FAQ</a></li>
+            </ul>
+
+            <div class="line"></div>
+            
+            <div class="container faq">
+
+            <h1>Questions</h1>
+
+            <h2><i class="question_icn th_fl"></i>General</h2>
+            <ul class="question underline">
+                <li>
+                    <a class="init-highlight">There's a lot to discover on the tunehog platform. Where should I start?</a>
+                    <div style="display: block;">
+                        <p>In order to give you a good idea of the potential of the tunehog platform, we have a few suggestions for what features you should check out first. Please keep in mind that we're still in Beta. We will continue to update tunehog over the next few weeks, adding more and more content for you to enjoy.</p>
+                        <p>You can search for specific artists or use our 'Sounds Like' function to find similar sounding new artists and tracks. Try searching for artists such as Coldplay and ACDC, and check out the results.</p>
+                        <p>Although no paid 'Opportunities' have been added to our Sync service yet, we have produced some samples that will show you what these will look like.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="init-highlight">As tunehog is still in Beta, can you let me know what limitations there are with the current version of the service?</a>
+                    <div style="display: block;">
+                        <p>Of course. There are a bunch of features that we're still working on. These will update as the Beta version of the platform evolves. Please find a short list below:</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    General
+                                    <br>
+                                    You cannot currently add songs to a playlist from tunehog Discovery or Music Manager. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Discovery
+                                    <br>
+                                    As Discovery's results depend on "Harry" (our artificial intelligence software), the more searches our users run, the more accurate the results will be. Over the next few weeks, you will notice that search results become more and more accurate. 
+                                    <br>
+                                    If you search by colour code, results will also start to change and improve over the next few weeks. "Harry" is still in the process of matching colour to the mood of each song. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Music Manager<br>
+                                    Our 'Play all tracks' button, which allows a user to automatically stream the entire collection of any artist's work, is not yet enabled. 
+                                    <br>
+                                    Our system of 'following' other users and artists, so you can track their progress and keep up-to-date on their activity, is not yet enabled.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Sync
+                                    <br>
+                                    Your search results will currently return a very narrow choice of music. This is because we are still expanding our catalogue of Sync music. Please upload your tracks and help us to expand and improve the service.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#What_is_a_Sync_" class="init-highlight">What is a Sync?</a><div style="display: block;">
+                        A sync (short for 'synchronisation') is when music is used to accompany a visual image i.e. when music is used on a film, in a TV show, on a commercial, or other forms of multimedia. A licence is required for such usage and this is called a Sync Licence.
+                    </div></li>
+                <li><a href="#What_will_Tunehog_SYNC_do_for_me_" class="init-highlight">What will Tunehog SYNC do for me?</a><div>
+                        <b>ARTISTS:</b><br>
+                        For Artists tunehog Sync provides an opportunity to upload their music and earn money without giving up any ownership or rights to their work. tunehog Sync will enable you to make your music available for Sync. We will act as an administrator for any usage that we obtain and collect revenue from the licensor and pay to you the designated proportion of that revenue.<br>
+                        <b>CUSTOMERS:</b><br>
+                        For Customers - tunehog Sync offers access to an online catalogue of professional music that is perfectly legal and you will be able to choose the perfect fit for your needs. You will be able to present a license to performance rights organization representatives in the event of an inspection.
+                    </div></li>
+                <li><a href="#What_is_a_Sync_Track_" class="init-highlight">What is a Sync Track?</a> <div>
+                        A Sync track is a piece of music chosen by a broadcaster to accompany their piece of media.
+                    </div></li>
+            </ul>
+
+            <h2><i class="men_icn th_fl"></i>Account</h2>
+            <ul class="question underline">
+                <li><a href="#Do_I_need_to_create_an_account_to_use_tunehog_Sync_" class="init-highlight">Do I need to create an account to use tunehog Sync?</a><div>
+                        You can browse music without creating an account. However, you will need to register in order to license a song.
+                    </div></li>
+                <li><a href="#How_can_I_change_my_username_or_password_" class="init-highlight">How can I change my username or password?</a><div>
+                        Changing a Username<br>
+                        Click tunehog profile and select 'edit profile'. Go to Artist and type in your new Username. Save the changes.<br><br>
+                        Changing the Password<br>
+                        Click tunehog profile and select 'edit profile'. Go to Security and type in your new password. Save the changes.
+                    </div></li>
+                <li><a href="#How_can_I_update_my_account_information_" class="init-highlight">How can I update my account information?</a><div style="display: block;">
+                        You can update your writer's card by simply clicking on your profile and selecting 'writer's card'. Update your profile and save the changes.
+                    </div></li>
+            </ul>
+
+            <h2><i class="upload_icn th_fl"></i>Uploading your music</h2>
+            <ul class="question underline">
+                <li><a href="#How_do_I_create_an_account_on_Tunehog_SYNC_" class="init-highlight">How do I create an account on Tunehog SYNC?</a><div>
+                        Choose option 'Sign up', enter your email address and choose a password or you can also sign up via your Facebook, Twitter and Google+ accounts.<br>
+                        After registration - you will have access not only to tunehog Sync but also to all services provided by tunehog such as Discovery, Music Manager and Hitmaker.
+                    </div></li>
+                <li><a href="#What_is_the_uploading_process_" class="init-highlight">What is the uploading process?</a><div>
+                        Uploading your tracks:<br>
+                        <ul>
+                            <li>Click on <i>Upload Music</i> button, select a type of track: if it is original, select original; if it includes samples of previously released track or of it is a cover version select cover.</li>
+                            <li>On the <i>upload</i>, when you are uploading your first track, you will be suggested to enter the stage name. When you are uploading your second track, you will be given a choice to create a new stage name or select the previously created stage name.</li>
+                            <li>Choose a file to upload. Bear in mind, that you can upload uncompressed 44.1kHz stereo WAV format file.</li>
+                            <li>Please fill in basic track information like stage name, song name, keywords, and answer question if song contains samples or not.</li>
+                            <li>Go to next stage of filling information: select a genre, song type, tempo, feel, style, theme, producers, writers, musicians, year of release, lyrics and if the track was used before please select choose where it was used, license expiration date and licensor information.</li>
+                            <li>Go to next stage: co-writers, if there was anyone who helped you with your track please provide details such as name, surname, email, percentage share, DOB, country, city, address, postal code, phone number and CAE number.</li>
+                            <li>Penultimate stage is reading the license agreement for an artist and if you agree with terms and conditions, tick <i>'I agree to the terms of the usage license agreement'</i>, you will be taken to final stage, if not your upload is cancelled.</li>
+                            <li>Final stage represents if the track is fully uploaded or not.</li>
+                            <li>After upload process is completed, it will take some time to process the track with our algorithm system. This will let us approve your tracks and place them within the market. We can speed up the process if you provide us your user name and informed us right after you have finished uploading.</li>
+                        </ul>
+                    </div></li>
+                <li><a href="#What_is_a_Writers_Card_" class="init-highlight">What is a Writers Card?</a><div>
+                        The Writers card is a section were all basic information about Artists is collected and saved. Please enter this data carefully as this is what will appear in the official agreement between you and R&amp;R Music Limited (R&amp;R).
+                    </div></li>
+                <li><a href="#What_if_I_want_to_change_the_data_in_my_Writer___s_Card_" class="init-highlight">What if I want to change the data in my Writer's Card?</a><div>
+                        Please go to Manage Account and then to the Writer's Card tab.
+                    </div></li>
+                <li><a href="#When_I_upload_a_track_I_can_create_a_different_Artist__What_does_this_mean_" class="init-highlight">When I upload a track I can create a different Artist. What does this mean?</a><div>
+                        Your account can represent several Artists for which you have the rights to upload their music to Sync.
+                        You can manage your Artists in My Account dashboard.
+                    </div></li>
+                <li><a href="#What_is_an_original_" class="init-highlight">What is an original?</a><div>
+                        An original is a song you have composed yourself or in co-operation with another artist and you have all the rights to upload it to Sync.
+                    </div></li>
+                <li><a href="#What_is_a_cover_" class="init-highlight">What is a cover?</a><div>
+                        A cover is a song that was first recorded or made popular by somebody else, and you have made your own version of this song.
+                    </div></li>
+                <li><a href="#What_do_I_need_to_know_before_uploading_a_cover_" class="init-highlight">What do I need to know before uploading a cover?</a><div>
+                        To upload the cover and make it available on Sync - you need to own the commercial rights for this song and you will need to upload a supporting document.
+                    </div></li>
+                <li><a href="#What_if_I_don___t_have_commercial_rights_to_cover_a_song_I_want_to_upload_" class="init-highlight">What if I don't have commercial rights to cover a song I want to upload?</a><div>
+                        If you do not have the rights to cover a song, R&amp;R can contact the author/publisher of the original song to attempt to obtain the rights on your behalf. In this case you will need to pay R&amp;R a fee for obtaining the rights.<br>
+                        This option will be available in the Cover Upload process.
+                    </div></li>
+                <li><a href="#What_if_I_don___t_want_R_R_Music_to_contact_the_author_publisher_of_the_original_song_to_attempt_to_obtain_the_rights_for_me_" class="init-highlight">What if I don't want R&amp;R Music to contact the author/publisher of the original song to attempt to obtain the rights for me?</a><div>
+                        You will need to attempt to obtain the rights for that song by yourself, and only after obtaining the rights you can then upload your track.
+                    </div></li>
+                <li><a href="#What_if_the_Original_song_contains_a_Sample_" class="init-highlight">What if the Original song contains a Sample?</a><div>
+                        If your song contains a sample or elements of another recording made by another author, you will need written permission from the owner.<br>
+                        When uploading the track with a sample, you will need to specify the owner and the publisher of this sample as well as provide us (R&amp;R) with a copy of the Sample Clearance Agreement. Please bear in mind that one sample may require two clearances: one for the sound recording and another for the publishing.
+                    </div></li>
+                <li><a href="#What_is_a_Sample_Clearance_Agreement_for_the_Sample_" class="init-highlight">What is a Sample Clearance Agreement for the Sample?</a><div>
+                        Sampling potentially violates the law regarding two separate copyrights, the copyright of the <i>musical composition</i> (the PA Copyright) and the copyright of the <i>sound recording</i> (SR Copyright). You'll need to find out who the original writers of the work are, and which publisher(s), if any, represent their interest or share of copyright in the song.  You need to obtain the permission of those copyright holders before using the original song or master and provide us (R&amp;R) with a copy of Sample Clearance Agreement.
+                    </div></li>
+                <li><a href="#In_what_format_should_I_upload_a_track_" class="init-highlight">In what format should I upload a track?</a><div>
+                        tunehog Sync can only accept files in .wav format.
+                    </div></li>
+                <li><a href="#After_I_upload_a_track__is_it_instantly_available_in_the_tunehog_SYNC_catalogue_" class="init-highlight">After I upload a track, is it instantly available in the tunehog SYNC catalogue?</a><div>
+                        No, there is a process of a quality control conducted by the tunehog Sync team to ensure that our customers get the best quality possible. Your track will be processed by our algorithms and reviewed by our team. Please allow us a fair amount of time to make it public. In case you need more information, please contact us at <a href="mailto:support@tunehog.com">support@tunehog.com</a> or via <a href="http://sync.tunehog.com/index/feedback">Feedback form</a>.
+                    </div></li>
+                <li><a href="#What_is_the_overall_song_rating_and_how_is_it_calculated_" class="init-highlight">What is the overall song rating and how is it calculated?</a><div>
+                        Each track is listened to and analysed by the tunehog Sync team who provide rating to each song on 3 parameters: sound quality, song quality, song description.
+                    </div></li>
+                <li><a href="#What_is_a_Hitscore_" class="init-highlight">What is a Hitscore?</a><div>
+                        The Hitscore illustrates the song's potential to be a hit based on how close it is sonically to other hits in the past and present. For more information please visit: <a href="http://hitmaker.tunehog.com">http://hitmaker.tunehog.com</a>
+                    </div></li>
+                <li><a href="#Why_was_my_track_not_approved_" class="init-highlight">Why was my track not approved?</a><div>
+                        We will provide you with a written confirmation detailing the reasons for declining your unapproved track. This could be due to the use of explicit lyrics or due to low sound quality on the track.
+                        We may ask you to upload another track that is of higher sound quality or ask you to provide a more full description.
+                    </div></li>
+                <li><a href="#How_can_I_change_some_information_about_the_track__after_uploading_" class="init-highlight">How can I change some information about the track, after uploading?</a><div>
+                        After the track is approved you cannot change any information about it. You can only delete it or change the track's status from active to inactive.<br>
+                        If you have written wrong information about the track - please email us at <a href="maito:support@tunehog.com">support@tunehog.com</a> or use <a href="http://sync.tunehog.com/index/feedback">Feedback form</a> and explain your problem.
+                    </div></li>
+                <li><a href="#How_can_I_increase_the_chances_of_my_track_being_purchased_" class="init-highlight">How can I increase the chances of my track being purchased?</a><div>
+                        All parameters are important: quality of the song, sound, relevant description, genres, keywords, song lyrics, and your track Hitscore.<br>
+                        It is therefore important that you provide as much information about your track as possible and are aware of any new opportunities in the 'opportunities' section of the site.
+                    </div></li>
+                <li><a href="#How_much_does_it_cost_to_upload_my_track_to_tunehog_Sync_" class="init-highlight">How much does it cost to upload my track to tunehog Sync?</a><div>
+                        It is free to submit your songs to our catalogue.
+                    </div></li>
+                <li><a href="#How_can_I_withdraw_my_songs_from_the_tunehog_SYNC_catalogue_" class="init-highlight">How can I withdraw my songs from the tunehog SYNC catalogue?</a><div>
+                        Just delete your track in your My Account dashboard or change the track's status from active to not active.
+                    </div></li>
+            </ul>
+
+            <h2><i class="target_icn th_fl"></i>Opportunities</h2>
+            <ul class="question underline">
+                <li><a href="#What_is_an_Opportunity_" class="init-highlight">What is an Opportunity?</a><div>
+                        An opportunity is a request for music from anyone with specific needs.
+                    </div></li>
+                <li><a href="#Who_can_create_an_Opportunity_" class="init-highlight">Who can create an Opportunity?</a><div>
+                        Any registered user can create an opportunity and find the perfect music for their needs.
+                    </div></li>
+                <li><a href="#How_do_I_create_an_Opportunity_" class="init-highlight">How do I create an Opportunity?</a><div style="display: block;">
+                        To create a new opportunity please click on the "Submit Request" button on the opportunities page and fill in all information about your request. If you want to save a draft of your request please un-click the Published checkbox.
+                    </div></li>
+                <li><a href="#Where_I_can_manage_my_Opportunities_" class="init-highlight">Where I can manage my Opportunities?</a><div>
+                        In My Account dashboard.
+                    </div></li>
+                <li><a href="#How_do_I_find_Opportunities_" class="init-highlight">How do I find Opportunities?</a><div>
+                        In the 'opportunities' section you will find the list of all available opportunities. If you want to find anything specific - please use our Advanced Search tool.
+                    </div></li>
+                <li><a href="#How_can_I_submit_my_track_to_an_Opportunity_" class="init-highlight">How can I submit my track to an Opportunity?</a><div>
+                        To submit your track to the opportunity just click on the 'respond' icon. You will be forwarded to the page where you can either choose from your approved tracks or upload a new one.
+                    </div></li>
+                <li><a href="#What_if_I_like_the_Opportunity__but_I_need_time_to_consider_if_I_want_to_respond_to_it_" class="init-highlight">What if I like the Opportunity, but I need time to consider if I want to respond to it?</a><div>
+                        If you need time, just "Pin" it (click on the Pin button in the Actions section) and the opportunity will be saved so that you can get back to it anytime by visiting the my account opportunities tab.
+                    </div></li>
+                <li><a href="#What_if_I_want_to_make_some_changes_to_my_Opportunity_" class="init-highlight">What if I want to make some changes to my Opportunity?</a><div>
+                        To make some changes in your Request, you just need to open it in 'My Account' opportunities tab, and choose 'Edit' in the 'Action' section.
+                    </div></li>
+                <li><a href="#What_if_I_want_to_create_an_Opportunity_for_a_cover_version_" class="init-highlight">What if I want to create an Opportunity for a cover version?</a><div>
+                        If you want to make a request for a cover version, after clicking 'Submit Request', you need to choose the 'Cover Version' section beside 'Request an original song' section.
+                    </div></li>
+                <li><a href="#What_if_I_responded_to_an_Opportunity_but_I_now_wish_to_withdraw_my_track_" class="init-highlight">What if I responded to an Opportunity but I now wish to withdraw my track?</a><div>
+                        To withdraw your track from an opportunity, you just need to open it in 'My Account' opportunities tab, and choose 'Delete' in the Action section.
+                    </div></li>
+                <li><a href="#Does_it_cost_me_any_money_to_create_an_Opportunity_" class="init-highlight">Does it cost me any money to create an Opportunity?</a><div>
+                        There is no fee for creating an opportunity.
+                    </div></li>
+            </ul>
+
+            <h2><i class="magnifier_icn th_fl"></i>Search/Browse</h2>
+            <ul class="question underline">
+                <li><a href="#What_is_the_fastest_way_to_search_for_music_on_your_site_" class="init-highlight">What is the fastest way to search for music on your site?</a><div>
+                        Searching for music is easy with the search bar located throughout the site. You can also do a more specific search by clicking on Search button and using the filters.
+                    </div></li>
+                <li><a href="#How_can_I_find_a_specific_song_" class="init-highlight">How can I find a specific song?</a><div>
+                        You search for specific song by clicking on 'Advanced search' and specifying Genre, Song type, Tempo, Feel, Style or Theme. Another option is to use our Sounds Like technology; you simply need to type in Song name, Artists, Keywords or Lyrics.
+                    </div></li>
+                <li><a href="#Can_I_save_my_favourite_songs_so_I_can_review_them_later_" class="init-highlight">Can I save my favourite songs so I can review them later?</a><div>
+                        Yes, when you sign in, you can select your favourite songs by clicking the heart icon next to each song. Then, the next time you visit the site; you can review your saved favourites in Saved Tracks under My Account Section. To remove a song from your favourites, simply click the heart icon to the right of the song in the list.
+                    </div></li>
+                <li><a href="#Can_I_browse_music_by_categories_like_themes__moods__etc___" class="init-highlight">Can I browse music by categories like themes, moods, etc.?</a><div>
+                        You can browse music library by clicking on the Advanced Search bar. There you can specify what theme or mood you are searching for.
+                    </div></li>
+            </ul>
+
+            <h2><i class="pound_icn th_fl"></i>Payment</h2>
+            <ul class="question underline">
+                <li><a href="#How_much_will_I_get_paid_" class="init-highlight">How much will I get paid?</a><div>
+                        The party that wishes to use your track for their media must buy the rights before they are allowed to use it. You will be paid: 20% of Gross Revenue and 50% of Gross Publishing Revenue<br>
+                        The price for the track depends on the type of license used with full pricing details found at (<a href="http://sync.tunehog.com/index/pricing">http://sync.tunehog.com/index/pricing</a>). R&amp;R will charge a commission fee of 20% on all Sync sales and any amounts due to you from this are netted against other expenses you may have incurred during the same month on the tunehog platform. All payments will be made in GBP (?).
+                    </div></li>
+                <li><a href="#How_often_will_I_get_paid_" class="init-highlight">How often will I get paid?</a><div>
+                        R&amp;R will provide you with a statement detailing the amount of Sync sales during each calendar sales cycle within 15 days of the end of each calendar month (or the next following business day if such day falls on a weekend or holiday).<br><br>
+                        If the net amount due to you is at least ?25 payment in full will be made within 30 days of receipt of your statement. Should the balance due to you be less than ?25 this will be carried over to each following calendar sales cycle until the minimum payment level is achieved.
+                    </div></li>
+                <li><a href="#How_will_I_get_paid_" class="init-highlight">How will I get paid?</a><div>
+                        Payment in GBP will be made via PayPal to the nominated PayPal account detailed in your user profile at the time of transfer. If you do not have a PayPal account please visit <a href="http://paypal.com">http://paypal.com</a> and create your account for free.
+                    </div></li>
+                <li><a href="#How_can_I_split_payments_between_myself_and_other_parties_" class="init-highlight">How can I split payments between myself and other parties?</a><div>
+                        tunehog Sync pays all monies due to the nominated PayPal account of the person who has created the account, uploaded the tracks and with whom R&amp;R have the Sync agreement. It is the responsibility of that person to distribute the funds between the co-writers.
+                    </div></li>
+                <li><a href="#How_will_I_know_that_my_music_was_purchased_" class="init-highlight">How will I know that my music was purchased?</a><div>
+                        We will send you a report after each accounting period detailing what, where and when your music was purchased .
+                    </div></li>
+            </ul>
+
+            <h2><i class="pricelist_icn th_fl"></i>Pricing and checkout</h2>
+            <ul class="question underline">
+                <li><a href="#How_are_prices_determined_" class="init-highlight">How are prices determined?</a><div>
+                        We provide pricing guidance to help you determine the price range according to the required license. Read more in pricing page.
+                    </div></li>
+                <li><a href="#What_exactly_I_am_buying_" class="init-highlight">What exactly I am buying?</a><div>
+                        You are buying the right to use a song in a specific way according to its usage.
+                    </div></li>
+            </ul>
+
+            <h2><i class="cart_icn th_fl"></i>Buying a license for a track</h2>
+            <ul class="question underline">
+                <li><a href="#How_can_I_find_the_best_music_for_my_needs_" class="init-highlight">How can I find the best music for my needs?</a><div>
+                        In the 'Search' section you will find the list of all available tracks. If you want to find something specific please use our 'Advanced Search'.
+                    </div></li>
+                <li><a href="#What_is_a_Usage_type_and_why_is_price_different_" class="init-highlight">What is a Usage type and why is price different?</a><div>
+                        Usage type defines the nature of your product, exclusivity, budget terms and/or the duration of the license. The price is defined according to the chosen usage type. The full list of usage types and prices is available in the pricing section (<a href="http://sync.tunehog.com/index/pricing">http://sync.tunehog.com/index/pricing</a>).
+                    </div></li>
+                <li><a href="#What_if_I_like_the_track_but_I_need_time_to_decide_if_I_want_to_buy_it_" class="init-highlight">What if I like the track but I need time to decide if I want to buy it?</a><div>
+                        If you need time, just click on the 'Like' button in the Actions section and this track will be saved and you will be able to get back to it anytime by visiting 'Saved Tracks' tab in 'My Account'.
+                    </div></li>
+                <li><a href="#What_if_I_want_to_buy_a_track_but_none_of_the_usage_types_suits_me_" class="init-highlight">What if I want to buy a track but none of the usage types suits me?</a><div>
+                        Please contact us at <a href="mailto:support@tunehog.com">support@tunehog.com</a> or via <a href="http://sync.tunehog.com/index/feedback">Feedback form</a> and we will get back to you shortly.
+                    </div></li>
+                <li><a href="#How_can_I_pay_for_my_order_" class="init-highlight">How can I pay for my order?</a><div>
+                        All payments are processed via PayPal. If you do not have a PayPal account please visit <a href="http://paypal.com">http://paypal.com</a> and create your account for free.
+                    </div></li>
+                <li><a href="#How_to_fill_in_correctly_the_Company_info_" class="init-highlight">How to fill in correctly the Company info?</a><div>
+                        Production company: Please enter your company name (if you are an individual person - please enter here your full name);<br>
+                        Production details: describe your project;<br>
+                        Production start date: your project release date;<br>
+                        Broadcaster(s): Company/Companies which will be responsible for distributing your project;<br>
+                        Broadcast territories: if it will be distributed on the internet, please enter worldwide. If your project will be shown only in definitive countries, please specify the territories.
+                    </div></li>
+                <li><a href="#What_if_I_want_to_purchase_one_track_with_several_types_of_usage_" class="init-highlight">What if I want to purchase one track with several types of usage?</a><div>
+                        You will need to purchase each usage type separately.
+                    </div></li>
+                <li><a href="#What_about_the_security_of_the_payment_" class="init-highlight">What about the security of the payment?</a><div>
+                        All payments are processed via PayPal. For security reasons, we do not store any information regarding your credit cards and your credit card number will not be communicated to us at any time.<br>
+                        Rights and Licenses<br>
+                        If I license my music to tunehog Sync, can I still do other things with it?<br>
+                        Definitely. You are providing your music to tunehog Sync on a non-exclusive basis, and are not restricted in any way with respect to what else you may want to do with your music. In certain cases, a customer may want to have the exclusive right to use the music for a particular application, in which case tunehog Sync would deal directly with you to get your approval and negotiate such an exclusive arrangement.<br>
+                        Why purchase a license?<br>
+                        To ensure that you are using the music legally by paying a licensing fee and to be able to present a license to performance rights organization representatives in the event of an inspection.<br>
+                        What happens if a Customer requires my music on an exclusive basis?<br>
+                        When a customer wants to use your music exclusively, they will need to contact tunehog Sync and we will negotiate the terms and price. We will contact you for your approval on the best terms we've managed to negotiate on your behalf.<br>
+                        What will happen if the Artist whose track I have bought has terminated their agreement?<br>
+                        Termination of the agreement between tunehog Sync and the Artist will not affect any existing licensing agreements with the customer.
+                    </div></li>
+            </ul>
+
+            <h2><i class="padlock_icn th_fl"></i>Rights and licenses</h2>
+            <ul class="question">
+                <li><a href="#If_I_license_my_music_to_tunehog_Sync__can_I_still_do_other_things_with_it_" class="init-highlight">If I license my music to tunehog Sync, can I still do other things with it?</a><div>
+                        Definitely. You are providing your music to tunehog Sync on a non-exclusive basis, and are not restricted in any way with respect to what else you may want to do with your music. In certain cases, a customer may want to have the exclusive right to use the music for a particular application, in which case tunehog Sync would deal directly with you to get your approval and negotiate such an exclusive arrangement.
+                    </div></li>
+                <li><a href="#Why_purchase_a_license_" class="init-highlight">Why purchase a license?</a> <div>
+                        To ensure that you are using the music legally by paying a licensing fee and to be able to present a license to performance rights organization representatives in the event of an inspection.
+                    </div></li>
+                <li><a href="#What_happens_if_a_Customer_requires_my_music_on_an_exclusive_basis_" class="init-highlight">What happens if a Customer requires my music on an exclusive basis?</a><div>
+                        When a customer wants to use your music exclusively, they will need to contact tunehog Sync and we will negotiate the terms and price. We will contact you for your approval on the best terms we've managed to negotiate on your behalf.
+                    </div></li>
+                <li><a href="#What_will_happen_if_the_Artist_whose_track_I_have_bought_has_terminated_their_agreement_" class="init-highlight">What will happen if the Artist whose track I have bought has terminated their agreement?</a><div>
+                        Termination of the agreement between tunehog Sync and the Artist will not affect any existing licensing agreements with the customer.
+                    </div></li>
+            </ul>
+
+        </div>
+    </body>
+</html>

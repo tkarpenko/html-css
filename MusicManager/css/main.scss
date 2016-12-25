@@ -1,0 +1,167 @@
+@import "lib/reset";
+@import "lib/mixins";
+@import "lib/grid";
+@import "lib/overwrites";
+@import "lib/blocks/typographic";
+@import "lib/blocks/links";
+@import "lib/blocks/buttons";
+@import "lib/blocks/tracks_albums";
+@import "lib/blocks/charts";
+@import "lib/blocks/icons";
+@import "lib/blocks/navigation_and_menu";
+@import "lib/blocks/forms";
+
+@import "lib/pages/profile";
+@import "lib/pages/upload";
+@import "lib/pages/fullscreen_gallery";
+@import "lib/pages/messages";
+@import "lib/pages/what_is_mm";
+@import "lib/pages/shared_tracks";
+@import "lib/pages/galleries";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url("../img/bg.jpg") repeat #f2f0f0;
+}
+
+.ie8 {
+  display:none;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.clear {
+  clear: both;
+}
+
+
+.mm_genre {
+  @include font(#fff, 14px, 400, center, 1);
+  @include text_shadow (rgba(255, 255, 255, 0.93), 0px, 0px, 0px);
+  letter-spacing: 0px;
+  background-color: #bbb1a1;
+  padding: 0 3px;
+  &:hover {
+    background-color: #43acd5;
+  }
+}
+
+.mm_space_diagram {
+  margin: 10px 0;
+  .info {
+    overflow: hidden;
+    height: 15px;
+    margin-bottom: 5px;
+  }
+  .progress {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: #e5e4d9;
+    height: 5px;
+    div {
+      border: none;
+      background: #b5a489;
+      height: 5px;
+    }
+  }
+}
+
+.mm_block {
+  & > dd {
+    display: none;
+  }
+  &.open > dd {
+    display: block;
+  }
+  &.close > dd {
+    display: none;
+  }
+}
+
+.mm_block_head {
+  font-size: 0;
+  letter-spacing: -4px;
+  .left {
+    display: inline-block;
+    vertical-align: bottom;
+    letter-spacing: 0px;
+    width: 45%;
+    text-align: left;
+  }
+  .line {
+    height: 0px;
+    border-top: 1px solid #d8d7cd;
+    border-bottom: 1px solid #fff;
+    margin: 3px 0;
+    width: 100%;
+    clear: both;
+  }
+  .right {
+    display: inline-block;
+    vertical-align: bottom;
+    letter-spacing: 0px;
+    width: 55%;
+    text-align: right;
+    
+  }
+}
+
+.mm_title {
+  font-family: "Lucida Grande";
+  @include font(#9e9a93, 14px, 400, left, 1.1);
+  margin: 25px 0 4px 0;
+  @include ellipsis;
+  dt {
+    font-family: inherit;
+    font-weight: 700;
+    margin-right: 5px;
+    text-transform: uppercase;
+    display: inline;
+  }
+  dd {
+    font-family: inherit;
+    display: inline;
+  }
+}
+
+
+
+.mm_tags {
+  @include ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+  color: #9e9a93;
+  font-size: 12px;
+  width: 100%;
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 14px;
+    width: 13px;
+    margin-right: 5px;
+    background: url('../img/mm_track_icons.png') no-repeat -5px -8px;
+  }
+}
+
+.mm_load_more {
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+  
+.darkened {
+  background-color: rgba(207, 192, 170, 0.2);
+  border-top: 1px solid #d1c6be;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8); 
+}
+
+

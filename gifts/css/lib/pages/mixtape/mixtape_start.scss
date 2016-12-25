@@ -1,0 +1,47 @@
+h1 .gifts_black {
+	color: #000;
+	font-family: 'Roboto Slab', serif;
+}
+.gifts_subtitle {
+	font-family: 'lato', Arial;
+	@include font (#000, 15px, 400, left, 18px);
+	margin-bottom: 25px;
+}
+.gifts_preset {
+	height: 339px;
+	width: 322px;
+	.title {
+		font-family: 'Roboto Slab', serif;
+		@include font(#ffcc00, 28px, 400, center, 72px);
+		display: block;
+	}
+	.info {
+		font-family: 'lato', Arial;
+		@include font(#000, 15px, 400, left, 18px);
+		display: block;
+		padding: 0 30px;
+		margin-top: 183px;
+	}
+	&.choose {
+		background: url("../img/mixtape/choose_preset.png") no-repeat center center;
+		float: left;
+	}
+	&.build {
+		background: url("../img/mixtape/build_preset.png") no-repeat center center;
+		float: right;
+	}
+}
+
+.gifts_left,
+.gifts_right {
+	width: 322px;
+	&.wide {
+		width: 340px;
+	}
+}
+.gifts_left {
+	float: left;
+}
+.gifts_right {
+	float: right;
+}

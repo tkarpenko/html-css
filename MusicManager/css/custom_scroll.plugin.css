@@ -1,0 +1,108 @@
+.custom_scroll {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.custom_scroll .custom_scroll_place {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  padding-right: 0 !important;
+}
+.custom_scroll .custom_scroll_hide_scroll {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.custom_scroll .custom_scroll_controls { 
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 17px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
+
+.custom_scroll .custom_scroll_controls.hide {
+  display: none;
+}
+
+.custom_scroll .custom_scroll_track {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 15px;
+}
+
+.custom_scroll .custom_scroll_track:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  border-left: 1px solid #d8d7cd;
+  border-right: 1px solid #d8d7cd;
+  z-index: 0;
+}
+
+.messages .custom_scroll .custom_scroll_track:after {
+  border-color: #d7d7d7;
+}
+
+.custom_scroll .custom_scroll_arrow,
+.custom_scroll .custom_scroll_slider {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.custom_scroll .custom_scroll_arrow {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: url('../img/mm_vsmall_icons.png') no-repeat;
+}
+
+.custom_scroll .custom_scroll_arrow.up {
+  background-position: -15px -15px;
+}
+
+.custom_scroll .custom_scroll_arrow.down {
+  background-position: 0 -15px;
+}
+
+.custom_scroll .custom_scroll_slider {
+  position: relative;
+  min-height: 5px;
+  width: 6px;
+  margin: 0 auto;
+  background: url('../img/mm_scroll_bg.jpg') repeat-y top left #bbb1a1;
+  display: block;
+  z-index: 1;
+}
+
+.messages .custom_scroll .custom_scroll_slider {
+  background-color: #aeaeae;
+}
+
+.custom_scroll .custom_scroll_slider:active,
+.custom_scroll .custom_scroll_slider:focus {
+  background-image: url('../img/mm_scroll_active_bg.jpg');
+}

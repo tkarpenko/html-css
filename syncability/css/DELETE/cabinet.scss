@@ -1,0 +1,298 @@
+.page_head h2 {
+    @include font(#e9e5dc, 18px, 700);
+    @include text_shadow (#403f3c, 1px, 0px, 3px);
+    margin: 0 0 0 25px;
+    padding: 13px 0 0 0;
+}
+
+
+.head_tabs ul {
+    list-style: none;
+    margin: 16px 0 0 0;
+    overflow: hidden;
+    padding: 0;
+    li {
+        float: left;
+        a {
+            @include rounded_border (3px, 3px, 0, 0);
+            @include font(#e9e5dc, 14px, 400);
+            display: block;
+            height: 20px;
+            padding: 15px 25px;
+            text-decoration: underline;
+            @include text_shadow (#403f3c, 1px, 0px, 3px);
+        }
+        &.active a {
+            background: url('../img/current_link_bg.png') repeat-x;
+            @include font(#404040, 14px, 700);
+            position: relative;
+            text-decoration: none;
+            @include text_shadow (#fff, 1px, 0px, 3px);
+        }
+    }
+}
+
+
+.head_breadcrumbs {
+    border-bottom: 1px solid #d5d5d4;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            float: left;
+            a {
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                height: 20px;
+                padding: 15px  30px 15px 15px;
+                position: relative;
+                text-decoration: underline;
+                &:after {
+                    background: url('../img/small_icons.png') -52px -107px no-repeat;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    right: -6px;
+                    height: 13px;
+                    width: 24px;
+                }
+            }
+            &.active a {
+                color: #404040;
+                @include ellipsis;
+                display: inline-block;
+                font-weight: 700;
+                text-decoration: none;
+                @include text_shadow (#fff, 1px, 0px, 3px);
+                width: 450px;
+                &:after {
+                    background: none;
+                    float: none;
+                }
+            }
+        }
+    }
+}
+
+
+.uploaded_files {
+    span {
+        color: #8b9918;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 10px 0 55px;
+        display: block;
+        &:before {
+            content: "";
+            display: block;
+            float: left;
+            margin-top: -2px;
+            width: 21px;
+        }
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+
+.pricing {
+    margin: 0 auto;
+    tr {
+        color: #6d6a65;
+    }
+    td {
+        padding: 5px 10px;
+        line-height: 1.5;
+    }
+    .hover:hover {
+        background-color: #fff;
+    }
+    .title {
+        font-weight: 700;
+    }
+    a {
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    p {
+        width: 800px;
+    }
+}
+
+
+.advocate {
+    background-color: #fff;
+    .left_col {
+        padding: 11px 55px 0px 30px;
+        width: 295px;
+    }
+    .center_col {
+        padding: 11px 0 0 0;
+        width: 325px;
+    }
+    .right_col {
+        padding: 11px 20px 0 0;
+        width: 190px;
+    }
+}
+
+
+.doc_list {
+    margin: 0;
+    padding: 10px 0;
+    dt {
+        color: #050708;
+        float: none;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+    dd {
+        margin: 5px 0 0 0;
+        padding: 0;
+        a {
+            padding: 0 0 0 20px;
+            position: relative;
+            &:before {
+                content: "";
+                background: url(../img/small_icons.png) -104px -79px no-repeat;
+                display: block;
+                height: 17px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 17px;
+            }
+        }
+    }
+}
+
+
+.advocate_title {
+    color: #9E9A93;
+    font-size: 12px;
+    padding: 11px 10px 0px 30px;
+    width: 375px;
+    a {
+        display: block;
+        font-size: 16px;
+        height: 18px;
+        padding: 3px 0;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: normal;
+    }
+}
+
+
+.bills_list {
+    .description_col {
+        height: 28px;
+        padding: 0 10px 0 0;
+        @include ellipsis;
+        width: 240px;
+        &.title {
+            height: auto;
+        }
+    }
+    .search_result_row {
+        padding-top: 11px;
+        &.active {
+            .search_info_line {
+                display: none;
+            }
+            .description_col {
+                height: auto;
+                overflow: visible;
+                white-space: normal;
+            }
+            .artist_col {
+                height: auto;
+                overflow: visible;
+                white-space: normal;
+                word-break: break-all;
+            }
+        }
+    }
+    .state_col {
+        width: 60px;
+    }
+    .artist_col {
+        width: 145px;
+        height: 28px;
+        @include ellipsis;
+    }
+    .creation_col {
+        margin-left: 20px;
+        width: 72px;
+    }
+}
+
+
+.licenses_list {
+    .startdate_col {
+        padding-left: 35px;
+        width: 110px;
+    }
+    .expdate_col {
+        padding-right: 35px;
+        width: 200px;
+    }
+}
+
+
+.edit_form {
+    background-color: #fff;
+    margin-top: -20px;
+    padding: 20px 20px 0 20px;
+    .control-label {
+        right: 187px;
+    }
+    .form_right_col {
+        width: 173px;
+    }
+    .checkbox_link {
+        margin-top: 8px;
+    }
+    .reqdetail_genre {
+        display: table;
+        overflow: visible;
+        line-height: 25px;
+        white-space: normal;
+    }
+    .reqdetail_genre_title {
+        display: table-cell;
+        height: 16px;
+        float: none;
+        line-height: 15px;
+        padding: 2px 4px 0 0;
+        margin: 0;
+        vertical-align: top;
+        width: 1px;
+        white-space: nowrap;
+    }
+    .reqdetail_genre_txt {
+        display: table-cell;
+        height: 16px;
+        padding: 2px 0 0 0;
+        margin: 0;
+        line-height: 15px;
+        overflow: visible;
+        vertical-align: top;
+        white-space: normal;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-all;
+    }
+    #deadline-label .control-label {
+        right: 0px;
+        width: 75px;
+        left: -85px;
+    }
+}

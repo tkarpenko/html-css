@@ -1,0 +1,180 @@
+.lp .page_5 {
+  width: 100%;
+  background: url("../img/page5/page5_bg.jpg") center bottom no-repeat #3c6355;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .tableCell {
+    vertical-align: top;
+  }
+  .page_5_container {
+    width: 890px;
+    margin: 0 auto;
+    padding-right: 120px;
+    .page_5_content {
+      width: 390px;
+      float: left;
+      margin-top: 125px;
+       .page_5_title {
+        font-family: "Solomon Sans SemiBold";
+        @include font(#fff, 30px, 400, left, 30px);
+        margin: 30px 0 40px 0;
+        white-space: nowrap;
+      }
+      .page_5_info,
+      .page_5_info p {
+        @include font(#fff, 16px, 400, left, 33px);
+        width: 390px; 
+      }
+      .page_5_info p {
+        margin-top: 30px;
+        white-space: nowrap;
+      }
+      .lp_google_play {
+        margin-top: 30px;
+      }
+    }
+    .page_5_phone {
+      background: url('../img/page5/phone.png') right center no-repeat;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      float: right;
+      height: 550px;
+      width: 300px;
+      margin-top: 125px;
+      position: relative;
+    }
+  }
+  .lp_by_tunehog {
+    font-family: "Solomon Sans Thin";
+    @include font(#fff, 16px, 400, left, 45px);
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    margin-right: -279px;
+    white-space: nowrap;
+    span {
+      font-family: "Solomon Sans SemiBold";
+      @include font(#fff, 16px, 400, left, 45px);
+      display: inline-block;
+      vertical-align: baseline;
+      margin: 0 5px;
+    }
+  }
+  .lp_to_top {
+    font-family: "Solomon Sans Thin";
+    @include font(#fff, 16px, 400, left, 45px);
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -500px;
+  }
+} 
+
+
+@media screen and (max-width: 1000px) {
+  .lp .page_5 .page_5_container {
+    width: auto;
+    padding: 0 10px;
+  }
+  .lp .page_5 .lp_to_top {
+    left: 0;
+    margin-left: 0;
+  }
+  .lp .page_5 .lp_by_tunehog {
+    right: 220px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .lp .page_5 .page_5_container .page_5_content {
+    float: none;
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+  }
+  .lp .page_5 .page_5_container .page_5_phone {
+    float: none;
+    width: 100%;
+    background-position: center center;
+    height: 416px;
+    height: 222px;
+    margin-top: 0;
+  }
+  .lp .page_5 .page_5_container .page_5_content .page_5_title {
+    font-size: 46px;
+    padding-top: 0;
+  }
+  .lp .page_5 .page_5_container .page_5_content .page_5_info, 
+  .lp .page_5 .page_5_container .page_5_content .page_5_info p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .lp .page_5 .lp_by_tunehog {
+    bottom: 62px;
+    right: 0;
+    margin-right: 0;
+  }
+  .lp .page_5 .page_5_container {
+    margin-top: 0;
+  }
+  .lp .page_5 .page_5_container .page_5_content .page_5_title {
+    margin: 10% 0 0 0;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .lp .page_5 .page_5_container .page_5_content .page_5_title {
+    font-size: 35px;
+  }
+  .lp .page_5 .page_5_container .page_5_content .page_5_info, 
+  .lp .page_5 .page_5_container .page_5_content .page_5_info p {
+    font-size: 16px;
+  }
+  .lp .page_5 .lp_to_top {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-height: 770px) and (max-width: 720px){
+  .lp .page_5 .lp_by_tunehog {
+    bottom: 76px;
+    right: 10px;
+    margin-right: 0;
+  }
+  .lp .page_5 .lp_to_top {
+    bottom: 104px;
+    left: auto;
+    margin-left: 0;
+    right: 10px;
+  }
+}
+
+@media screen and (max-height: 730px) and (min-width: 721px) {
+  .lp .page_5 .page_5_container .page_5_phone {
+    height: 518px;
+    top: 30px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-height: 680px) and (max-width: 720px) {
+  .lp .page_5 .page_5_container .page_5_content .page_5_title {
+    font-size: 25px;
+  }
+  .lp .page_5 .page_5_container .page_5_content .page_5_info, 
+  .lp .page_5 .page_5_container .page_5_content .page_5_info p {
+    font-size: 16px;
+  }
+  .lp .page_5 .page_5_container .page_5_content .lp_google_play,
+  .lp .page_5 .page_5_container .page_5_content .page_5_info p {
+    margin-top: 10px;
+  }
+}
+

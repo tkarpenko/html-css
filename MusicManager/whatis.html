@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- tuneHog styles (header and footer) -->
+  <link href="http://assets.tunehog.com/style_v2.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="http://assets.tunehog.com/header_v2.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="http://assets.tunehog.com/footer.css" media="all" rel="stylesheet" type="text/css" />
+
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="css/custom_scroll.plugin.css" rel="stylesheet" type="text/css"/>
+  <!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css"/> <![endif]-->
+  
+  
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="js/jquery.placeholder.js"></script>
+  <script src="js/jquery.cycle.all.js"></script>
+  <script src="js/custom_scroll.plugin.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/whatis.js"></script>
+  <script src="js/messages.js"></script>
+  
+  <!-- tuneHog js (header and footer) -->
+  <script src="http://assets.tunehog.com/header.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $('.home_slider .slider').cycle({ 
+        fx: 'scrollHorz',
+        speed: 'fast',
+        timeout: 5000,
+        pause:   1,
+        next: '.home_slader_arw.next',
+        prev: '.home_slader_arw.prev'
+      });
+    })
+  </script>
+</head>
+
+<body>
+   
+  <div class="what_is_mm popup close">
+    <div class="popup_content">
+      <div class="js-video-player text_center"></div>
+      <button type="button" class="mm_btn js-video-close">Close</button>
+    </div>
+  </div>
+  <div class="th_container">
+    <div class="th_header_v2">
+      <div class="th_page th_pr">
+        <a href="http://accounts.tunehog.com" title="" class="th_header_v2_logo"></a>
+        <div class="th_clear"></div>
+        <div class="th_header_v2_login th_fr">
+          <a class="js-header-menu-opener" data-href="#profile-menu" href="#" title="User's Profile">
+            <span class="th_header_v2_login_nick">Tetiana Karpenko</span>
+            <img alt="Tetiana Karpenko" class="th_fr" height="60" src="/default/user.png" width="60">
+          </a>
+          <div class="th_clear"></div>
+          <div class="th_header_v2_login_popup th_dn js-header-menu" id="profile-menu">
+            <a href="profile.html">My Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="edit_profile.html">Edit profile</a>
+          </div>
+        </div>
+        
+        <div class="th_clear"></div>
+      </div>
+    </div>
+
+    <div class="th_header_v2_menu">
+      <div class="th_page th_pr">
+       <ul class="th_header_v2_menu_list">
+        <li class="th_header_v2_menu_dropdown">
+          <a href="/" title="" class="th_header_v2_menu_resname_beta"><span>Services<i></i><em></em></span>
+          </a>
+         <ul class="th_dn">
+            <li><a href="http://tunehogdiscovery.com" title="Discovery">Discovery</a></li>
+            <li><a href="http://tunehoghitmaker.com" title="Hitmaker">Hitmaker</a></li>
+            <li><a href="/" title="Music Manager">Music Manager</a></li>
+            <li><a href="http://tunehogsync.com" title="Sync">Sync</a></li>
+            <li><a href="http://tunehogradio.com" title="Radio">Radio</a></li>
+            <li><a href="http://recommender.tunehog.com" title="Recommend">Recommend</a></li>
+         </ul>
+        </li>
+        <li>
+          <a href="#" class="th_header_v2_menu_links_current">What is Manager</a>
+        </li>
+        <li>
+          <a href="charts_artists.html" class="">Charts</a>
+        </li>
+        <li>
+          <a href="artists.html" class="">Artists</a>
+        </li>
+        <li>
+          <a href="upload.html" class="">Upload track</a>
+        </li>
+       </ul>
+       <div class="th_clear"></div>
+      </div>
+    </div>
+  
+    <div class="th_content">
+      <div class="what_is_mm preview">
+        <div class="article">
+          <div class="text">
+            <h1 class="title">Music Manager</h1>
+            <h3 class="p_title">The one-stop music management service</h3>
+            <p>Store, share and sell your music. 2GB free storage lets you upload and share tracks with your loyal fans as well as give you tools to help new fans hear your sound with our intelligent discovery engine.</p>
+          </div>
+          <div class="illustration video js-play-video"></div>
+        </div>
+      </div>
+            
+      <div class="what_is_mm home_slider">
+        <button class="home_slader_arw prev" type="button"></button>
+        <button class="home_slader_arw next" type="button"></button>
+        <div class="slider">
+          <dl class="article current">
+            <dt class="upload">
+              <h3 class="subtitle">Do you create music?</h3>
+              <h2 class="title tower">Upload it!</h2>
+            </dt>
+            <dd>
+              <div class="text">
+                <p>We offer artists a music management service, that allows artists to store, share and sell their music in any digital format.
+                </p>
+                <p>We’ll give you 2GB of free storage to get you started, enabling you to share tracks with existing fans and allow new fans to discover you for the first time.
+                </p>
+              </div>
+              <div class="illustration">
+                <img src="img/what_is_mm/slides/upload.png" height="333" width="419"  />
+              </div>
+            </dd>
+          </dl>
+
+          <dl class="article current">
+            <dt class="manager">
+              <h3 class="subtitle">Do you want your space?</h3>
+              <h2 class="title tower">Manage it!</h2>
+            </dt>
+            <dd>
+              <div class="text">
+                <p>Music Manager enables artists to store, access, share and sell their music in any format online. </p>
+
+                <p>Music Manager has a number of features that enable artists to build their fan-base and make money.</p>
+              </div>
+              <div class="illustration">
+                <img src="img/what_is_mm/slides/manage.png" height="333" width="419"  />
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    
+    <div class="th_footer">
+      <div class="th_page">
+        <div class="th_footer_left th_fl">
+          <a href="/">Home</a>
+          <i>|</i>
+          <a href="#" id="zenboxShow">Contact us</a>
+          <i>|</i>
+          <a href="http://musicmanager.tunehog.com/statics/show/terms" class="fblue">Terms and Conditions</a>
+          <i>|</i>
+          <a href="#">FAQ</a>
+          <i>|</i>
+          <a href="http://blog.tunehog.com">Blog</a>
+          <div class="th_clear_big"></div>
+          Copyright © 2013 tunehog. All rights reserved
+        </div>
+        <div class="th_footer_right th_fr">Powered by <b>tunehog</b></div>
+      </div>
+    </div>
+    
+    
+  </div>
+</body>

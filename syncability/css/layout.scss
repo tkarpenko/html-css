@@ -1,0 +1,322 @@
+@import "lib/reset";
+@import "lib/mixins";
+@import "lib/grid";
+@import "lib/jquery_overwrite";
+
+@import "lib/blocks/accordion";
+@import "lib/blocks/typography";
+@import "lib/blocks/buttons";
+@import "lib/blocks/icons";
+@import "lib/blocks/master";
+@import "lib/blocks/form_elements";
+@import "lib/blocks/navigation";
+@import "lib/blocks/search_result_table";
+
+@import "lib/pages/upload";
+@import "lib/pages/faq";
+@import "lib/pages/rate_card";
+
+@import "lib/color_schemas/green";
+@import "lib/color_schemas/orange";
+@import "lib/color_schemas/violet";
+
+html, body {
+    height: 100%;
+}
+body {
+    background:url(../img/bg.jpg) repeat #f2f0f0;
+}
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+.layout {
+    display: block;
+    min-height: 100%;
+    min-width: 980px;
+    position: relative;
+}
+.top_title {
+  @include font(#404040, 24px, 700, left);
+  display: inline-block;
+	color:#404040;
+  font-size: 24px;
+	font-weight:700;
+	margin:40px 40px 13px 0;
+	text-transform:uppercase;
+  span {
+      color:#9e9a93;
+      font-size:12px;
+      font-weight:400;
+      margin:40px 0 0 0;
+  }
+}
+
+.line {
+    clear:both;
+    border-top:1px solid #d8d7cd;
+    border-bottom:1px solid #fff;
+}
+
+.simple_lnk {
+    color:#2b9bc5;
+    font-size:12px;
+    font-weight: 400;
+    text-decoration:underline;
+    &.ajax {
+        text-decoration: none;
+        span:last-child {
+            text-decoration: none;
+            border-bottom: 1px dotted;
+        }
+        &:hover span:last-child {
+            border-bottom: 1px dotted transparent;
+        }
+    }
+}
+
+.upload_cancel {
+    border-bottom: 1px dashed #2B9BC5;
+    text-decoration: none;
+}
+
+.clone-group-control {
+    display: block;
+    float: right;
+}
+
+.alert {
+    font-size:14px;
+    font-weight:700;
+    margin: 10px 0;
+    &.error {
+        color:#d86304;
+    }
+    &.good {
+        color:#93a11c;
+        .alert_icn {
+            background-position: -166px -7px;
+        }
+    }
+}
+.alert_icn {
+    background:url(../img/large_icons.png) -7px -6px no-repeat;
+    display:block;
+    height:28px;
+    left:-46px;
+    top:5px;
+    width:32px;
+}
+
+.info_block {
+    background-color:#e9e5dc;
+    @include rounded_border (3px, 3px, 3px, 3px, 1px solid #bab9ae);
+    padding:12px;
+}
+.info_txt {
+    color:#404040;
+    font-size:12px;
+}
+
+.glow_red {
+    @include rounded_border (3px, 3px, 3px, 3px);
+    @include box_shadow (0px, 0px, 10px, 0, #FF0000);
+    height: 31px;
+}
+
+.glow_place {
+    @include rounded_border (3px, 3px, 3px, 3px);
+    @include box_shadow (0px, 0px, 0, 0, #BAB9AE);
+    height: 31px;
+    margin-top: 5px;
+}
+
+.white_select  {
+    @include font(#050708, 14px, 400, left, 26px);
+    background-color:#fff;
+    @include rounded_border (3px, 3px, 3px, 3px, 1px solid #bab9ae);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0 0 3px 0;
+    padding:5px 5px 4px 10px;
+    position: relative;
+    height:31px;
+    width:378px;
+}
+
+.reqdetail {
+    padding: 0px 0px;
+    margin: 0px;
+    width: 455px;
+    white-space:normal;
+}
+
+
+
+.line_link {
+    text-decoration: underline;
+}
+
+.required:after {
+    content: " *";
+    color: #fe0000;
+    font-weight: 700;
+}
+
+.success {
+    background-color: #e0e7a2;
+    @include rounded_border (3px, 3px, 3px, 3px, 1px solid #c9d74e);
+    padding: 20px 15px 20px 60px;
+    position: relative;
+    &:before {
+        content: "";
+        background: url(../img/large_icons.png) -96px -7px no-repeat;
+        display: block;
+        height: 31px;
+        left: 15px;
+        position: absolute;
+        top: 13px;
+        width: 31px;
+    }
+    .title {
+        color: #707b14;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    p {
+        color: #707b14;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+.warning {
+    background-color: #ffe5ad;
+    @include rounded_border (3px, 3px, 3px, 3px, 1px solid #ffcc5f);
+    padding: 20px 15px 20px 60px;
+    position: relative;
+    &:before {
+        content: "";
+        background:url(../img/large_icons.png) -7px -6px no-repeat;
+        display: block;
+        height: 31px;
+        left: 15px;
+        position: absolute;
+        top: 13px;
+        width: 33px;
+    }
+    .title {
+        color: #d86304;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    p {
+        color: #d86304;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+.message {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    &.success .close {
+        background: url(../img/small_icons.png) -51px -2px no-repeat;
+        display: block;
+        height: 22px;
+        right: 0;
+        position: absolute;
+        top: 0;
+        width: 22px;
+        &:hover {
+            background-position: -51px -27px;
+        }
+    }
+    &.warning .close {
+        background: url(../img/small_icons.png) -51px -52px no-repeat;
+        display: block;
+        height: 22px;
+        right: 0;
+        position: absolute;
+        top: 0;
+        width: 22px;
+        &:hover {
+            background-position: -26px -77px;
+        }
+    }
+}
+
+.usage_details {
+    margin-left: 96px;
+}
+
+.errors {
+    @include font(#D16200, 14px, 700);
+    list-style: none outside none;
+    margin: 3px 0 0;
+    padding: 0;
+    clear: both;
+}
+
+.advocate_player {
+    padding-top: 30px;
+}
+.form_user_track {
+    margin-right: 540px;
+}
+.continue {
+    padding-left: 186px;
+}
+.player-loader {
+    position: relative;
+    top: 3px;
+    left: 4px;
+}
+.usage_label {
+    @include font(#9E9A93, 14px, 700, left);
+    right: 420px;
+    text-transform: uppercase;
+    top: 7px;
+    width: 410px;
+}
+.clear18 {
+    clear: both;
+    font-size: 1px;
+    height: 18px;
+    display: block;
+}
+.panto {
+    cursor: pointer;
+    color: #2B9BC5;
+    border-bottom: 1px dashed;
+    &:hover {
+        border-bottom: 1px dashed transparent;
+    }
+}
+
+
+.summary.th_fl {
+    width: 215px;
+    padding-right: 115px;
+}
+.summary_block {
+    min-height: 50px;
+}
+.summary_block_small {
+    min-height: 25px;
+}
+.summary_block_right {
+    width: 500px;
+    display: inline-block;
+}
+.sum_btn {
+    margin: 10px 0 44px 10px !important;
+}
+.martop_19 {
+    margin-top: 19px;
+}

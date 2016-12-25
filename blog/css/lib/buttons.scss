@@ -1,0 +1,20 @@
+.blog_btn {
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+	width: 200px;
+	@include font(#fff, 13px, 700, center, 30px);
+	background-color: #28dbc1;
+	cursor: pointer;
+	&:hover {
+		background-color: #2aecd0;
+	}
+}
+.blog_cancel {
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+	min-width: 100px;
+	@include font(#3d3d3d, 13px, 400, center, 30px);
+	text-decoration: underline;
+}

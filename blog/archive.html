@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+  
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  
+  <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+	
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <!--[if IE]><link href="css/ie.css" rel="stylesheet" type="text/css"/> <![endif]-->
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+	<script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+  <script>
+	$(document).ready(function() {
+		$(".blog_comments .comments").mCustomScrollbar();
+		
+		$('.blog_dropdown > dt').click(function(e) {
+			$(this).parent().toggleClass('open close');
+			e.preventDefault();
+		})
+		
+		$('.blog_dropdown .dropdown_items > li > a').click(function(e) {
+  
+			var dropdown_item = $(this).html();
+			$(this).parents('.blog_dropdown').children().find('.dropdown_head_txt').html(dropdown_item);
+					
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().siblings().children().find('li').removeClass('active');
+			$(this).parent().addClass('open');
+			
+			e.preventDefault();
+		})
+  });
+  </script>
+</head>
+<body>
+	 <div class="blog_header" title="read article" style="background-image:url(img/blog_head_search.jpg);">
+    <div class="blog_content">
+      <a href="#" class="blog_logo">Blog</a>
+      <ul class="blog_menu">
+        <li><a href="#" class="blog_all">All</a></li>
+        <li><a href="#" class="blog_popular">Popular</a></li>
+        <li><a href="#" class="blog_tech">Tech</a></li>
+        <li><a href="#" class="blog_feature">Feature</a></li>
+        <li><a href="#" class="blog_community">Community</a></li>
+        <li class="active last"><a href="#" class="blog_archive">Archive of articles</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="blog_content">
+    
+		<div class="blog_archive_head">
+			<div class="blog_search">
+				<form>
+					<input type="text"/>
+					<button type="submit">
+						<i class="blog_icon_search"></i>
+					</button>
+				</form>
+			</div>
+			<div class="blog_left">
+				<div class="blog_archive_filter">
+					<div class="title">filter by category:</div>
+					<dl class="blog_dropdown close close">
+						<dt>
+							<span class="dropdown_head_txt">All</span>
+						</dt>
+						<dd>
+							<ul class="dropdown_items">
+								<li><span>All</span></li>
+								<li><span>Competitions</span></li>
+								<li><span>Music News</span></li>
+								<li><span>HitLogic</span></li>
+								<li><span>Discover</span></li>
+								<li><span>DIY</span></li>
+								<li><span>Tips from the pros</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<ul class="blog_years">
+						<li class="active"><span>2012</span></li>
+						<li class="active"><span>2013</span></li>
+						<li class="active"><span>2014</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<dl class="blog_search_result">
+			<dt>
+				<div class="date">
+					<div class="year">2014</div>
+					<div class="month">Nov</div>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<div class="result_item">
+						<div class="result_item_head">
+							<a class="blog_categories" href="#">
+								<span style="color: #ff4ab5 ">Competitions</span>
+							</a>
+							<div class="date">2014-11-04</div>
+							<div class="post_author">by<strong>Chloe Opuama</strong></div>
+							<br>
+							<ul class="blog_tags">
+								<li><span>Tags:</span></li>
+								<li><a href="#">Competitions</a></li>
+								<li><a href="#">Pictures</a></li>
+								<li><a href="#">Music</a></li>
+								<li><a href="#">iPad Air 2</a></li>
+								<li><a href="#">music apps</a></li>
+							</ul>
+						</div>
+						<div class="result_item_body">
+							<a href="#"><div class="item_title">Be in with a chance to win an iPad Air 2 – by sharing your SnapJams with the world!</div></a>
+							<div class="item_content"><p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">We love your SnapJams – so much so that we are eager to give away an <strong>iPad Air 2</strong> to one lucky winner – meaning that you can have another device to take some awesome photos with &amp; let us generate a list of tracks for you! SnapJam brings the worlds of photography &amp; music together, where you can upload your own snaps &amp; we’ll suggest songs based on your images – for a fun, audio-visual experience!</span></span></p>
+							<p>&nbsp;</p></div>
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		
+		<dl class="blog_search_result">
+			<dt>
+				<div class="date">
+					<div class="year">2014</div>
+					<div class="month">Nov</div>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<div class="result_item">
+						<div class="result_item_head">
+							<a class="blog_categories" href="#">
+								<span style="color: #ff4ab5 ">Competitions</span>
+							</a>
+							<div class="date">2014-11-04</div>
+							<div class="post_author">by<strong>Chloe Opuama</strong></div>
+							<br>
+							<ul class="blog_tags">
+								<li><span>Tags:</span></li>
+								<li><a href="#">Competitions</a></li>
+								<li><a href="#">Pictures</a></li>
+								<li><a href="#">Music</a></li>
+								<li><a href="#">iPad Air 2</a></li>
+								<li><a href="#">music apps</a></li>
+							</ul>
+						</div>
+						<div class="result_item_body">
+							<a href="#"><div class="item_title">Be in with a chance to win an iPad Air 2 – by sharing your SnapJams with the world!</div></a>
+							<div class="item_content"><p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">We love your SnapJams – so much so that we are eager to give away an <strong>iPad Air 2</strong> to one lucky winner – meaning that you can have another device to take some awesome photos with &amp; let us generate a list of tracks for you! SnapJam brings the worlds of photography &amp; music together, where you can upload your own snaps &amp; we’ll suggest songs based on your images – for a fun, audio-visual experience!</span></span></p>
+							<p>&nbsp;</p></div>
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		
+		<dl class="blog_search_result">
+			<dt>
+				<div class="date">
+					<div class="year">2014</div>
+					<div class="month">Nov</div>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<div class="result_item">
+						<div class="result_item_head">
+							<a class="blog_categories" href="#">
+								<span style="color: #ff4ab5 ">Competitions</span>
+							</a>
+							<div class="date">2014-11-04</div>
+							<div class="post_author">by<strong>Chloe Opuama</strong></div>
+							<br>
+							<ul class="blog_tags">
+								<li><span>Tags:</span></li>
+								<li><a href="#">Competitions</a></li>
+								<li><a href="#">Pictures</a></li>
+								<li><a href="#">Music</a></li>
+								<li><a href="#">iPad Air 2</a></li>
+								<li><a href="#">music apps</a></li>
+							</ul>
+						</div>
+						<div class="result_item_body">
+							<a href="#"><div class="item_title">Be in with a chance to win an iPad Air 2 – by sharing your SnapJams with the world!</div></a>
+							<div class="item_content"><p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">We love your SnapJams – so much so that we are eager to give away an <strong>iPad Air 2</strong> to one lucky winner – meaning that you can have another device to take some awesome photos with &amp; let us generate a list of tracks for you! SnapJam brings the worlds of photography &amp; music together, where you can upload your own snaps &amp; we’ll suggest songs based on your images – for a fun, audio-visual experience!</span></span></p>
+							<p>&nbsp;</p></div>
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		
+		<dl class="blog_search_result">
+			<dt>
+				<div class="date">
+					<div class="year">2014</div>
+					<div class="month">Nov</div>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<div class="result_item">
+						<div class="result_item_head">
+							<a class="blog_categories" href="#">
+								<span style="color: #ff4ab5 ">Competitions</span>
+							</a>
+							<div class="date">2014-11-04</div>
+							<div class="post_author">by<strong>Chloe Opuama</strong></div>
+							<br>
+							<ul class="blog_tags">
+								<li><span>Tags:</span></li>
+								<li><a href="#">Competitions</a></li>
+								<li><a href="#">Pictures</a></li>
+								<li><a href="#">Music</a></li>
+								<li><a href="#">iPad Air 2</a></li>
+								<li><a href="#">music apps</a></li>
+							</ul>
+						</div>
+						<div class="result_item_body">
+							<a href="#"><div class="item_title">Be in with a chance to win an iPad Air 2 – by sharing your SnapJams with the world!</div></a>
+							<div class="item_content"><p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">We love your SnapJams – so much so that we are eager to give away an <strong>iPad Air 2</strong> to one lucky winner – meaning that you can have another device to take some awesome photos with &amp; let us generate a list of tracks for you! SnapJam brings the worlds of photography &amp; music together, where you can upload your own snaps &amp; we’ll suggest songs based on your images – for a fun, audio-visual experience!</span></span></p>
+							<p>&nbsp;</p></div>
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+
+ </div>
+</body>
+</html>

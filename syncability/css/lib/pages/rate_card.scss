@@ -1,0 +1,64 @@
+.price_table {
+    border-top: 1px solid #d8d7cd;
+    position: relative;
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0px 1px; 
+    &:after {
+        content: "";
+        background: url(../img/search_info_border.jpg) repeat-x;
+        clear: both;
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    td {
+        padding-left: 15px;
+        vertical-align: middle;
+    }
+    .price {
+        @include font(#050708, 16px, 400);
+        width: 110px;
+    }
+    .description {
+        padding: 0;
+        .description_title {
+            @include font(#9e9a93, 12px, 700);
+            padding: 15px 0 9px 15px;
+        }
+        .description_txt {
+            @include font(#050708, 12px, 400);
+            padding: 0 0 10px 15px;
+            width: 840px;
+        }
+    }
+    .free_space td {
+        font-size: 0px;
+        height: 0px;
+    }
+    .category {
+        @include font(#6d6a65, 14px, 400);
+        background-color: #fafbf9;
+        height: 37px;
+        &:hover {
+            background-color: #fff;
+        }
+        h2 {
+            @include font(#6d6a65, 16px, 700);
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            @include font(#6d6a65, 14px, 700);
+            margin: 0;
+            padding: 0;
+        }
+    }
+    a {
+        @include font(#2fa9d7, 14px, 400);
+        text-decoration: underline;
+    }
+}

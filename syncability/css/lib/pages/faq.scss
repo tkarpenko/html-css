@@ -1,0 +1,49 @@
+.faq h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+    position: relative;
+}
+
+.faq .underline:after {
+    content: "";
+    display: block;
+    border-top: 1px solid #d8d7cd;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+} 
+
+.faq .question {
+    list-style-image: url(../img/blue_list_marker.png);
+    list-style-position: inside;
+    margin: 0 0 7px 50px;
+    padding: 0 0 12px 0;
+    position: relative;
+    li {
+        font-size: 14px;
+        line-height: 30px;
+        div {
+            display: none;
+            background-color: #f5f5f5;
+            @include rounded_border (3px, 3px, 3px, 3px, 1px solid #ccc);
+            font-size: 12px;
+            margin: 15px 0;
+            padding: 15px 20px;
+            ul {
+                list-style-image: url(../img/grey_list_marker.png);
+                list-style-position: inside;
+                margin: 0 0 7px 0;
+                padding: 0 0 12px 0;
+                position: relative;
+                li {
+                    font-size: 12px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- tuneHog styles (header and footer) -->
+  <link href="http://assets.tunehog.com/style_v2.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="http://assets.tunehog.com/header_v2.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="http://assets.tunehog.com/footer.css" media="all" rel="stylesheet" type="text/css" />
+
+  <link href="css/ui-jquery/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="css/custom_scroll.plugin.css" rel="stylesheet" type="text/css"/>
+  <!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css"/> <![endif]-->
+  
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="js/jquery.placeholder.js"></script>
+  <script src="js/custom_scroll.plugin.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dropdown.js"></script>
+  
+  <!-- tuneHog js (header and footer) -->
+  <script src="http://assets.tunehog.com/header.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="th_container">
+    <div class="th_header_v2">
+      <div class="th_page th_pr">
+        <a href="http://accounts.tunehog.com" title="" class="th_header_v2_logo"></a>
+        <div class="th_clear"></div>
+        <div class="th_header_v2_login th_fr">
+          <a class="js-header-menu-opener" data-href="#profile-menu" href="#" title="User's Profile">
+            <span class="th_header_v2_login_nick">Tetiana Karpenko</span>
+            <img alt="Tetiana Karpenko" class="th_fr" height="60" src="/default/user.png" width="60">
+          </a>
+          <div class="th_clear"></div>
+          <div class="th_header_v2_login_popup th_dn js-header-menu" id="profile-menu">
+            <a href="profile.html">My Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="edit_profile.html">Edit profile</a>
+          </div>
+        </div>
+        
+        <div class="th_clear"></div>
+      </div>
+    </div>
+
+    <div class="th_header_v2_menu">
+      <div class="th_page th_pr">
+       <ul class="th_header_v2_menu_list">
+        <li class="th_header_v2_menu_dropdown">
+          <a href="/" title="" class="th_header_v2_menu_resname_beta"><span>Services<i></i><em></em></span>
+          </a>
+         <ul class="th_dn">
+            <li><a href="http://tunehogdiscovery.com" title="Discovery">Discovery</a></li>
+            <li><a href="http://tunehoghitmaker.com" title="Hitmaker">Hitmaker</a></li>
+            <li><a href="/" title="Music Manager">Music Manager</a></li>
+            <li><a href="http://tunehogsync.com" title="Sync">Sync</a></li>
+            <li><a href="http://tunehogradio.com" title="Radio">Radio</a></li>
+            <li><a href="http://recommender.tunehog.com" title="Recommend">Recommend</a></li>
+         </ul>
+        </li>
+        <li>
+          <a href="whatis.html" class="">What is Manager</a>
+        </li>
+        <li>
+          <a href="charts_artists.html" class="">Charts</a>
+        </li>
+        <li>
+          <a href="artists.html" class="">Artists</a>
+        </li>
+        <li>
+          <a href="upload.html" class="">Upload track</a>
+        </li>
+       </ul>
+       <div class="th_clear"></div>
+      </div>
+    </div>
+  
+    <div class="th_content">
+    
+      <div class="container_20">
+        <div class="prefix_4 grid_12 suffix_4">
+        
+          <div class="mm_tabs">
+            <ul>
+              <li class="active">
+                <a href="#edit-profile-general">General</a>
+              </li>
+              <li>
+                <a href="#edit-profile-artist">Artist</a>
+              </li>
+              <li>
+                <a href="#edit-profile-referralls">Referralls (0)</a>
+              </li>
+              <li>
+                <a href="#edit-profile-security">Security</a>
+              </li>
+            </ul>
+            
+            <div id="edit-profile-general" class="tab_content open">
+              <dl class="mm_block close">
+                <dt class="mm_block_head">
+                  <div class="left"><dl class="mm_title"><dt>Personal information</dt><dd>| Tetiana Karpenko</dd></dl></div>
+                  <div class="right">
+                    <a href="#" title="Create" class="mm_show big">
+                      <span class="close_txt">Hide</span>
+                      <span class="open_txt">Show</span>
+                    </a>
+                  </div>
+                  <div class="line"></div>
+                </dt>                  
+                <dd>
+                  <form>
+                    <div class="mm_form_elem">
+                      <label>First name</label>
+                      <div>
+                        <input type="text" value="Tetiana"/>                        
+                        <p class="desc">desc desc desc desc desc desc desc </p>
+                        <p class="error">error error error error error error error </p>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Last name</label>
+                      <div>
+                        <input type="text" value="Karpenko"/>
+                        <p class="desc">desc desc desc desc desc desc desc </p>
+                        <p class="error">error error error error error error errorerror error error error error error errorerror error error error error error errorerror error error error error error errorerror error error error error error errorerror error error error error error error </p>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>URL</label>
+                      <div>
+                        <input type="text" value=""/>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Web page</label>
+                      <div>
+                        <input type="text" value=""/>
+                        <p class="desc">desc desc desc desc desc desc desc </p>
+                        <p class="error">error error error error error error error </p>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Userpic</label>
+                      <div>
+                        <div class="mm_input_img">
+                          <a href="#" class="mm_add_img">
+                            <i class="icon_round_upload"></i>
+                            <span>Add Image</span>
+                            <img src="img/mm_profile_photo.png" alt="" />
+                          </a>
+                          <input type="file" />
+                        </div>
+                        <p class="desc">desc desc desc desc desc desc desc </p>
+                        <p class="error">error error error error error error error </p>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Tags</label>
+                      <div>
+                        <ul class="mm_edit_tags">
+                          <li class="label">tag 1<a href="#" title="delete"><i class="icon_close shadow"></i></a></li>
+                          <li class="label">tag 1111<a href="#" title="delete" ><i class="icon_close shadow"></i></a></li>
+                          <li class="input"><input type="text" value=""/></li>
+                        </ul>
+                        <p class="desc">desc desc desc desc desc desc desc </p>
+                        <p class="error">error error error error error error error </p>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Gender</label>
+                      <div>
+                        <select class="small">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <p class="desc">desc desc desc desc desc desc desc </p>
+                        <p class="error">error error error error error error error </p>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Date of birth</label>
+                      <div>
+                        <input type="text" value="" class="small" id="datepicker"/>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Biography</label>
+                      <div>
+                        <div class="textarea">
+                          <textarea id="js-edit-profile-bio"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="mm_btn">Save</button>
+                    <a href="#" class="mm_btn">Cancel</a>
+                  </form>
+                </dd>
+              </dl>
+              
+              <dl class="mm_block open">
+                <dt class="mm_block_head">
+                  <div class="left"><dl class="mm_title"><dt>Contacts</dt><dd>| Ukraine</dd></dl></div>
+                  <div class="right">
+                    <a href="#" title="Create" class="mm_show big">
+                      <span class="close_txt">Hide</span>
+                      <span class="open_txt">Show</span>
+                    </a>
+                  </div>
+                  <div class="line"></div>
+                </dt>                  
+                <dd>
+                  <form>
+                    <div class="mm_form_elem">
+                      <label>Messenger</label>
+                      <div>
+                        <div class="messenger_block">
+                          <div class="messenger_item">
+                            <dl class="mm_dropdown close">
+                              <dt>
+                                <span class="dropdown_head_txt"></span>
+                              </dt>
+                              <dd>
+                                <ul class="dropdown_items">
+                                  <li><a href="#"><i class="icon_messenger_aim"></i>aim</a></li>
+                                  <li><a href="#"><i class="icon_messenger_gtalk"></i>gtalk</a></li>
+                                  <li><a href="#"><i class="icon_messenger_isq"></i>isq</a></li>
+                                  <li><a href="#"><i class="icon_messenger_msn"></i>msn</a></li>
+                                  <li><a href="#"><i class="icon_messenger_skype"></i>skype</a></li>
+                                  <li><a href="#"><i class="icon_messenger_yahoo"></i>yahoo</a></li>
+                                  <li><a href="#"><i class="icon_messenger_other"></i>Other...</a></li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          
+                            <input type="text" value="" />  
+                            <a href="#" class="delete" title="delete messenger"><i class="icon_dustbin"></i></a>
+                          </div>
+                          
+                          <p class="desc">desc desc desc desc desc desc desc </p>
+                          <p class="error">error error error error error error error </p>
+                        
+                          <div class="messenger_item">
+                            <dl class="mm_dropdown close">
+                              <dt>
+                                <span class="dropdown_head_txt"></span>
+                              </dt>
+                              <dd>
+                                <ul class="dropdown_items">
+                                  <li><a href="#"><i class="icon_messenger_aim"></i>aim</a></li>
+                                  <li><a href="#"><i class="icon_messenger_gtalk"></i>gtalk</a></li>
+                                  <li><a href="#"><i class="icon_messenger_isq"></i>isq</a></li>
+                                  <li><a href="#"><i class="icon_messenger_msn"></i>msn</a></li>
+                                  <li><a href="#"><i class="icon_messenger_skype"></i>skype</a></li>
+                                  <li><a href="#"><i class="icon_messenger_yahoo"></i>yahoo</a></li>
+                                  <li><a href="#"><i class="icon_messenger_other"></i>Other...</a></li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          
+                            <input type="text" value="" />  
+                            <a href="#" class="delete" title="delete messenger"><i class="icon_dustbin"></i></a>
+                          </div>
+                          
+                          <p class="desc">desc desc desc desc desc desc desc </p>
+                          <p class="error">error error error error error error error </p>
+                        
+                          <a href="#"><i class="icon_plus"></i>add one more</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Phone</label>
+                      <div>
+                        <input type="text" value="" class="small"/>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Country</label>
+                      <div>
+                        <select>
+                          <option>Ukraine</option>
+                          <option>USA</option>
+                          <option>Italy</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>State / Province</label>
+                      <div>
+                        <input type="text" value=""/>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>City</label>
+                      <div>
+                        <input type="text" value=""/>
+                        <p class="error">error error error error error</p>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Address</label>
+                      <div>
+                        <input type="text" value=""/>
+                        <p class="error">error error error error error</p>
+                      </div>
+                    </div>
+                    <button type="submit" class="mm_btn">Save</button>
+                    <a href="#" class="mm_btn">Cancel</a>
+                  </form>
+                </dd>
+              </dl>
+              
+            </div>
+            
+            
+            <div id="edit-profile-artist" class="tab_content">
+              <dl class="mm_block open">
+                <dt class="mm_block_head">
+                  <div class="left"><dl class="mm_title"><dt>Artist</dt><dd></dd></dl></div>
+                  <div class="right">
+                    <a href="#" title="Create" class="mm_show big">
+                      <span class="close_txt">Hide</span>
+                      <span class="open_txt">Show</span>
+                    </a>
+                  </div>
+                  <div class="line"></div>
+                </dt>                  
+                <dd>
+                  <form>
+                    <div class="mm_form_elem">
+                      <label>Stage name</label>
+                      <div>
+                        <input type="text" value=""/>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>My role</label>
+                      <div>
+                        <input type="text" value=""/>
+                        <div class="desc">Enter your skills and roles e.g. songwriter, guitarist, arranger etc...</div>
+                      </div>
+                    </div>
+                    
+                    <button type="submit" class="mm_btn">Save</button>
+                    <a href="#" class="mm_btn">Cancel</a>
+                  </form>
+                </dd>
+              </dl>
+            </div>
+            
+            <div id="edit-profile-referralls" class="tab_content">
+              <dl class="mm_block open">
+                <dt class="mm_block_head">
+                  <div class="left"><dl class="mm_title"><dt>Referralls (0)</dt><dd></dd></dl></div>
+                  <div class="right">
+                    <a href="#" title="Create" class="mm_show big">
+                      <span class="close_txt">Hide</span>
+                      <span class="open_txt">Show</span>
+                    </a>
+                  </div>
+                  <div class="line"></div>
+                </dt>                  
+                <dd>
+                  <div class="mm_form_elem">
+                    <label>Referral url</label>
+                    <div>
+                      <a class="ellipsis" href="http://accounts.tunehog.com/referral/JMTDZXMuhnyqcpD7CYpQ">http://accounts.tunehog.com/referral/JMTDZXMuhnyqcpD7CYpQ</a>
+                    </div>
+                  </div>
+                  <div class="mm_form_elem">
+                    <label>Share link to:</label>
+                    <div>
+                      <a href="#" title="facebook"><i class="icon_facebook_2"></i></a>
+                      <a href="#" title="twitter"><i class="icon_twitter_2"></i></a>
+                      <a href="#" title="google+"><i class="icon_google"></i></a>
+                    </div>
+                  </div>
+                  <div class="mm_form_elem">
+                    <label>Accepted</label>
+                    <div class="ellipsis">
+                      0
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            
+            <div id="edit-profile-security" class="tab_content">
+              <dl class="mm_block open">
+                <dt class="mm_block_head">
+                  <div class="left"><dl class="mm_title"><dt>Change password</dt><dd></dd></dl></div>
+                  <div class="right">
+                    <a href="#" title="Create" class="mm_show big">
+                      <span class="close_txt">Hide</span>
+                      <span class="open_txt">Show</span>
+                    </a>
+                  </div>
+                  <div class="line"></div>
+                </dt>                  
+                <dd>
+                  <form>
+                    <div class="mm_form_elem">
+                      <label>New password</label>
+                      <div>
+                        <input type="text" value=""/>
+                        <div class="desc">Password must be at least 6 symbols long.</div>
+                      </div>
+                    </div>
+                    <div class="mm_form_elem">
+                      <label>Password confirmation</label>
+                      <div>
+                        <input type="text" value=""/>
+                      </div>
+                    </div>
+                    
+                    
+                    <button type="submit" class="mm_btn">Save</button>
+                    <a href="#" class="mm_btn">Cancel</a>
+                  </form>
+                </dd>
+              </dl>
+            </div>
+            
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+    
+    <div class="th_footer">
+      <div class="th_page">
+        <div class="th_footer_left th_fl">
+          <a href="/">Home</a>
+          <i>|</i>
+          <a href="#" id="zenboxShow">Contact us</a>
+          <i>|</i>
+          <a href="http://musicmanager.tunehog.com/statics/show/terms" class="fblue">Terms and Conditions</a>
+          <i>|</i>
+          <a href="#">FAQ</a>
+          <i>|</i>
+          <a href="http://blog.tunehog.com">Blog</a>
+          <div class="th_clear_big"></div>
+          Copyright © 2013 tunehog. All rights reserved
+        </div>
+        <div class="th_footer_right th_fr">Powered by <b>tunehog</b></div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,59 @@
+.purchase {
+    .container {
+        width: 652px;
+    }
+    .master_steps {
+        margin-bottom: 0px;
+    }
+    .line_box {
+        background: #fff;
+        padding: 20px 25px;
+        position: relative;
+    }
+    .line_box {
+        & > div {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .form_right_col  {
+            display: block;
+            margin-left: 99px;
+            float: none !important;
+        }
+        .clear_big  {
+            display: none;
+        }
+        .lyrics  {
+            margin-left: 40px;
+        }
+    }
+    .track_title {
+        @include font(#6c6760, 14px, 700);
+        @include ellipsis;
+        display: inline-block;
+        float: left;
+        text-decoration: none;
+        width: 250px;
+    }
+    .track_info_genre {
+        width: 370px;
+        margin-left: 40px;
+    }
+    .track_col {
+        width: 310px;
+    }
+    .usage_type_price {
+        color: #9E9A93;
+        font-weight: bold;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        span {
+            color: #000;
+        }
+    }
+    #usage_type {
+        width: 320px;
+        margin-left: 100px;
+    }
+}

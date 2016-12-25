@@ -1,0 +1,126 @@
+.lp .page_2 {
+  width: 100%;
+  background: url("../img/page2/page2_bg.jpg") repeat #fff;
+  .tableCell {
+    vertical-align: top;
+  }
+  .page_2_white_bg {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &:before {
+      content: '';
+      display: block;
+      height: 100%;
+      position: relative;
+      top: -50%;
+      left: -30%;
+      width: 200%;
+      background: #fff; 
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+    }
+  }
+  .page_2_phone_bg {
+    background: url('../img/page2/bg_phone.png') center center no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    top: 22%;
+    left: -5%;
+    width: 113%;
+    height: 81%;
+    z-index: 2;
+    max-width: 1920px;
+  }
+  .page_2_content {
+    background: url('../img/page2/bg_phone.png') center center no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 1240px;
+    height: 96%;
+    margin: 0 auto;
+    padding: 0 0 0 240px;
+    position: relative;
+    top: -100%;
+    z-index: 2;
+     .page_2_title {
+      font-family: "Solomon Sans SemiBold";
+      @include font(#69b537, 30px, 400, left, 30px);
+      margin: 150px 0 20px 0;
+      white-space: nowrap;
+    }
+    .page_2_info {
+      @include font(#69b537, 16px, 400, left, 27px);
+      width: 390px;
+      .page_2_radio_more {
+        font-family: "Solomon Sans SemiBold";
+        text-decoration: underline;
+        @include font(#69b537, 16px, 400, left, 22px);
+        display: block;
+        margin: 13px 0 10px 0;
+      }
+    }
+    .lp_app_store {
+      margin-top: 30px;
+    }
+  }
+}
+@media screen and (max-width: 1480px) {
+  .lp .page_2 .page_2_content {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .lp .page_2 .page_2_content {
+    width: auto;
+    padding: 0 30px;
+    margin: 0 -20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .lp .page_2 .page_2_content .page_2_title {
+    margin: 10% 0 0 0;
+  }
+  .lp .page_2 .page_2_content .page_2_info .page_2_radio_more {
+    margin: 2% 0;
+  }
+  .lp .page_2 .page_2_content {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 815px) {
+  .lp .page_2 .page_2_phone_bg {
+    top: 14%;
+  }
+  .lp .page_2 .page_2_content {
+    width: auto;
+    padding: 0 30px;
+    margin: 0 -20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .lp .page_2 .page_2_content .lp_app_store {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .lp .page_2 .page_2_content .page_2_info {
+    width: auto;
+  }
+  .lp .page_2 .page_2_content .page_2_info {
+    font-size: 12px;
+  }
+  .lp .page_2 .page_2_content .page_2_info .page_2_radio_more {
+    font-size: 14px;
+  }
+}

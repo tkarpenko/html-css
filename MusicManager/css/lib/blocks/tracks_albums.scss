@@ -1,0 +1,313 @@
+.mm_track {
+  border: 1px solid transparent;
+  border-left: none;
+  border-right: none;
+  padding-top: 8px;
+  position: relative;
+  width: 100%;
+  min-height: 57px;
+  height: auto;
+  cursor: default;
+  .track_cover {
+    display: inline-block;
+    vertical-align: middle;  
+    height: 48px;
+    width: 48px;
+    margin: 0 0 8px 8px;
+    position: relative;
+    text-align: center;
+    img {
+      height: 48px;
+      width: 48px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 48px;
+    }
+    &:before {
+      content: '';
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 48px;
+      width: 48px;
+      z-index: 1;
+      background: url('../img/mm_track_icons.png') no-repeat;
+    }
+  } 
+  .info {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    width: 470px;
+    overflow: hidden;
+    .track_name,
+    .author_name {
+      display: inline-block;
+      vertical-align: middle;
+      @include ellipsis;
+    }
+    .track_name {
+      @include font(#575757, 14px, 400, left, 20px);
+    }
+    .author_name {
+      @include font(#9e9a93, 12px, 400, left, 1.1);
+      max-width: 118px;
+    }
+    .mm_tags {
+      width: 170px;
+    }
+  }
+  .settings {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    height: 48px;
+    width: 89px;
+    .subinfo {
+      text-align: right;
+      padding-right: 8px;
+      margin: 4px 0;
+      height: 15px;
+    }
+  }
+  .info span, 
+  .mm_genre,
+  .settings .subinfo {
+    font-size: 12px;
+  }
+
+  
+  
+  &:hover,
+  &.disabled:hover {
+    background: #2c2c2c;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    
+    .track_cover:before {
+      display: block;
+      background-position: -77px -6px;
+    }
+    .track_name {
+      color: #fff;
+    }
+    .mm_genre {
+      color: #2c2c2c;
+    }
+    * {
+      @include text_shadow (rgba(255, 255, 255, 0.93), 0px, 0px, 0px);
+    }
+  }
+  
+  &.play .track_cover:before {
+    display: block;
+    background-position: -77px -69px;
+  }
+  
+  &.disabled {
+    background: rgba(207, 192, 170, 0.2);
+    border-top-color: #d1c6be;
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+    &:after {
+      content: 'Unavaliable';
+      background: url("../img/mm_track_icons.png") -34px -200px no-repeat;
+      height: 25px;
+      width: 90px;
+      font-size: 12px;
+      line-height: 25px;
+      display: block;
+      position: absolute;
+      top: 12px;
+      right: 8px;
+    }
+    .subinfo {
+      display: none;
+    }
+    .settings .mm_menu_buttons {
+      margin-top: 21px;
+    }
+  }
+}
+
+.mm_track.chart {
+  .position {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    margin: 0 0 8px 8px;
+    position: relative;
+    text-align: center;
+    @include font(#fff, 18px, 400, center, 48px);
+    background-color: #c4bbad;
+    @include text_shadow (#4c453a, 0px, 0px, 7px);
+  }
+  .info {
+    width: 411px;
+    .mm_tags {
+      width: 120px;
+    }
+  }
+}
+
+.mm_album {
+  height: auto;
+  margin: 30px 0;
+  .album_cover {
+    height: 120px;
+    width: 120px;
+    display: block;
+    float: left;
+    position: relative;
+    img {
+      height: 120px;
+      width: 120px;
+    }
+    &:before {
+      content: '';
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 36px;
+      height: 48px;
+      width: 48px;
+      z-index: 1;
+      background: url('../img/mm_track_icons.png') -77px -6px no-repeat;
+    }
+    &:after {
+      content: 'Play album';
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 82px;
+      width: 104px;
+      @include font(#fff, 14px, 400, center, 193px);
+      border: 8px solid #2c2c2c;
+      border-bottom: 30px solid #2c2c2c;
+    }
+  }
+  
+  .mm_block_head {
+    float: right;
+    width: 490px;
+  }
+  &:before,
+  &:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+  & > dd {
+    height: auto;
+    float: right;
+    width: 500px;
+    .mm_track {
+      width: 500px;
+      .info {
+        width: 342px;  
+        .author_name {
+          max-width: 87px;
+        }
+      }
+      .mm_tags {
+        width: 82px;
+      }
+    }
+  }
+  &:hover .album_cover:before,
+  &:hover .album_cover:after {
+    display: block;
+  }
+  
+  &.play {
+    .album_cover:before {
+      display: block;
+      background-position: -77px -69px;
+    }
+    .album_cover:after {
+      display: block; 
+    }
+  }
+  &.close {
+    dd {
+      height: 133px;
+      overflow: hidden
+    }
+  }
+}
+
+
+
+.mm_menu_buttons {
+  list-style: none;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  text-align: right;
+  height: 25px;
+  width: 100%;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    a { 
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      @include font(#9e9a93, 12px, 400, center, 0);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+.mm_music_in_detail {
+  & > [class*=grid_] {
+    height: 120px;
+  }
+  * {
+    line-height: 23px;
+  }
+  .mm_btn_play {
+    margin-left: 18px;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  .settings {
+    text-align: right;
+    display: inline-block;
+    vertical-align: bottom;
+    height: 100%;
+    .mm_menu_buttons {
+      margin-top: 66px;
+    }
+  }
+}
+
+.mm_buttons_row {
+  margin: 10px 0 60px 0;
+}
+
+.mm_tabs .tab_content {
+  .info_illustration {
+    width: 100%;
+    height: auto;
+  }
+  .lyrics_title {
+    margin-top: 30px;
+  }
+}

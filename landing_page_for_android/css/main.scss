@@ -1,0 +1,93 @@
+@import "lib/mixins";
+@import "lib/reset";
+@import "lib/typographic";
+@import "lib/icons";
+
+@import "lib/pages/page1";
+@import "lib/pages/page1_animation";
+@import "lib/pages/page2";
+@import "lib/pages/page3";
+@import "lib/pages/page3_animation";
+@import "lib/pages/page4";
+@import "lib/pages/page5";
+@import "lib/pages/page5_animation";
+@import "lib/pages/video";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Solomon Sans Book";
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+.section {
+  min-width: 300px;
+  overflow: hidden;
+}
+#fullPage-nav.right {
+  visibility: hidden;
+}
+
+
+.lp_google_play,
+.lp_app_store {
+  background: url('../img/buy_buttons.png') no-repeat;
+  height: 40px;
+  width: 115px;
+  text-indent: -9999px;
+  display: block;
+  &.white_border {
+    @include rounded_border(5px, 5px, 5px, 5px, 1px solid #fff);
+  }
+}
+.lp_google_play {
+  background-position: 0 0;
+  &:hover,
+  &.black { background-position: 0 -44px; }
+}
+.lp_app_store {
+  background-position: -132px 0;
+  width: 135px;
+  &:hover,
+  &.black { background-position: -132px -44px; }
+}
+
+
+.lp_social_block {
+  list-style: none;
+  position: fixed;
+  bottom: 25px;
+  right: 50%;
+  margin-right: -489px;
+  width: 202px;
+  white-space: nowrap;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 45px;
+    line-height: 45px;
+    &.like {
+      width: 100px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  #fullPage-nav {
+    display: none;
+  }
+  .lp_social_block {
+    right: 0;
+    margin-right: 0;
+  }
+}

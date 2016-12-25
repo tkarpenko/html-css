@@ -1,0 +1,71 @@
+.gifts_dropdown {
+  position: relative;
+  cursor: pointer;
+  z-index: 99;
+  width: 100%;
+  dt {
+    padding-right: 50px;
+    @include font(#666666, 16px, 400, left, 20px);
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 50px 15px 10px;
+    margin-top: 18px;
+    height: 20px;
+    display: block;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 14px;
+      height: 0;
+      width: 0;
+      border-top: 8px solid #c0c0c0;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-bottom: none;
+    }
+    &:hover:after {
+      border-top-color: #ff8a65;
+    }
+    &.placeholder {
+      color: #a9a9a9;
+    }
+  }
+  dd {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #f4f4f4;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    z-index: 2;
+    max-height: 500px;
+    overflow-y: scroll;
+    a {
+      @include font(#666666, 16px, 400, left, 50px);
+      display: block;
+      padding: 0 15px;
+      &:hover {
+        background-color: rgba(255, 213, 79, 0.2);
+      }
+    }
+  }
+  &.active dt {
+    border-radius: 3px 3px 0 0;
+    &:after {
+      border-bottom: 8px solid #c0c0c0;
+      border-top: none;
+    }
+    &:hover:after {
+      border-bottom-color: #ff8a65;
+    }
+  }
+  &.active dd {
+    display: block;
+  }
+
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="css/ui/jquery-ui-1.8.23.custom.css">
+        <link type="text/css" rel="stylesheet" href="css/layout.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#js-accordion").accordion({
+                  header:"h3",
+                  active:false,
+                  autoHeight:false,
+                  collapsible:true
+                });
+                $('.search_play').click(function() {
+                    $(this).toggleClass('pause');
+                })
+                $('.search_act_info, .search_rezult_info_bottom a').click(function(){
+                    $(this).parents('.search_result_row').toggleClass('active');
+                })
+            })
+        </script>
+    </head>
+    <body class="schema_orange">
+
+        <div class="container_20">
+            <div class="grid_20">
+                <span class="top_title">Syncability<span>music space</span></span>
+
+                <ul class="top_menu">
+                    <li><a href="index.html">Upload Music</a></li>
+                    <li><a href="search.html">Search Track</a></li>
+                    <li class="active"><a href="opportunity.html">Opportunities</a></li>
+                    <li><a href="my_account.html">My Account</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+
+                <div class="line"></div>
+            </div>
+        </div>
+        
+        <div class="search_head">
+            <div class="container_20">
+                <div class="grid_6 line_vert">
+                    <div class="search_head_block">        
+                        <p>FOUND</p>
+                        <span>1 – 15 </span>
+                        <span class="search_head_subtxt ">&nbsp;of about 1021 tracks</span>
+                        <div class="pagination">
+                            <span class="previous"></span>
+                            <a href="#" title="" class="page active">1</a>
+                            <a href="#" title="" class="page">2</a>
+                            <a href="#" title="" class="page">3</a>
+                            <span>…</span>
+                            <a href="#" title="" class="page">69</a>
+                            <a href="/search?page=2#content" title="" class="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6 line_vert">
+                    <div class="search_head_block">
+                        <p>SHOW:</p>
+                        <ul class="filter">
+                            <li class="active">
+                                <a href="#" title="">All</a>
+                            </li>
+                            <li class="">
+                                <a href="#" title="">Original tracks</a>
+                            </li>
+                            <li class="">
+                                <a href="#" title="">Cover versions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid_8">
+                    <div class="search_head_block">
+                        <p>FILTER:</p>
+                        <ul class="filter">
+                            <li>
+                                <a href="#" title="">All</a>
+                            </li>
+                            <li class="active">
+                                <a href="#" title="">Original tracks</a>
+                            </li>
+                            <li class="">
+                                <a href="#" title="">Cover versions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+        
+        
+        <div class="container_20">
+            <div class="grid_13 prefix_1">
+                <a href="#" title="" class="search_result_title"> Request details </a>
+            </div>
+            <div class="grid_2">
+                <span class="search_result_title">
+                    Deadline<i class="search_title_arw up"></i>
+                </span>
+            </div>
+            <div class="grid_4">
+                <span class="search_result_title">Actions</span>
+            </div>
+            
+            
+            <div class="line"></div>
+            
+            
+            <div class="search_result_row opport_resalt">
+                <div class="search_resalt_main">
+                    <div class="grid_13 prefix_1">
+                        <div class="opport_title">
+                            <i class="o_icn"></i>
+                            <span title="BMW Advert (Test)">BMW Advert (Test)</span>
+                        </div>
+                        <div class="grid_7 alpha">
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Genre</div>
+                                <div class="reqdetail_genre_txt"> Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock </div>
+                            </div>
+                             <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Song Type</div>
+                                <div class="reqdetail_genre_txt">  Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal </div>
+                            </div>
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Usage Type</div>
+                                <div class="reqdetail_genre_txt"> ExclusiveExclusive Exclusive Exclusive Exclusive Exclusive Exclusive vExclusive Exclusive Exclusive Exclusive </div>
+                            </div>
+                        </div>
+                        <div class="grid_6 omega">
+                            <div class="info_genre">
+                            <span class="info_genre_title">Description</span>
+                            <span class="info_genre_txt">
+                                BMW are looking for an upbeat, summery pop-rock song to feature in their advert in August. The music supervisor would like something similar to Coldplay, but are open to similar sounding tracks.
+                                There is an urgency for this advert, so the deadline won't be long.
+                                We're looking for a track which includes a chorus lasting around 30 seconds and includes the word: love.                            
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_2">2013-07-12</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_buy"></a>
+                        <a href="#" title="Like" class="search_act_love liked"></a>
+                        <a href="#" title="Like" class="search_act_download"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                <div class="search_info_line"></div>
+                <div class="search_rezult_info_bottom">
+                    <a href="#" title="">Hide</a>
+                </div>
+            </div>
+            
+            <div class="search_result_row opport_resalt">
+                <div class="search_resalt_main">
+                    <div class="grid_13 prefix_1">
+                        <div class="opport_title">
+                            <i class="c_icn"></i>
+                            <span title="BMW Advert (Test)">BMW Advert (Test)</span>
+                        </div>
+                        <div class="grid_7 alpha">
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Genre</div>
+                                <div class="reqdetail_genre_txt"> Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock </div>
+                            </div>
+                             <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Song Type</div>
+                                <div class="reqdetail_genre_txt">  Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal </div>
+                            </div>
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Usage Type</div>
+                                <div class="reqdetail_genre_txt"> ExclusiveExclusive Exclusive Exclusive Exclusive Exclusive Exclusive vExclusive Exclusive Exclusive Exclusive </div>
+                            </div>
+                        </div>
+                        <div class="grid_6 omega">
+                            <div class="info_genre">
+                            <span class="info_genre_title">Description</span>
+                            <span class="info_genre_txt">
+                                BMW are looking for an upbeat, summery pop-rock song to feature in their advert in August. The music supervisor would like something similar to Coldplay, but are open to similar sounding tracks.
+                                There is an urgency for this advert, so the deadline won't be long.
+                                We're looking for a track which includes a chorus lasting around 30 seconds and includes the word: love.                            
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_2">2013-07-12</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_buy"></a>
+                        <a href="#" title="Like" class="search_act_love liked"></a>
+                        <a href="#" title="Like" class="search_act_download"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                <div class="search_info_line"></div>
+                <div class="search_rezult_info_bottom">
+                    <a href="#" title="">Hide</a>
+                </div>
+            </div>
+            
+            <div class="search_result_row opport_resalt">
+                <div class="search_resalt_main">
+                    <div class="grid_13 prefix_1">
+                        <div class="opport_title">
+                            <i class="o_icn"></i>
+                            <span title="BMW Advert (Test)">BMW Advert (Test)</span>
+                        </div>
+                        <div class="grid_7 alpha">
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Genre</div>
+                                <div class="reqdetail_genre_txt"> Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock </div>
+                            </div>
+                             <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Song Type</div>
+                                <div class="reqdetail_genre_txt">  Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal </div>
+                            </div>
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Usage Type</div>
+                                <div class="reqdetail_genre_txt"> ExclusiveExclusive Exclusive Exclusive Exclusive Exclusive Exclusive vExclusive Exclusive Exclusive Exclusive </div>
+                            </div>
+                        </div>
+                        <div class="grid_6 omega">
+                            <div class="info_genre">
+                            <span class="info_genre_title">Description</span>
+                            <span class="info_genre_txt">
+                                BMW are looking for an upbeat, summery pop-rock song to feature in their advert in August. The music supervisor would like something similar to Coldplay, but are open to similar sounding tracks.
+                                There is an urgency for this advert, so the deadline won't be long.
+                                We're looking for a track which includes a chorus lasting around 30 seconds and includes the word: love.                            
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_2">2013-07-12</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_buy"></a>
+                        <a href="#" title="Like" class="search_act_love liked"></a>
+                        <a href="#" title="Like" class="search_act_download"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                <div class="search_info_line"></div>
+                <div class="search_rezult_info_bottom">
+                    <a href="#" title="">Hide</a>
+                </div>
+            </div>
+            
+            <div class="search_result_row opport_resalt">
+                <div class="search_resalt_main">
+                    <div class="grid_13 prefix_1">
+                        <div class="opport_title">
+                            <i class="c_icn"></i>
+                            <span title="BMW Advert (Test)">BMW Advert (Test)</span>
+                        </div>
+                        <div class="grid_7 alpha">
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Genre</div>
+                                <div class="reqdetail_genre_txt"> Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock Pop<span class="text_pere"> | </span>Rock </div>
+                            </div>
+                             <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Song Type</div>
+                                <div class="reqdetail_genre_txt">  Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal Male Vocal </div>
+                            </div>
+                            <div class="reqdetail_genre">
+                                <div class="reqdetail_genre_title">Usage Type</div>
+                                <div class="reqdetail_genre_txt"> ExclusiveExclusive Exclusive Exclusive Exclusive Exclusive Exclusive vExclusive Exclusive Exclusive Exclusive </div>
+                            </div>
+                        </div>
+                        <div class="grid_6 omega">
+                            <div class="info_genre">
+                            <span class="info_genre_title">Description</span>
+                            <span class="info_genre_txt">
+                                BMW are looking for an upbeat, summery pop-rock song to feature in their advert in August. The music supervisor would like something similar to Coldplay, but are open to similar sounding tracks.
+                                There is an urgency for this advert, so the deadline won't be long.
+                                We're looking for a track which includes a chorus lasting around 30 seconds and includes the word: love.                            
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_2">2013-07-12</div>
+                    <div class="grid_4">
+                        <a href="#" title="Buy" class="search_act_buy"></a>
+                        <a href="#" title="Like" class="search_act_love liked"></a>
+                        <a href="#" title="Like" class="search_act_download"></a>
+                        <a href="#" title="Info" class="search_act_info"><span>Hide</span></a>
+                    </div>
+                </div>
+                <div class="search_info_line"></div>
+                <div class="search_rezult_info_bottom">
+                    <a href="#" title="">Hide</a>
+                </div>
+            </div>
+             
+          
+            <div class="line"></div>
+            
+            <div class="pagination">
+                <span class="previous">Previous</span>
+                <a href="#" title="" class="page active">1</a>
+                <a href="#" title="" class="page">2</a>
+                <a href="#" title="" class="page">3</a>
+                <span>…</span>
+                <a href="#" title="" class="page">67</a>
+                <a href="#" title="" class="page">68</a>
+                <a href="#" title="" class="page">69</a>
+                <a href="#" title="" class="next">Next</a>
+            </div>
+        </div>  
+
+    </body>
+</html>

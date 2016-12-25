@@ -1,0 +1,273 @@
+/*  ----------------- delete this (begin) ----------------- */
+
+.box {
+  display: relative;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 5px;
+  z-index: 999;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  -o-perspective: 500px;
+  perspective: 500px;
+}
+.masonry .masonry-brick {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+.masonry, .masonry .masonry-brick {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.box.size22 {
+  font-size: 150%;
+  width: 265px;
+  height: 265px;
+}
+.box:hover > .wrapper, .box.flipped > .wrapper {
+  -webkit-transition-delay: 0;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.box .wrapper {
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1), zoom 0.8s;
+  -moz-transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1);
+  -ms-transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1);
+  -o-transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.box .wrapper .averse {
+  background-color: #ffdab9;
+}
+.box .wrapper .reverse {
+  background: -webkit-radial-gradient(top left, ellipse cover, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.16) 100%);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.box .wrapper > div {
+  position: absolute;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.box .info {
+  position: absolute;
+  z-index: 999;
+  margin: 3px;
+  padding: 5px;
+  color: #b4b4b4;
+}
+
+.box .info > * {
+  display: block;
+  font-weight: 600;
+  font-size: 1.15em;
+  text-shadow: 1px 1px 0px #666;
+}
+.box .info .title {
+  color: #DDD;
+  margin-bottom: 4px;
+}
+
+.box .info .artist {
+color: #EEE;
+}
+
+.mixcolor {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background-color .5s, opacity .5s;
+  -moz-transition: background-color .5s, opacity .5s;
+  -o-transition: background-color .5s, opacity .5s;
+  transition: background-color .5s, opacity .5s;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box .wrapper .reverse > div {
+  background: -webkit-radial-gradient(top left, ellipse cover, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.16) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+}
+/* -------------------- delete this (end) --------------------------------- */
+
+/* new */
+
+.box .info .title {
+  color: #fff;             
+}
+.box .info .artist {
+  color: #fff;           
+}
+.box .info,
+.box .info_track {      
+  margin: 8px;            
+  padding: 5px;            
+  color: #fff;           
+}
+
+.box .info,
+.box .info_track {
+  color: #fff;       
+}
+.box .info > * {
+  font-weight: 400;       
+  font-size: 12px;       
+  text-shadow: none;     
+}
+
+.box.seed .wrapper .averse,
+.box.seed .wrapper .reverse {
+  overflow: visible;
+}
+
+.box.seed .wrapper .averse:before,
+.box.seed .wrapper .reverse:before {
+  content: '';
+  display: block;
+  height: 48px;
+  width: 42px;
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  background: url('../img/tiles_small_icons.png') no-repeat -0px -59px;
+}
+.box.seed .wrapper .reverse:before {
+  left: 10px;
+  background-position: -50px -59px;
+}
+
+.box.play .wrapper .averse:after,
+.box.play .wrapper .reverse:after,
+.box.pause .wrapper .averse:after,
+.box.pause .wrapper .reverse:after {
+  content: '';
+  display: block;
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  bottom: 13px;
+  right: 17px;
+  background: url('../img/tiles_small_icons.png') no-repeat;
+}
+
+.box.play .wrapper .averse:after,
+.box.play .wrapper .reverse:after {
+  background-position: -113px -2px;
+}
+.box.pause .wrapper .averse:after,
+.box.pause .wrapper .reverse:after {
+  background-position: -113px -26px;
+}
+
+.box .info .title,
+.box .info .artist {       
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis; 
+  -o-text-overflow: ellipsis; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.box.size22 .info .title,
+.box.size22 .info .artist {       
+  width: 215px;
+}
+
+.box .info.black,
+.box .info.black .title,
+.box .info.black .artist,
+.box .info_track.black {                       
+  color: #312e2e;            
+}
+
+.box .info_track {         
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 50px; 
+  
+}
+.box .info_track .genre,
+.box .info_track .year,
+.box .info_track .bpm {
+  font-size: 11px;  
+  padding-left: 15px;
+  position: relative;
+  line-height: 18px;
+  height: 18px;
+  width: 45px;
+  display: block;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis; 
+  -o-text-overflow: ellipsis; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.box .info_track .genre:before,
+.box .info_track .year:before,
+.box .info_track .bpm:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: url('../img/tiles_small_icons.png') no-repeat;
+}
+.box .info_track.white .genre:before  {
+  background-position: -81px -34px;
+}
+.box .info_track.white .year:before  {
+  background-position: -55px -34px;
+}
+.box .info_track.white .bpm:before  {
+  background-position: -29px -34px;
+}
+
+.box .info_track.black .genre:before  {
+  background-position: -81px 0;
+}
+.box .info_track.black .year:before  {
+  background-position: -55px 0;
+}
+.box .info_track.black .bpm:before  {
+  background-position: -29px 0;
+}
+
+/* new */

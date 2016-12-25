@@ -1,0 +1,18 @@
+.upload_info {
+  width: 500px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.upload_buttons {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 40px;
+  .upload_file {
+    height: 40px;
+    width: 200px;
+    overflow: hidden;
+    margin: 40px auto 0 auto;
+    position: relative;
+  }
+}

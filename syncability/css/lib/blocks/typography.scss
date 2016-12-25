@@ -1,0 +1,120 @@
+p {
+    color: #050708;
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+a.link:hover {
+    text-decoration: underline;
+}
+a {
+    color: #2b9bc5;
+    text-decoration: none;
+}
+
+
+h1 {
+    @include font(#404040, 24px, 700, left);
+    padding: 40px 0 20px 0;
+    .title_option {
+        float: right;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 12px 20px 0 0;
+    }
+    &:after {
+        content: "";
+        display: block;
+        border-top:1px solid #d8d7cd;
+        border-bottom:1px solid #fff;
+        margin-top: 3px;
+    }
+}
+
+h2 {
+    @include font(#404040, 18px, 700, left);
+    padding: 20px 0 10px 0;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.pre {
+    white-space: pre;          
+    white-space: pre-wrap;      
+    white-space: pre-line;      
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+}
+
+.darkgrey {
+    color:#404040;
+}
+.grey {
+    color:#9e9a93;
+}
+.darkblue {
+    color:#050708;
+}
+
+.green {
+    color: #7e8a16;
+}
+
+.orange {
+    color: #ed8101;
+}
+
+.violet {
+    color: #713973;
+}
+.red {
+    color:red;
+}
+.white {
+    color:#fff;
+}
+.black {
+    color:#000;
+}
+
+.decorated {
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+    li {
+        @include font($darkgrey, 14px, 400, left, 18px);
+        margin-top: 10px;
+        position: relative;
+        &:before {
+            background: url('../img/vsmall_icons.png') no-repeat -50px -5px;
+            display: inline-block;
+            vertical-align: middle;
+            @include position (absolute, 6px, auto, auto, -11px);
+            height: 5px;
+            width: 5px;
+            content: "";
+        }
+        b {
+            display: block;
+        }
+    }
+}

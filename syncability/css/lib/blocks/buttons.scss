@@ -1,0 +1,44 @@
+$btn_color_top: #74c6e4;
+$btn_color_bottom: #2fa9d7; 
+$btn_color_active: #1f9ccb;
+$btn_box_shadow_inset: #178bb5; 
+$btn_border_color: #2b9bc6;
+
+.scema_blue .btn,
+.btn
+{
+    @include gradient ($btn_color_top, $btn_color_bottom);   
+    @include rounded_border (3px, 3px, 3px, 3px, 1px solid $btn_border_color);
+    @include font(#fff, 14px, 700, center, 26px);
+    @include text_shadow (rgba(0, 0, 0, 0.5), 0, 0, 6px);
+    height: 26px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    &:hover {
+        @include gradient ($btn_color_bottom, $btn_color_top);
+    }
+    &:active {
+        @include gradient ($btn_color_active, $btn_color_active);
+        @include box_shadow_inset (2px, 2px, 4px, 2px, $btn_box_shadow_inset);
+    }
+    &.big {
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+button.btn {
+    height: 32px;
+    &.big {
+        height: 56px;
+    }
+}
+
+.btn i {
+    position: relative;
+    left: -6px;
+} 

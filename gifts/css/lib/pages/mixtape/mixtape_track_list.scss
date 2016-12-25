@@ -1,0 +1,146 @@
+.gifts_track_list {
+	.item {
+		padding-left: 10px;
+		background: none;
+		height: 55px;
+		position: relative;
+		cursor: default;
+		.progress {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 0%;
+			background: rgba(253,211,0,0.2);
+			z-index: 1;
+		}
+		.count,
+		.track,
+		.delete,
+		.move {
+			position: relative;
+			z-index: 2;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.count {
+			font-family: 'lato', Arial;
+			@include font(#fff, 20px, 300, left, 55px);
+			width: 35px;
+		}
+		.track {
+			width: 163px;
+			height: 55px;
+			line-height: 55px;
+			.cover {
+			  background-position: center center;
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  height: 40px;
+			  width: 40px;
+			  display: inline-block;
+			  vertical-align: middle;
+			  margin-right: 3px;
+			  position: relative;
+			  &:before {
+			  	content: "";
+			  	display: none;
+			  	position: absolute;
+			  	top: 0;
+			  	left: 0;
+			  	width: 100%;
+			  	height: 100%;
+			  	background: url("../img/gifts_sprite.png") -84px -35px rgba(0,0,0,0.5);
+			  }
+			}
+			.info {
+				display: inline-block;
+			  vertical-align: middle;
+			  width: 112px;
+			  .name,
+			  .artist {
+			  	@include ellipsis;
+			  	display: block;
+			  	font-family: 'lato', Arial;
+			  	@include font(#fff, 15px, 400, left, 17px);
+			  }
+			  .artist {
+			  	font-weight: 300;
+			  }
+			}
+		}
+		.delete,
+		.move {
+			@include rounded_border(40px, 40px, 40px, 40px);
+			height: 40px;
+			width: 40px;
+			margin-right: 10px;	
+			text-align: center;
+			cursor: pointer;
+			display: none;
+			&:hover {
+				border: 1px solid #fff;
+			}
+		}
+		&:hover {
+			background: rgba(0,0,0,0.25);
+			.track .cover:before {
+		  	display: block;
+			}
+			.delete,
+			.move {
+				display: inline-block;
+			}
+		}
+		&.active {
+			.track .cover:before {
+				background: url("../img/gifts_sprite.png") -84px -81px rgba(0,0,0,0.5);
+		  	display: block;
+			}
+		}
+		&:before {
+			content: "";
+			display: none;
+			position: absolute;
+			right: 20px;
+			background: url('../img/gifts_sprite.png') no-repeat -151px 8px;
+			width: 40px;
+			height: 54px;
+		}
+		&:after {
+			content: "";
+			display: block;
+			height: 0;
+			margin: -1px 10px 0 0;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		}
+	}
+}
+
+
+.gifts_build_list .gifts_track_list {
+	height: 255px;
+	.item {
+		background: rgba(115, 128, 145, 0.23);
+		&.item_checked {
+			background: none;
+			&:before {
+				display: block;
+			}
+		}
+		&:hover {
+			background: none;
+		}
+		.track {
+			width: 262px;
+			.info {
+				width: 170px;
+			}
+		}
+	}
+	&.long {
+		height: 297px;
+	}
+} 

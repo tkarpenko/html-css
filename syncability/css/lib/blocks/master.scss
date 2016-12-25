@@ -1,0 +1,76 @@
+.schema_blue .master,
+.master {
+    @include rounded_border(3px, 3px, 3px, 3px, 1px solid #227a9b);
+    @include box_shadow (0px, 1px, 1px, 0px, #fff);
+    height: 30px;
+    border-spacing: 0px;
+    display: table;
+    margin: 0 auto 10px auto;
+    font-size: 0;
+    overflow: hidden;
+    .master_txt {
+        @include font(#2b9bc5, 12px, 400, left, 30px);
+        height: 30px;
+        padding: 0 20px;
+        z-index: 1;
+        &:before {
+            background: url('../img/small_icons.png') no-repeat -150px -75px;
+            height: 25px;
+            width: 25px;
+            @include position (absolute, 3px, auto, auto, 7px);
+            content: "";
+            display:none;
+        }
+    }
+    .master_step {
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #a1e5ff;
+        height: 100%;
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            border-right: none;
+            position: absolute;
+        }
+        &:before {
+          border-top: 16px solid;
+          border-left: 11px solid;
+          border-bottom: 16px solid;
+          border-color: transparent transparent transparent #227a9b;
+          top: -1px;
+          right: -11px;
+          z-index: 2;
+        }
+        &:after {
+          border-top: 15px solid;
+          border-left: 10px solid;
+          border-bottom: 15px solid;
+          border-color: transparent transparent transparent #a1e5ff;
+          top: 0px;
+          right: -10px;
+          z-index: 3;
+        }
+        &.current {
+            background-color: #2b9bc5;
+            @include box_shadow_inset (0px, 14px, 11px, -15px, rgba(0,0,0,0.3) );
+            .master_txt {
+                color: #fff;
+                font-weight: 700;
+                @include text_shadow (rgba(0,0,0,0.5), 1px, 0, 3px);
+            }
+            &:after {
+                border-color: transparent transparent transparent #2b9bc5;
+            }
+        }
+        &.past {
+            .master_txt {
+                padding: 0 5px 0 35px;
+                &:before {
+                    display: block;
+                }
+            }
+        }
+    }
+}

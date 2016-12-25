@@ -1,0 +1,485 @@
+::-webkit-input-placeholder { 
+  text-align:left; 
+}
+
+/*input, textarea, select, label, fieldset, legend
+----------------------------------------------*/
+input[type="text"],
+.textarea,
+select {
+  border: 1px solid #c8c9c0;
+  background-color: #fff;
+  padding: 4px 10px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+  @include font(#9e9a93, 14px, 400, left, 22px);
+  height: 22px;
+  width: 412px;
+}
+input[type="text"].small,
+.grid_13 input[type="text"].small {
+  width: 127px;
+}
+
+select {
+  @include font(#9e9a93, 14px, 400, left, 22px);
+  line-height: 26px;
+  padding-right: 0;
+  width: 434px;
+  height: 30px;
+}
+select.small,
+.grid_13 select.small {
+  width: 150px;
+}
+
+.textarea {
+  height: 100px;
+  width: 412px;
+  textarea {
+    @include font(#9e9a93, 14px, 400, left, 22px);
+    height: 100px;
+    width: 421px; 
+  }
+}
+
+.grid_13 input[type="text"],
+.grid_13 .textarea {
+  width: 462px;
+}
+.grid_13 .textarea textarea {
+  width: 471px;
+  max-width: 471px;
+}
+.grid_13 select {
+  width: 483px;
+}
+
+.grid_13 .mm_create_form input[type="text"],
+.grid_13 .mm_create_form .textarea {
+  width: 443px;
+}
+.grid_13 .mm_create_form .textarea textarea {
+  width: 452px;
+}
+.grid_13 .mm_create_form select {
+  width: 465px;
+}
+
+input[type="file"] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 100px;
+  @include opacity(0);
+}
+
+form {
+  text-align: right;
+  font-size: 0;
+  letter-spacing: -4px;
+  line-height: 0;
+}
+
+fieldset {
+  padding-top: 15px;
+  position: relative;
+}
+
+legend {
+  @include font(#9e9a93, 14px, 700, left, 30px);
+}
+
+.mm_form_elem {
+  position: relative;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 0;
+  letter-spacing: -4px;
+  line-height: 0;
+  label {
+    @include font(#575757, 14px, 400, left, 30px);
+    display: inline-block;
+    vertical-align: top;
+    width: 146px;
+  }
+  & > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 412px;
+    line-height: 30px;
+  }
+  .error {
+    @include font(#ff0000, 14px, 400, left, 15px);
+  }
+  .desc {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0px;
+  }
+  .title {
+    @include font(#9e9a93, 14px, 400, left, 0px);
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.mm_form_elem .messenger_block {
+  width: 434px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  letter-spacing: -4px;
+  .messenger_item {
+    margin: 0 0 10px 0;
+  }
+  .mm_dropdown {
+    width: 147px;
+    & > dt {
+      width: 117px;
+    }
+    .dropdown_items li a {
+      width: 127px;
+    }
+  }
+  input[type="text"] {
+    margin-left: 10px;
+    width: 217px;
+  }
+}
+
+.mm_form_elem .mm_dropdown {
+  width: 404px;
+  .dropdown_head_txt {
+    @include font(#9e9a93, 14px, 400, left, 22px);
+  }
+  & > dt,
+  & > dd {
+    border: 1px solid #c8c9c0;
+    background-color: #fff;
+  }
+  & > dt {
+    padding: 4px 20px 4px 10px;
+    position: relative;
+    height: 22px;
+    width: 374px;
+  }
+  .dropdown_items li { 
+    a {
+      @include font(#9e9a93, 14px, 400, left, 22px);
+      padding: 0 10px;
+    }
+    a:hover,
+    &.active > a,
+    &.open > a,
+    .dropdown_subitems ul li.active a {
+      color: #fff;
+      background-color: #43acd5;
+      @include text_shadow (rgba(255, 255, 255, 0.93), 0px, 0px, 0px);
+    }
+  }
+}
+
+.mm_form_elem.genre .mm_dropdown {
+  width: 481px;
+  dt {
+    width: 451px;
+  }
+  dd:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 0;
+    height: 100%;
+    border-left: 1px solid #c8c9c0; 
+    z-index: 0;
+  }
+  .dropdown_items {
+    width: 200px;
+    li {
+      & > a {
+        width: 180px;
+      }
+      .dropdown_subitems {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 201px;
+        overflow: hidden;
+        ul li a {
+          width: 264px;
+        } 
+      }
+      .dropdown_subitems,
+      .dropdown_subitems ul {
+        width: 280px;
+        overflow-x: hidden;
+      }
+      &.dir > a:after {
+        content: '';
+        background: url('../img/mm_vsmall_icons.png') 0 0 no-repeat;
+        height: 15px;
+        width: 15px;
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 0;
+      }
+      
+      &.dir.open > a:after,
+      &.dir:hover > a:after {
+        background-position: -15px 0;
+      }
+      
+      &.dir.open .dropdown_subitems {
+        display: block;
+      }
+    }
+  }
+}
+
+.mm_create_form .mm_form_elem.genre.charts .mm_dropdown {
+  width: 960px;
+  dt {
+    width: 930px;
+  }
+  dd:after {
+    left: 474px;
+  }
+  .dropdown_items {
+    width: 474px;
+    li {
+      & > a {
+        width: 454px;
+      }
+      .dropdown_subitems {
+        left: 475px;
+        ul li a {
+          width: 466px;
+        } 
+      }
+      .dropdown_subitems,
+      .dropdown_subitems ul {
+        width: 486px;
+      }
+    }
+  }
+}
+
+.mm_create_form .mm_form_elem.genre.charts_tracks .mm_dropdown {
+  width: 610px;
+  dt {
+    width: 580px;
+  }
+  dd:after {
+    left: 300px;
+  }
+  .dropdown_items {
+    width: 300px;
+    li {
+      & > a {
+        width: 280px;
+      }
+      .dropdown_subitems {
+        left: 301px;
+        ul li a {
+          width: 290px;
+        } 
+      }
+      .dropdown_subitems,
+      .dropdown_subitems ul {
+        width: 310px;
+      }
+    }
+  }
+}
+
+.mm_create_form .mm_form_elem .mm_dropdown {
+  width: 462px;
+  & > dt {
+    width: 432px;
+  }
+  .dropdown_size {
+    height: 484px;
+    width: 460px;
+  }
+}
+
+.mm_form_elem .mm_input_img {
+  margin: 0;
+}
+
+.mm_input_img {
+  width: 130px;
+  height: 122px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.mm_add_img {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #cec9be;
+  position: relative;
+  text-indent: -9999px;
+  line-height: 197px;
+  text-align: center;
+  z-index: 0;
+  cursor: pointer;
+  .icon_round_upload {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    z-index: 2;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  span {
+    position: relative;
+    width: 120px;
+    text-align: center;
+    z-index: 3;
+  }
+}
+
+.mm_input_img:hover .mm_add_img {
+  border-color: #4baed4; 
+  text-indent: 0px;
+  span {
+    color: #2b9bc5;
+  }
+  .icon_round_upload {
+    background-position: -50px -100px;
+  }
+}
+
+
+.mm_edit_tags {
+  border: 1px solid #c8c9c0;
+  background-color: #fff;
+  padding: 2px 10px;
+  position: relative;
+  width: 412px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  list-style: none;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    padding: 0 5px;
+    margin: 2px 3px;
+    &.label {
+      @include font(#fff, 12px, 400, left, 20px);
+      @include text_shadow (#4c453a, 0px, 0px, 7px);
+      background-color: #bbb1a1;
+      a {
+        margin: -4px 0 0 3px;
+      }
+    }
+    &.input input[type="text"] {
+      height: 20px;
+      width: 100px;
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  border: none;
+  visibility: hidden;
+}
+input[type=radio]+.mm_radio {
+  @include font(#575757, 14px, 400, left, 30px);
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  @include ellipsis;
+  &:before {
+    background: url('../img/mm_small_icons.png') no-repeat -30px -210px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    content: "";
+  }
+  &:hover:before {
+    background-position: -90px -210px;
+  }
+  &.active:before {
+    background-position: -60px -210px;
+  }
+}
+
+input[type=checkbox]+.mm_checkbox {
+  @include font(#575757, 14px, 400, left, 30px);
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  @include ellipsis;
+  &:before {
+      background: url('../img/mm_small_icons.png') no-repeat -120px 0;
+      display: inline-block;
+      vertical-align: middle;
+      height: 30px;
+      width: 30px;
+      content: "";
+  }
+  &:hover:before {
+      background-position: -120px -30px;
+  }
+  &.active:before {
+      background-position: -120px -60px;
+  }
+}
+
+.mm_form_elem .mm_dropdown .mm_checkbox {
+  height: 23px;
+  line-height: 23px;
+}
+
+.mm_create_form {
+  position: relative;
+  top: 1px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: none;
+  background: url("../img/dark_bg.jpg") repeat;
+  border-top: 1px solid #d1c6be;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8); 
+  &.open {
+    display: block;
+  }
+}
+
+.mm_track .mm_create_form {
+  margin: 0;
+}

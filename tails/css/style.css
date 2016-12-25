@@ -1,0 +1,475 @@
+body {
+  font-family: Arial, Tahoma, Verdana, Sans-Serif;
+  font-size: 12px;
+  color: #fff;
+  background: #1f1d1d;
+}
+
+.sort_filters, .sort_filters div, .sort_filters dl, .sort_filters dt,
+.sort_filters dd, .sort_filters button, .sort_filters ul {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort_filters {
+  width: 920px;
+  left: 65px;
+  margin: 10px auto 2px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/* ----------------- dl - dt - dd ------------------------- */
+.sort_filters dl {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: 2px;
+  overflow: hidden;
+}
+.sort_filters dl:first-child {
+  margin-left: 0;
+}
+.sort_filters dl dt {
+  display: table-cell;
+  height: 130PX;
+  width: 130px;
+}
+.sort_filters dl dd {
+  display: table-cell;
+  vertical-align: middle;
+  background: #fff;
+  display: none;
+  padding: 25px 20px;
+  position: relative;
+  min-height: 80px;
+  width: 620px;
+  color: #333030;
+  overflow: hidden;
+}
+/* ----------------- dl - dt - dd ------------------------- */
+
+
+/* ------------------------- big buttons --------------------------- */
+.sort_filters dl dt .filter,
+.sort_filters .clear_all,
+.sort_filters .back {
+  background: url('../img/tiles_sort_filters.png') no-repeat;
+  background-color: #333030;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  font-size: 18px;
+  height: 130px;
+  width: 130px;
+  padding-top: 70px;
+  cursor: pointer;
+}
+.sort_filters .clear_all,
+.sort_filters .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1f1d1d;
+  display: none;
+}
+.sort_filters dl dt .filter .title,
+.sort_filters dl dt .filter .subtitle {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis; 
+  -o-text-overflow: ellipsis; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+  text-align: center;
+  line-height: 18px;
+}
+.sort_filters dl dt .filter .subtitle {
+  font-size: 12px;
+}
+
+/* buttons images */
+.sort_filters .filter.genre {
+  background-position: 0 0;
+}
+.sort_filters .filter.year {
+  background-position: 0 -130px;
+}
+.sort_filters .filter.bpm  {
+  background-position: 0 -260px;
+}
+.sort_filters .filter.color {
+  background-position: 0 -390px;
+  background-color: #fff;
+}
+.sort_filters .filter.content {
+  background-position: 0 -520px;
+}
+.sort_filters .filter.sort {
+  background-position: 0 -650px;
+}
+.sort_filters .clear_all {
+  background-position: 0 -780px;
+}
+.sort_filters .back {
+  background-position: 0 -910px;
+}
+/* buttons images */
+
+/* ------------------- big buttons ------------------------ */
+
+
+
+/* ---------------- active dl ---------------------- */
+.sort_filters.select_filter dl.active dt .filter {
+  background-image: url('../img/tiles_sort_filters_active.png');
+  background-color: #fff;
+  color: #333030;
+}
+.sort_filters.select_filter .active .filter.color {
+  background-color: #333030;
+}
+/* ---------------- active dl ---------------------- */
+
+
+/* ----------------- open filter popup ----------------------*/
+.sort_filters.select_filter_value dl {
+  display: none;
+}
+.sort_filters.select_filter_value dl.open {
+  margin-left: 0;
+  display: block;
+}
+.sort_filters.select_filter_value dl.open dd {
+  display: table-cell;
+}
+.sort_filters.select_filter_value .back,
+.sort_filters.select_filter .clear_all {
+  display: inline-block;
+}
+/* ----------------- open filter popup ----------------------*/
+
+
+
+
+
+/* ---------------------- checkbox --------------------------- */
+.sort_filters .checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  color: #333030;
+  font-size: 14px;
+  line-height: 23px;
+  padding: 0 0 0 10px;
+  margin: 0 0 0 5px;
+  height: 23px;
+  width: 180px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis; 
+  -o-text-overflow: ellipsis; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  cursor: pointer;
+}
+.sort_filters .checkbox input {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sort_filters .checkbox.active {
+  font-weight: 700;
+}
+.sort_filters .checkbox.disabled  {
+  color: #9b9b9b;
+  cursor: default;
+}
+
+
+/* ----- checkbocks types ----- */
+
+/* big checkbox */
+.sort_filters  .checkbox.big {
+  font-size: 18px;
+  width: 250px;
+}
+/* big checkbox */
+
+/* color checkbox */
+.sort_filters  .checkbox.color {
+  background: url('../img/tiles_sort_filters.png') no-repeat;
+  margin: 0;
+  padding: 44px 0 0 0;
+  height: 33px;
+  font-size: 0;
+  text-align: center;
+  width: 65px;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.sort_filters  .checkbox.color span{
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 14px;
+  color: #333030;
+  margin-left: -2px;
+  padding: 0 0 0 8px;
+  position: relative;
+  width: auto;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.sort_filters  .checkbox.color.red {
+  background-position: -31px -1068px;
+}
+.sort_filters  .checkbox.color.orange {
+  background-position: -31px -1197px;
+}
+.sort_filters  .checkbox.color.yellow {
+  background-position: -31px -1327px;
+}
+.sort_filters  .checkbox.color.green {
+  background-position: -31px -1457px;
+}
+.sort_filters  .checkbox.color.blue {
+  background-position: -31px -1587px;
+}
+.sort_filters  .checkbox.color.purpule {
+  background-position: -31px -1717px;
+}
+.sort_filters  .checkbox.color.black {
+  background-position: -31px -1847px;
+}
+.sort_filters  .checkbox.color.silver {
+  background-position: -31px -1977px;
+}
+.sort_filters  .checkbox.color.white {
+  background-position: -31px -2107px;
+}
+/* color checkbox */
+
+/* ----- checkbocks types ----- */
+
+
+/* ----- blue point ------ */
+.sort_filters .checkbox.active:before,
+.sort_filters .checkbox:hover:before,
+.sort_filters  .checkbox.color.active span:before,
+.sort_filters  .checkbox.color:hover span:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  height: 6px;
+  width: 6px;
+  background-color: #2cade0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  behavior: url("PIE.htc");
+}
+.sort_filters .checkbox.disabled:hover:before,
+.sort_filters .checkbox.active.disabled:hover:before, 
+.sort_filters .checkbox.active.disabled:before,
+.sort_filters .checkbox.color.active:before,
+.sort_filters .checkbox.color:hover:before,
+.sort_filters  .checkbox.color.disabled:hover span:before,
+.sort_filters  .checkbox.color.active.disabled:hover span:before,
+.sort_filters  .checkbox.color.active.disabled span:before {
+  display: none;
+}
+/* ----- blue point ------ */
+
+/* ---------------------- checkbox --------------------------- */
+
+
+
+
+
+/* ------------------- small buttons -------------------------*/
+.sort_filters .clear {
+  background: none;
+  border: none;
+  color: #333030;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.sort_filters .clear:before {
+  content: '';
+  background: url('../img/tiles_small_icons.png') no-repeat 0px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 9px;
+  width: 9px;
+  margin-right: 5px;
+}
+/* ------------------- small buttons -------------------------*/
+
+
+
+
+/* ------------------- scale -------------------------*/
+.sort_filters .scale {
+  list-style: none;
+  font-size: 0;
+  letter-spacing: -4px;
+  height: 30px;
+  width: 623px;
+  margin: 0 0 4px 3px;
+}
+.sort_filters .scale li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #333030;
+  font-size: 12px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  text-align: center;
+  height: 30px;
+  width: 70px;
+}
+.sort_filters .scale li:first-child {
+  text-align: left;
+  width: 46px;
+}
+.sort_filters .scale li:after,
+.sort_filters .scale li:before {
+  content: '|';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #c1c0c0;
+  font-size: 14px;
+  height: 15px;
+  width: 1px;
+}
+.sort_filters .scale li:before {
+  bottom: 3px;
+  left: 100%;
+  font-size: 8px;
+  height: 8px;
+}
+.sort_filters .scale li:first-child:after {
+  left: 11px;
+}
+.sort_filters .scale li.disabled {
+  color: #9b9b9b;
+  cursor: default;
+}
+.sort_filters .scale_slider {
+  width: 610px;
+}
+/* ------------------- scale -------------------------*/
+
+
+
+.sort_filters .caption {
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* ---------------- jquery ui slider rewrite ------------------- */
+.sort_filters .ui-widget-content {
+  background-color: #cccbcb;
+  background-image: none;
+  color: #333030;
+}
+.sort_filters .ui-corner-all {
+  border-radius: 0;
+}
+.sort_filters .ui-slider-horizontal {
+  height: 3px;
+}
+.sort_filters .ui-widget-header {
+  background-color: #2cade0;
+  background-image: none;
+  color: #333030;
+}
+.sort_filters .ui-state-default, 
+.sort_filters .ui-widget-content .ui-state-default, 
+.sort_filters .ui-widget-header .ui-state-default {
+  height: 45px;
+  width: 45px;
+  border: none;
+  background: none;
+  color: #333030;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.sort_filters .ui-state-default:before, 
+.sort_filters .ui-widget-content .ui-state-default:before, 
+.sort_filters .ui-widget-header .ui-state-default:before {
+  content: '';
+  display: block;
+  position: relative;
+  left: 13px;
+  margin-bottom: 5px;
+  height: 18px;
+  width: 18px;
+  border: none;
+  background-color: #2cade0;
+  background-image: none;
+  color: #333030;
+  border-radius: 18px;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  behavior: url("PIE.htc");
+}
+.sort_filters .ui-slider-horizontal .ui-slider-handle {
+  top: -8px;
+  margin-left: -20px;
+}
+/* ---------------- jquery ui slider rewrite ------------------- */
+
+
+
+
+/* ---------------- info about sort results ------------------- */
+.sort_result {
+  height: 22px;
+  margin: 35px 0 15px 0;
+  font-size: 18px;
+  color: #fff;
+  line-height: 22px;
+}
+
+.sort_result .tracks_number {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #333030;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+/* ---------------- info about sort results ------------------- */
