@@ -1,0 +1,14 @@
+.dwl_cp_icon_facebook,
+.dwl_cp_icon_twitter,
+.dwl_cp_icon_google,
+.dwl_cp_icon_instagram {
+	background: url("../img/campaign_page/dwl_cp_icons_social.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;
+	width: 24px;
+}
+.dwl_cp_icon_facebook { background-position: 0 0; }
+.dwl_cp_icon_twitter { background-position: 0 -32px; }
+.dwl_cp_icon_google { background-position: 0 -64px; }
+.dwl_cp_icon_instagram { background-position: 0 -96px; }

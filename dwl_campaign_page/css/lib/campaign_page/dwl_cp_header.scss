@@ -1,0 +1,487 @@
+@mixin font ($color: $grey, $size: 12px, $weight: 400, $align: left, $line_height: inherit) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-align: $align;
+  line-height: $line_height;
+}
+@mixin ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+}
+@mixin rounded_border ($left_top: 4px, $right_top: 4px, $right_bottom: 4px, $left_bottom: 4px, $border: none) {
+  border: $border;
+  border-radius:         $left_top $right_top $right_bottom $left_bottom;
+  -moz-border-radius:    $left_top $right_top $right_bottom $left_bottom;
+  -webkit-border-radius: $left_top $right_top $right_bottom $left_bottom;
+}
+
+.tw-bs {
+	.dwl_cp_header {
+		width: 100%;
+		height: 48px;
+		background: rgba(0, 0, 0, 0.8);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 4;
+		button {
+			border: none;
+			background: none;
+		}
+		.dwl_cp_logo {
+			height: 47px;
+			width: 49px;
+			float: left;
+			position: relative;
+			background: url("../img/campaign_page/dwl_cp_logo.png") center center no-repeat;
+			border-right: 1px solid rgba(255, 255, 255, 0.2);
+			text-indent: -9999px;
+			z-index: 2;
+		}
+		.dwl_cp_nav {
+			float: left;
+			position: relative;
+			z-index: 2;
+			.menu_head {
+				display: inline-block;
+				vertical-align: middle;
+				border-right: 1px solid rgba(255, 255, 255, 0.2);
+				height: 47px;
+				cursor: pointer;
+				padding: 0 10px;	
+				white-space: nowrap;
+				.name {
+					font-family: "Lato", Arial;
+					@include font(#fff, 14px, 400, left, 48px);
+					@include ellipsis;
+					width: auto;
+					max-width: 300px;	
+					min-width: 120px;
+					padding-right: 10px;
+				}
+				.caret {
+					border-top-color: #fff; 
+				}
+				.menu_smsc {
+					display: none;
+					vertical-align: middle;
+					height: 48px;
+					width: 28px;
+					.icon-bar {
+					  display: block;
+						margin-right: auto;
+						margin-left: auto;
+					  width: 22px;
+					  height: 2px;
+					  border-radius: 0px;
+					  background-color: #fff;
+					}
+					.icon-bar + .icon-bar {
+					  margin-top: 4px;
+					}
+				}
+			}
+			.menu_body {
+				position: absolute;
+				top: 48px;
+				left: -385px;
+				margin: 0;
+				width: 100%;
+				height: 0;
+				li {
+					display: block;
+					position: relative;
+					a {
+						position: relative;
+						display: block;
+						span {
+							display: block;
+							border-right: 1px solid rgba(255, 255, 255, 0.2);
+							border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+							background: rgba(0, 0, 0, 0.8);
+							font-family: "Lato", Arial;
+							@include font(#959595, 14px, 400, left, 48px);
+							opacity: 0;
+							visibility: hidden;
+
+							-webkit-transform-origin: -100% 0%;
+							-moz-transform-origin: -100% 0%;
+							-o-transform-origin: -100% 0%;
+							-ms-transform-origin: -100% 0%;
+							transform-origin: -100% 0%;
+
+							-webkit-transform-style: preserve-3d;
+							-moz-transform-style: preserve-3d;
+							-o-transform-style: preserve-3d;
+							-ms-transform-style: preserve-3d;
+							transform-style: preserve-3d;
+						}
+						span:nth-child(1) {
+							-webkit-transition: all 0.5s 0.5s linear;
+							-moz-transition: all 0.5s 0.5s linear;
+							-o-transition: all 0.5s 0.5s linear;
+							-ms-transition: all 0.5s 0.5s linear;
+							transition: all 0.5s 0.5s linear;
+
+							-webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
+							-moz-transform: translate3d(-100%, 0, 0) rotateY(90deg);
+							-o-transform: translate3d(-100%, 0, 0) rotateY(90deg);
+							-ms-transform: translate3d(-100%, 0, 0) rotateY(90deg);
+							transform: translate3d(-100%, 0, 0) rotateY(90deg);
+
+							position: absolute;
+							top: 0;
+							left: -50px;
+							height: 49px;
+							width: 50px;
+							text-align: center;
+						}
+						span:nth-child(2) {
+							padding-left: 10px;
+							position: relative;
+
+							-webkit-transition: all 0.5s linear;
+							-moz-transition: all 0.5s linear;
+							-o-transition: all 0.5s linear;
+							-ms-transition: all 0.5s linear;
+							transition: all 0.5s linear;
+
+							-webkit-transform: translate3d(100%, 0, 0) rotateY(90deg);
+							-moz-transform: translate3d(100%, 0, 0) rotateY(90deg);
+							-o-transform: translate3d(100%, 0, 0) rotateY(90deg);
+							-ms-transform: translate3d(100%, 0, 0) rotateY(90deg);
+							transform: translate3d(100%, 0, 0) rotateY(90deg);						
+						}
+						&:hover,
+						&.active {
+							text-decoration: none;
+							span {
+								color: #fff;
+							}
+						}
+					}
+				}
+				-webkit-transition: all 0.01s 0.7s linear;
+				-moz-transition: all 0.01s 0.7s linear;
+				-o-transition: all 0.01s 0.7s linear;
+				-ms-transition: all 0.01s 0.7s linear;
+				transition: all 0.01s 0.7s linear;
+			}
+			&:hover .menu_body,
+			&.menu_open .menu_body {
+				left: 0;
+				-webkit-transition: all 0.01s linear;
+				-moz-transition: all 0.01s linear;
+				-o-transition: all 0.01s linear;
+				-ms-transition: all 0.01s linear;
+				transition: all 0.01s linear;
+			}
+			&:hover .menu_body li a span,
+			&.menu_open .menu_body li a span {
+				opacity: 1;
+				visibility: visible;
+				-webkit-transform: translate3d(0, 0, 0) rotateY(0deg);
+				-moz-transform: translate3d(0, 0, 0) rotateY(0deg);
+				-o-transform: translate3d(0, 0, 0) rotateY(0deg);
+				-ms-transform: translate3d(0, 0, 0) rotateY(0deg);
+				transform: translate3d(0, 0, 0) rotateY(0deg);
+			}
+			&:hover .menu_body li a span:nth-child(1),
+			&.menu_open .menu_body li a span:nth-child(1) {
+				-webkit-transition: -webkit-transform 0.5s linear;
+				-moz-transition: -moz-transform 0.5s linear;
+				-o-transition: all 0.5s linear;
+				-ms-transition: -ms-transform 0.5s linear;
+				transition: transform 0.5s linear;
+			}
+			&:hover .menu_body li a span:nth-child(2),
+			&.menu_open .menu_body li a span:nth-child(2) {
+				-webkit-transition: -webkit-transform 0.5s 0.5s linear;
+				-moz-transition: -moz-transform 0.5s 0.5s linear;
+				-o-transition: all 0.5s 0.5s linear;
+				-ms-transition: -ms-transform 0.5s 0.5s linear;
+				transition: transform 0.5s 0.5s linear;
+			}
+		}
+		.dwl_cp_filter {
+			float: left;
+			display: block;
+			height: 47px;
+			white-space: nowrap;
+			list-style: none;
+			padding: 0 15px;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				span,
+				button {
+					padding: 0 8px;
+					font-family: "Lato", Arial;
+					@include font(#fff, 14px, 400, center, 48px);
+					display: inline-block;
+					vertical-align: middle;
+					height: 48px;
+					min-width: 30px;
+				}
+				button.active {
+					color: #e3ba1d !important;
+				}
+			}
+		}
+		.dwl_cp_player {
+			float: left;
+			height: 47px;
+			border-left: 1px solid rgba(255, 255, 255, 0.2);
+			border-right: 1px solid rgba(255, 255, 255, 0.2);
+			position: relative;
+			width: 254px;
+			button.active {
+				color: #e3ba1d !important;
+			}
+			.player_main {
+				position: relative;
+				z-index: 2;
+				height: 48px;
+			}
+			.player_controls {
+				padding: 0 5px;
+				float: left;
+				button {
+					@include font(#fff, 14px, 400, center, 48px);
+					padding: 0 7px;
+					&.big {
+						font-size: 18px;
+						padding: 0 4px;
+					}
+				}
+			}
+			.player_track_info {
+				width: 113px;
+				float: left;
+				.player_track_name {
+					font-family: "Lato", Arial;
+					@include font(#fff, 14px, 400, left, 28px);
+					@include ellipsis;
+					margin-bottom: 4px;
+				}
+				.player_track_status {
+					font-family: "Lato", Arial;
+					@include font(#fff, 12px, 400, left, 14px);
+					display: none;
+					margin-top: -5px;
+				}
+			}
+			.player_advanced {
+				position: absolute;
+				top: 48px;
+				left: 0;
+				width: 100%;
+				z-index: 1;
+				overflow: hidden;
+				.player_advanced_content {
+					background: rgba(0, 0, 0, 0.8);
+					border-left: 1px solid rgba(255, 255, 255, 0.2);
+					border-right: 1px solid rgba(255, 255, 255, 0.2);
+					border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+					position: relative;
+					top: 0px;
+					height: 100%;
+					width: 100%;
+
+					opacity: 0;
+					visibility: hidden;
+
+					-webkit-transform: translate(0, -300px);
+					-moz-transform: translate(0, -300px);
+					-o-transform: translate(0, -300px);
+					-ms-transform: translate(0, -300px);
+					transform: translate(0, -300px);
+
+					-webkit-transition: all 0.5s linear;
+					-moz-transition: all 0.5s linear;
+					-o-transition: all 0.5s linear;
+					-ms-transition: all 0.5s linear;
+					transition: all 0.5s linear;
+				}
+				.player_advanced_controls {
+					width: 253px;
+					margin: 0 auto;
+				}
+				.player_volume {
+					float: right;
+					width: 117px;
+					.player_volume_progress {
+						display: inline-block;
+						vertical-align: middle;
+						width: 65px;
+						margin-top: -7px;
+					}
+				}
+				.player_playlist {
+					width: 100%;
+					max-height: 235px;
+					list-style: none;
+					border-top: 1px solid rgba(255, 255, 255, 0.2);
+					clear: both;
+					li {
+						display: block;
+						border-top: 1px solid rgba(255, 255, 255, 0.2);
+						&:first-child {
+							border-top: none;
+						}
+						a,
+						button {
+							display: inline-block;
+							vertical-align: middle;
+						}
+						button {
+							@include font(#fff, 14px, 400, center, 48px);
+							width: 30px;
+						}
+						a {
+							font-family: "Lato", Arial;
+							@include font(#fff, 14px, 400, left, 48px);
+							@include ellipsis;
+							width: 195px;
+							&:hover {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+			.progress {
+				background-color: #363636;
+				height: 4px;
+				margin: 0;
+				overflow: visible;
+				.progress-bar {
+					background-color: #ebc11d;
+					text-align: right;
+					@include rounded_border();
+					.player_pointer {
+						display: inline-block;
+						vertical-align: middle;
+						background-color: #fff;
+						height: 12px;
+						position: relative;
+						top: -10px;
+						cursor: pointer;
+						&.stick {
+							@include rounded_border();
+							width: 4px;
+							left: 2px;
+						}
+						&.circus {
+							@include rounded_border(12px, 12px, 12px, 12px);
+							width: 12px;
+							left: 4px;
+						}
+					}
+				}
+			}
+			&.player_open .player_advanced .player_advanced_content {
+				opacity: 1;
+				visibility: visible;
+				top: 0;
+
+				-webkit-transform: translate(0, 0);
+				-moz-transform: translate(0, 0);
+				-o-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				transform: translate(0, 0);
+
+				-webkit-transition: -webkit-transform 0.5s linear;
+				-moz-transition: -moz-transform 0.5s linear;
+				-o-transition: all 0.5s linear;
+				-ms-transition: -ms-transform 0.5s linear;
+				transition: transform 0.5s linear;
+			}
+		}
+		.dwl_cp_menu {
+			display: block;
+			list-style: none;
+			li {
+				float: left;
+				border-left: 1px solid rgba(255, 255, 255, 0.2);
+				button {
+					display: block;
+					@include font(#fff, 14px, 400, center, 48px);
+					min-width: 47px;
+					&.toggle {
+						i.glyphicon-remove {
+							display: none;
+						}
+						&.rightbar_open {
+							&>.glyphicon-book,
+							&>.glyphicon-info-sign,
+							&>.glyphicon-comment {
+								display: none;
+							}
+							&>.glyphicon-remove {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 970px) {
+	.tw-bs .dwl_cp_header .dwl_cp_nav .menu_head .name {
+		width: 100px;
+	}
+}
+@media (max-width: 768px) {
+	.tw-bs .dwl_cp_header .dwl_cp_nav .menu_head {
+		.name {
+			display: none;
+		}
+		.caret {
+			display: none; 
+		}
+		.menu_smsc {
+			display: inline-block;
+		}
+	}
+	.tw-bs .dwl_cp_header .dwl_cp_nav .menu_body {
+		width: 140px;
+	}
+}
+@media (max-width: 685px) {
+	.tw-bs .dwl_cp_header .dwl_cp_filter {
+		display: none;
+	}
+}
+@media (max-width: 450px) {
+	.tw-bs .dwl_cp_header .player_smsc {
+		display: none;
+	}
+	.tw-bs .dwl_cp_header .dwl_cp_player {
+		width: 125px;
+		.player_track_info {
+			width: 75px;
+			.player_track_status {
+				display: block;
+			}
+		}
+		.player_advanced {
+			left: -97px;
+			width: 317px;
+			.player_playlist li a {
+				width: 260px;
+			}
+		}
+	}
+}

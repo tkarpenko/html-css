@@ -1,0 +1,200 @@
+@mixin box_shadow ($x_shadow, $y_shadow, $radius, $blur, $color) {
+  -moz-box-shadow: $x_shadow $y_shadow $radius $blur $color;
+  -webkit-box-shadow: $x_shadow $y_shadow $radius $blur $color;
+  box-shadow: $x_shadow $y_shadow $radius $blur $color;
+}
+@mixin font ($color: $grey, $size: 12px, $weight: 400, $align: left, $line_height: inherit) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-align: $align;
+  line-height: $line_height;
+}
+@mixin ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+}
+@mixin rounded_border ($left_top: 4px, $right_top: 4px, $right_bottom: 4px, $left_bottom: 4px, $border: none) {
+  border: $border;
+  border-radius:         $left_top $right_top $right_bottom $left_bottom;
+  -moz-border-radius:    $left_top $right_top $right_bottom $left_bottom;
+  -webkit-border-radius: $left_top $right_top $right_bottom $left_bottom;
+}
+
+.tw-bs {
+	.dwl_cp_swatches_list {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 4;
+		.toggle_button {
+			display: none;
+			width: 146px;
+			margin-left: 50%;
+			background: rgba(0, 0, 0, 0.4);
+			@include rounded_border (5px, 5px, 0px, 0px);
+			border-left: 1px solid rgba(255, 255, 255, 0.2);
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+			border-right: 1px solid rgba(255, 255, 255, 0.2);
+			position: relative;
+			top: 1px;
+			left: -73px;
+			padding: 0 15px;
+			font-family: "Lato", Arial;
+			@include font(#fff, 14px, 400, center, 29px);
+			.sopen {
+				display: none;
+			}
+			.sclose {
+				display: inline-block;	
+			}
+		}
+		ul {
+			background: rgba(0, 0, 0, 0.4);
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+			padding: 2px 0 0 0;
+			margin: 0;
+			width: 100%;
+			list-style: none;
+			li {
+				float: left;
+				margin: 0 1px;
+				height: 200px;
+				width: 200px;
+				position: relative;
+
+		  	-webkit-transition: width 0.7s ease;
+		  	-moz-transition: width 0.7s ease;
+		  	-ms-transition: width 0.7s ease;
+		  	-o-transition: width 0.7s ease;
+		  	transition: width 0.7s ease;
+		  	.swatch_cover {
+		  		position: absolute;
+		  		top: 0;
+		  		left: 0;
+		  		width: 200px;
+		  		height: 200px;
+		  		background-repeat: no-repeat;
+					background-position: center center;
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+				  overflow: hidden;
+
+				  -webkit-transform: translate(0, 0);
+				  -moz-transform: translate(0, 0);
+			    -ms-transform: translate(0, 0);
+			    -o-transform: translate(0, 0);
+			    transform: translate(0, 0);
+
+				  -webkit-transition: -webkit-transform 0.7s ease;
+			  	-moz-transition: -mox-transform 0.7s ease;
+			  	-ms-transition: -ms-transform 0.7s ease;
+			  	-o-transition: -o-transform 0.7s ease;
+			  	transition: transform 0.7s ease;
+				  .swatch_hover {
+				  	top: 0;
+				  	height: 248px;
+				  	background: rgba(0,0,0,0.8);
+				  	padding: 10px;
+				  	position: relative;
+				  	.swatch_info {
+				  		float: left;
+				  		width: 148px;
+				  		span {
+				  			font-family: "Lato", Arial;
+								@include font(#fff, 14px, 400, left, 16px);
+								@include ellipsis;
+								display: block;
+								&.date {
+									font-size: 12px;
+									line-height: 14px;
+								}
+				  		}
+				  	}
+			  		.swatch_type {
+			  			float: right;
+			  			width: 30px;
+			  			text-align: right;
+			  			color: #e3ba1d;
+			  			line-height: 28px;
+			  		}
+			  		.swatch_view_btn {
+			  			background: none;
+			  			font-family: "Lato", Arial;
+							@include font(#fff, 14px, 400, center, 16px);
+							text-transform: uppercase;
+			  			height: 32px;
+			  			width: 95px;
+			  			display: block;
+			  			@include rounded_border(2px, 2px, 2px, 2px, 1px solid #fff);
+			  			cursor: pointer;
+			  			margin: 122px auto 0 auto;
+			  			&:hover {
+			  				background: rgba(255, 255, 255, 0.5);
+			  			}
+			  		}
+			  		-webkit-transform: translate(0, 152px);
+						-moz-transform: translate(0, 152px);
+						-o-transform: translate(0, 152px);
+						-ms-transform: translate(0, 152px);
+						transform: translate(0, 152px);
+
+						-webkit-transition: all 0.5s linear;
+						-moz-transition: all 0.5s linear;
+						-o-transition: all 0.5s linear;
+						-ms-transition: all 0.5s linear;
+						transition: all 0.5s linear;
+			  	}		  		
+			  }
+			  &:hover .swatch_hover {
+			  	margin-top: 0;
+
+		  		-webkit-transform: translate(0, -48px);
+					-moz-transform: translate(0, -48px);
+					-o-transform: translate(0, -48px);
+					-ms-transform: translate(0, -48px);
+					transform: translate(0, -48px);
+
+					-webkit-transition: -webkit-transform 0.5s linear;
+					-moz-transition: -moz-transform 0.5s linear;
+					-o-transition: all 0.5s linear;
+					-ms-transition: -ms-transform 0.5s linear;
+					transition: transform 0.5s linear;
+			  }
+			}
+		  &.use_filter li.remove_swatch {
+		  	width: 0;
+		  	margin: 0;
+		  	-webkit-transition: width 0.7s ease;
+		  	-moz-transition: width 0.7s ease;
+		  	-ms-transition: width 0.7s ease;
+		  	-o-transition: width 0.7s ease;
+		  	transition: width 0.7s ease;
+		  	.swatch_cover {
+			  	-webkit-transform: translate(2100px, 0);
+				  -moz-transform: translate(2100px, 0);
+			    -ms-transform: translate(2100px, 0);
+			    -o-transform: translate(2100px, 0);
+			    transform: translate(2100px, 0);
+		  		
+			  	-webkit-transition: -webkit-transform 0.7s ease;
+			  	-moz-transition: -mox-transform 0.7s ease;
+			  	-ms-transition: -ms-transform 0.7s ease;
+			  	-o-transition: -o-transform 0.7s ease;
+			  	transition: transform 0.7s ease;
+		  	}
+		  }
+		}
+	}
+}
+

@@ -1,0 +1,32 @@
+.th_footer {
+    height:89px;
+    background:url('//assets.tunehog.com/images/th_footer_bg.jpg') top left repeat-x;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+}
+.th_footer_left {
+    width:515px;
+    padding-top:24px;
+    color:#a0a0a0;
+}
+.th_footer_left a{
+    color:#a0a0a0;
+}
+.th_footer_left i{
+    margin:0px 10px;
+    font-style:normal;
+}
+.th_footer_left a:hover{
+    color:#fff;
+}
+.th_footer_right {
+    color:#a0a0a0;
+    padding-top:40px;
+}
+.th_footer_right a{
+    color:#fff;
+}
+.th_footer_right b{
+    color:#fff;
+}

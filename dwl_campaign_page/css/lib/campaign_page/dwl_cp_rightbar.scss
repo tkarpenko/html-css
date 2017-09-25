@@ -1,0 +1,207 @@
+@mixin box_shadow ($x_shadow, $y_shadow, $radius, $blur, $color) {
+  -moz-box-shadow: $x_shadow $y_shadow $radius $blur $color;
+  -webkit-box-shadow: $x_shadow $y_shadow $radius $blur $color;
+  box-shadow: $x_shadow $y_shadow $radius $blur $color;
+}
+@mixin font ($color: $grey, $size: 12px, $weight: 400, $align: left, $line_height: inherit) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-align: $align;
+  line-height: $line_height;
+}
+@mixin rounded_border ($left_top: 4px, $right_top: 4px, $right_bottom: 4px, $left_bottom: 4px, $border: none) {
+  border: $border;
+  border-radius:         $left_top $right_top $right_bottom $left_bottom;
+  -moz-border-radius:    $left_top $right_top $right_bottom $left_bottom;
+  -webkit-border-radius: $left_top $right_top $right_bottom $left_bottom;
+}
+
+.tw-bs {
+  .dwl_cp_rightbar {
+    width: 300px;
+    position: absolute;
+    top: 48px;
+    bottom: 220px;
+    right: -350px;
+    z-index: 2;
+    overflow: hidden;
+    @include box_shadow(0px, 0px, 29px, 2px, rgba(0,0,0,0.4));
+    .rightbar_body {
+      position: relative; 
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 2;
+      .rightbar_content {
+        position: relative;
+        padding: 20px 0 0 20px;
+        z-index: 3;
+      }
+      .rightbar_title {
+        font-family: "Lato Light", Arial;
+        @include font(#fff, 30px, 400, left, 40px);
+      }
+      .rightbar_subtitle {
+        font-family: "Lato", Arial;
+        @include font(#fff, 18px, 400, left, 28px);
+      }
+      .rightbar_txt {
+        font-family: "Lato", Arial;
+        @include font(#fff, 14px, 400, left, 18px);
+      }
+      .rightbar_comments {
+        &:before,
+        &:after {
+          content: "";
+          display: block;
+          height: 0;
+          width: 100%;
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+          margin: 19px 0 6px 0;
+        }
+        &:after {
+          margin-bottom: 12px;
+        }
+        &.one_line {
+          margin: 0 0 0 -20px;
+          &:before,
+          &:after {
+            margin: 11px 0 6px 0;
+          }
+          &:after {
+            margin: 0;
+            border: none;
+          }
+          &>a:hover {
+            text-decoration: none;
+          }
+          &>.rightbar_subtitle {
+            margin-bottom: 0;
+            margin-left: 20px;
+            i {
+              margin-right: 6px;
+            }
+          }
+          &:last-child {
+            &:after {
+              margin-top: 45px;
+              border-top: 1px solid rgba(255, 255, 255, 0.2);
+            }
+          }
+        }
+        &>.rightbar_subtitle {
+          float: left;
+          margin-bottom: 9px;
+        }
+        &>.rightbar_comments_btn {
+          background: none;
+          float: right;
+          line-height: 28px;
+          width: 30px;
+          text-align: right;
+          &>.caret {
+            color: #fff;
+          }
+        }
+        .rightbar_comments_content {
+          clear: both;
+          font-family: "Lato", Arial;
+          display: none;
+          @include font(#fff, 14px, 400, left, 22px);
+          textarea {
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 62px;
+            margin: 6px 0 3px 0;
+            font-family: "Lato", Arial;
+            @include font(#fff, 14px, 400, left, 18px);
+            background: none;
+            @include rounded_border(4px, 4px, 4px, 4px, 1px solid #fff);
+          }
+          .content_small {
+            font-size: 12px;
+          }
+          .rightbar_comments_comment {
+            margin: 15px 0 0 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            &:last-child {
+              border-bottom: none;
+              padding-bottom: 0;
+            }
+            .name {
+              font-family: "Lato Bold", Arial;
+              float: left;
+            }
+            .date {
+              float: left;
+              color: rgba(255, 255, 255, 0.5);
+              padding-left: 20px;
+            }
+            .comment {
+              clear: both;
+              line-height: 18px;
+            }
+          }
+        }
+        &.comments_open {
+          .rightbar_comments_content {
+            display: block;
+          }
+          &>.rightbar_subtitle {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .rightbar_bg {
+      position: absolute;
+      top: 0;
+      left: 1px;
+      width: 100%;
+      height: 100%;
+      background-position: center left;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -webkit-filter: blur(40px);
+      -moz-filter: blur(40px);
+      -o-filter: blur(40px);
+      filter: blur(40px);
+      z-index: 1;
+    }
+    -webkit-transition: right 0.5s linear;
+    -moz-transition: right 0.5s linear;
+    -o-transition: right 0.5s linear;
+    -ms-transition: right 0.5s linear;
+    transition: right 0.5s linear;
+    &.rightbar_open {
+      right: 0;
+      -webkit-transition: right 0.5s linear;
+      -moz-transition: right 0.5s linear;
+      -o-transition: right 0.5s linear;
+      -ms-transition: right 0.5s linear;
+      transition: right 0.5s linear;
+    }
+  }
+
+  .dwl_cp_rightbar.rightbar_comments {
+    bottom: 0;
+    z-index: 3;
+    .rightbar_body {
+      background: rgba(0,0,0,0.7);
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &.dwl_cp_swatch_open.dwl_cp_swatch_comment_open .dwl_cp_rightbar.rightbar_comments {
+    right: 0;
+    -webkit-transition: right 0.5s linear;
+    -moz-transition: right 0.5s linear;
+    -o-transition: right 0.5s linear;
+    -ms-transition: right 0.5s linear;
+    transition: right 0.5s linear;
+  }
+}
